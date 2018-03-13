@@ -1,28 +1,45 @@
 {
     "primary": [
-	    { 
-		    "label": "Option A",
+	    {
+		    "label": "About",
 		    "in_section": "",
 		    "hidden": false
 		},
-		{ 
-		    "label": "Option B",
+		{
+		    "label": "IATI Standard",
 		    "in_section": "",
 		    "hidden": false
 		},
-		{ 
-		    "label": "Option C",
+		{
+		    "label": "Data",
 		    "in_section": "",
 		    "hidden": false
 		},
-		{ 
-		    "label": "Option D",
+		{
+		    "label": "Guidance & Support",
 		    "in_section": "",
 		    "hidden": false
 		},
-		{ 
-		    "label": "Option E",
+		{
+		    "label": "Community",
 		    "in_section": "",
+		    "hidden": false
+		}
+    ],
+    "utility": [
+	    {
+		    "label": "News",
+		    "in_section": "news",
+		    "hidden": false
+		},
+		{
+		    "label": "Events",
+		    "in_section": "events",
+		    "hidden": false
+		},
+		{
+		    "label": "Contact",
+		    "in_section": "contact",
 		    "hidden": false
 		}
     ]

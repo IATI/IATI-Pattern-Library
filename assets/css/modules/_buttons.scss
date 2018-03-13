@@ -9,17 +9,23 @@
 	display: inline-block;
 	text-align: left;
 	padding: 1em;
-	@include font-size($para);
+	@include font-size($eta);
+	text-transform: uppercase;
+	letter-spacing: 1px;
 	line-height: 1;
-	color: #fff;
-	background-color: $action;
+	color: $heading-color;
+	background-color: darken($action-respond, 15%);
+	background: linear-gradient(30deg, darken($action-respond, 15%), $action-respond);
 	text-decoration: none;
 	position: relative;
 	vertical-align: middle;
 	cursor: pointer;
+	transition: all, ease-in-out, 0.3s;
 	@include link-active-styles {
 		color: #fff;
 		background-color: $action-respond;
+		background: linear-gradient(30deg, $action-respond, $action-respond);
+		color: $heading-color;
 	}
 }
 
@@ -27,6 +33,9 @@
 button.button {
 	border: 0;
 	width: 100%;
+	.footer & {
+		width: auto;
+	}
 }
 
 // ------------------------------------------------------------
@@ -63,9 +72,13 @@ button.button {
 }
 
 .button--secondary {
-	background-color: $action-respond;
+	color: #fff;
+	background-color: $action;
+	background: linear-gradient(30deg, $action, $iati-sunset);
 	@include link-active-styles {
-		background-color: $action;
+		color: #fff;
+		background-color: $iati-sunset;
+		background: linear-gradient(30deg, $iati-sunset, $iati-sunset);
 	}
 }
 

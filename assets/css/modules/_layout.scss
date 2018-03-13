@@ -56,6 +56,42 @@
 }
 
 // ------------------------------------------------------------
+// 3 column grid
+// ------------------------------------------------------------
+
+.l-3up {
+	@extend %l;
+	@include respond-to($c-vp) {
+		@supports (display: grid) {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, 30%);
+			grid-gap: 5%;
+		}
+	}
+	&__col {
+		margin-bottom: 3em;
+		@include respond-to($c-vp) {
+			float: left;
+			display: block;
+			width: 30%;
+			margin-left: 5%;
+			margin-bottom: 0;
+			&:nth-child(3n+1) {
+				margin-left: 0;
+				clear: left;
+				@supports (display: grid) {
+					margin-left: 0;
+				}
+			}
+			@supports (display: grid) {
+				margin-left: 0;
+				width: auto;
+			}
+		}
+	}
+}
+
+// ------------------------------------------------------------
 // Listings
 // ------------------------------------------------------------
 

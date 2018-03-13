@@ -31,6 +31,10 @@
 	    width: 1px !important;
 	    overflow: hidden;
 	}
+	.footer & {
+		color: #fff;
+		@include font-size($epsilon - 1);
+	}
 }
 
 // ------------------------------------------------------------
@@ -45,9 +49,12 @@
 // Space the form field
 .form-field--spaced {
 	padding-top: $internal-spacing;
+	.footer & {
+		padding-top: $internal-spacing/3;
+	}
 }
 
-// Standard form elements  
+// Standard form elements
 .form-item {
 	padding: 0 $form-padding/2;
 	display: block;
@@ -64,10 +71,13 @@
 		outline: none;
 		border-color: $action;
 	}
+	.footer & {
+		border: none;
+	}
 }
 
 // Turn off spinners for number input field, as flipping ugly
-.form-item[type=number]::-webkit-inner-spin-button, 
+.form-item[type=number]::-webkit-inner-spin-button,
 .form-item[type=number]::-webkit-outer-spin-button {
 	appearance: none;
 }
@@ -119,7 +129,7 @@ textarea.form-item {
 }
 
 // For enhanced style (off by default)
-// @import "form-items/checkbox-radio"; 
+// @import "form-items/checkbox-radio";
 
 // ------------------------------------------------------------
 // Select baseline style
@@ -161,4 +171,4 @@ textarea.form-item {
 // Only add style for checks / radio if enhancing to this level
 // ------------------------------------------------------------
 
-@import "form-items/validation"; 
+@import "form-items/validation";
