@@ -5,6 +5,7 @@
 .header {
 	overflow: hidden;
 	position: relative;
+	z-index: 2;
 	max-width: $max-grid;
 	margin-left: $internal-spacing;
 	margin-right: $internal-spacing;
@@ -17,7 +18,6 @@
 	@include respond-to($menu-respond) {
 		margin-top: 4em;
 		padding: 2em 3em;
-		margin-bottom: 7em;
 	}
 	@include respond-to($max-vp) {
 		margin-left: auto;

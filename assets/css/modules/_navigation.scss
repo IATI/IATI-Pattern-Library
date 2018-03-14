@@ -194,4 +194,7 @@
 			border-bottom: 1px solid $action-respond;
 		}
 	}
+	&--active a {
+		border-bottom: 1px solid $action-respond;
+	}
 }

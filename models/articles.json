@@ -1,25 +1,34 @@
 {
+    "featured_article": [
+        {
+		    "title": "São Tomé and Príncipe is IATI’s first Portuguese-speaking Member",
+            "image_name": "content-image3.jpg",
+		    "date": "27 Feb 2018",
+		    "author": "Rohini Simbodyal",
+		    "excerpt": "São Tomé and Príncipe has become the first Portuguese-speaking country to join IATI. They join 86 members of the initiative ..."
+		}
+    ],
     "article_list": [
-	    { 
-		    "title": "Extending liaison psychiatry service at the Bristol Royal Infirmary improves care and reduces costs for self-harm patients",
-		    "date": "25 Aug 2017",
-		    "author": "Robert Terwilliger",
-		    "taxonomy": "<a href=''>News</a>, <a href=''>Updates</a>",
-		    "excerpt": "The following examples include an image of how the example should look in a supporting browser, they each link to a page with more information about the technique being shown, code and a CodePen of the example. Unless otherwise noted these examples work in any browser supporting the up to date Grid Specification"
+	    {
+		    "title": "São Tomé and Príncipe is IATI’s first Portuguese-speaking Member",
+            "image_name": "content-image.jpg",
+		    "date": "27 Feb 2018",
+		    "author": "Rohini Simbodyal",
+		    "excerpt": "São Tomé and Príncipe has become the first Portuguese-speaking country to join IATI. They join 86 members of the initiative ..."
 		},
-		{ 
-		    "title": "University of Bristol team develop a new test to assist GP antibiotic prescribing",
-		    "date": "25 Aug 2017",
-		    "author": "Robert Terwilliger",
-		    "taxonomy": "<a href=''>News</a>",
-		    "excerpt": "The following examples include an image of how the example should look in a supporting browser, they each link to a page with more information about the technique being shown, code and a CodePen of the example. Unless otherwise noted these examples work in any browser supporting the up to date Grid Specification"
+        {
+		    "title": "São Tomé and Príncipe is IATI’s first Portuguese-speaking Member",
+            "image_name": "content-image2.jpg",
+		    "date": "27 Feb 2018",
+		    "author": "Rohini Simbodyal",
+		    "excerpt": "São Tomé and Príncipe has become the first Portuguese-speaking country to join IATI. They join 86 members of the initiative ..."
 		},
-		{ 
-		    "title": "Creating a communications culture in our sector",
-		    "date": "25 Aug 2017",
-		    "author": "Robert Terwilliger",
-		    "taxonomy": "<a href=''>Updates</a>",
-		    "excerpt": "The following examples include an image of how the example should look in a supporting browser, they each link to a page with more information about the technique being shown, code and a CodePen of the example. Unless otherwise noted these examples work in any browser supporting the up to date Grid Specification"
+        {
+		    "title": "São Tomé and Príncipe is IATI’s first Portuguese-speaking Member",
+            "image_name": "content-image3.jpg",
+		    "date": "27 Feb 2018",
+		    "author": "Rohini Simbodyal",
+		    "excerpt": "São Tomé and Príncipe has become the first Portuguese-speaking country to join IATI. They join 86 members of the initiative ..."
 		}
     ]
 }

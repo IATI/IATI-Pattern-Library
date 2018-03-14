@@ -8,9 +8,10 @@
 {# 2. Assign Settings and variables #}
 {# --------------------------------------- #}
 
-{% set id = "" %}
-{% set section = "" %}
-{% set title = "Article listing template" %}
+{% set id = "news" %}
+{% set section = "news" %}
+{% set title = "Latest IATI News" %}
+{% set hero_copy = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. " %}
 
 
 {# --------------------------------------- #}
@@ -24,19 +25,49 @@
 
 
 {# --------------------------------------- #}
-{# 
+{#
    4. Add page content into relevant areas
-      Add/Delete blocks as necessary 
+      Add/Delete blocks as necessary
 #}
 {# --------------------------------------- #}
 
+{% block hero %}
+    <div class="hero">
+        <div class="row">
+            <div class="hero__caption">
+                <h1 class="hero__heading">{{ title }}</h1>
+                {% if hero_copy %}
+                    <p class="hero__excerpt">{{ hero_copy }}</p>
+                {% endif %}
+            </div>
+            <div class="hero__emblem">
+                <img class="hero__emblem__mask" src="{{ global.assets_root }}/img/hero1.jpg" alt="alt tag">
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
 {% block aside %}
-	<h2 class="type-l heading">Aside items here</h2>
+	<div class="aside-m">
+        <div class="aside-m__header fill-land">
+            <h3 class="aside-m__heading">Categories</h3>
+        </div>
+        <ul class="aside-m__list">
+            <li class="aside-m__list-item"><a href="#">Category name</a></li>
+            <li class="aside-m__list-item"><a href="#">Category name</a></li>
+            <li class="aside-m__list-item"><a href="#">Category name</a></li>
+            <li class="aside-m__list-item"><a href="#">Category name</a></li>
+            <li class="aside-m__list-item"><a href="#">Category name</a></li>
+            <li class="aside-m__list-item"><a href="#">Category name</a></li>
+        </ul>
+    </div>
 {% endblock %}
 
 {% block main %}
-	<h1 class="type-xl heading">{{ title }}</h1>
 	<div class="l-listing">
+        {% for item in articles.featured_article %}
+			{% include 'listings/featured-article.html' %}
+		{% endfor %}
 		{% for item in articles.article_list %}
 			{% include 'listings/article.html' %}
 		{% endfor %}

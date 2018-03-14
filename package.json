@@ -13,6 +13,7 @@
   "author": "Dan Reeves <danr@fffunction.co>",
   "license": "MIT",
   "dependencies": {
+    "basicscroll": "^2.1.0",
     "fastclick": "^1.0.6",
     "jquery": "^2.1.4"
   }

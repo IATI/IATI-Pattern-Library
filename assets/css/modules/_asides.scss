@@ -1,0 +1,42 @@
+// ------------------------------------------------------------
+// Asides
+// ------------------------------------------------------------
+
+.aside-m {
+    +.aside-m {
+        margin-top: 2em;
+    }
+}
+
+.aside-m__header {
+    padding: 1em;
+    padding-top: 4em;
+}
+
+.aside-m__header {
+    @extend .heading;
+    @include font-size($epsilon);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+.aside-m__list {
+
+}
+
+.aside-m__list-item {
+    margin-top: 1px;
+    display: block;
+    @include font-size($epsilon);
+    a {
+        display: block;
+        background-color: $iati-land-light;
+        padding: 1em;
+        color: $heading-color;
+        transition: all, ease-in-out, 0.3s;
+        @include link-active-styles {
+            background-color: darken($iati-land-light, 5%);
+        }
+    }
+}
