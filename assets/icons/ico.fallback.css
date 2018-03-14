@@ -1,4 +1,32 @@
 
+.ico-calendar-ash {
+	background-image: url('png/calendar-ash.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-calendar-black {
+	background-image: url('png/calendar-black.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-calendar-ocean {
+	background-image: url('png/calendar-ocean.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-calendar-white {
+	background-image: url('png/calendar-white.png');
+	background-repeat: no-repeat;
+}
+
+
+
 .ico-error-error {
 	background-image: url('png/error-error.png');
 	background-repeat: no-repeat;
@@ -15,6 +43,34 @@
 
 .ico-test {
 	background-image: url('png/test.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-user-ash {
+	background-image: url('png/user-ash.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-user-black {
+	background-image: url('png/user-black.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-user-ocean {
+	background-image: url('png/user-ocean.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-user-white {
+	background-image: url('png/user-white.png');
 	background-repeat: no-repeat;
 }
 
