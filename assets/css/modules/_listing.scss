@@ -12,16 +12,23 @@
 	}
 	&--featured {
 		border-bottom: 0;
+		padding-bottom: 0;
 	}
 	@include respond-to($menu-respond) {
 		@supports (display: flex) {
 			display: flex;
+		}
+		&--featured {
+			padding-bottom: 4em;
 		}
 	}
 	&__aside {
 		margin-bottom: 1em;
 		display: block;
 		width: 100%;
+		.listing--featured & {
+			margin-bottom: 0;
+		}
 		@include respond-to($menu-respond) {
 			margin-bottom: 0;
 			display: block;
@@ -39,15 +46,17 @@
 	&__body {
 		display: block;
 		width: 100%;
+		.listing--featured & {
+			background-color: #fff;
+			padding: 2.5em;
+			box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1);
+		}
 		@include respond-to($menu-respond) {
 			display: block;
 			float: right;
 			width: 60%;
 			.listing--featured & {
 				width: 55%;
-				background-color: #fff;
-				padding: 2.5em;
-				box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1);
 				margin-left: -5%;
 				z-index: 2;
 				transform: translateY(var(--translateY));
@@ -124,7 +133,7 @@
 		display: block;
 	}
 	.listing--featured & {
-		@include respond-to($c-vp) {
+		@include respond-to($menu-respond) {
 			overflow: hidden;
 			box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1);
 			position: absolute;

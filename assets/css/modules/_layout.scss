@@ -44,7 +44,7 @@
 		}
 	}
 	&__body {
-		margin-bottom: 2em;
+		margin-bottom: 5em;
 		@include respond-to($sidebar-respond) {
 			float: left;
 			display: inline-block;
