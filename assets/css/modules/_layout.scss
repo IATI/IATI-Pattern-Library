@@ -23,11 +23,12 @@
 
 .l-standard {
 	@extend %l;
+	padding: 6em 0;
 }
 
 .l-error {
 	@extend %l;
-	padding-top: 2em;
+	padding: 6em 0;
 }
 
 // ------------------------------------------------------------
@@ -49,7 +50,6 @@
 			float: left;
 			display: inline-block;
 			width: $sidebar-body-width;
-			margin-bottom: 0;
 			padding-right: 5em;
 		}
 	}
@@ -77,6 +77,42 @@
 			margin-left: 5%;
 			margin-bottom: 0;
 			&:nth-child(3n+1) {
+				margin-left: 0;
+				clear: left;
+				@supports (display: grid) {
+					margin-left: 0;
+				}
+			}
+			@supports (display: grid) {
+				margin-left: 0;
+				width: auto;
+			}
+		}
+	}
+}
+
+// ------------------------------------------------------------
+// 2 column grid
+// ------------------------------------------------------------
+
+.l-2up {
+	@extend %l;
+	@include respond-to($c-vp) {
+		@supports (display: grid) {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, 47.5%);
+			grid-gap: 5%;
+		}
+	}
+	&__col {
+		margin-bottom: 3em;
+		@include respond-to($c-vp) {
+			float: left;
+			display: block;
+			width: 47.5%;
+			margin-left: 5%;
+			margin-bottom: 0;
+			&:nth-child(2n+1) {
 				margin-left: 0;
 				clear: left;
 				@supports (display: grid) {

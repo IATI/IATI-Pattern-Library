@@ -1,0 +1,26 @@
+// ------------------------------------------------------------
+// Sections
+// ------------------------------------------------------------
+
+.section {
+    @extend .space-section-top;
+    @extend .padd-section-both;
+    background-color: #fff;
+}
+
+
+.section__heading {
+    @extend .type-l;
+    @extend .heading;
+    margin-bottom: 0.75em;
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 2em;
+        height: 3px;
+        background-color: $iati-air;
+    }
+}

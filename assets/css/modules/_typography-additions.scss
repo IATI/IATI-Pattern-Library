@@ -32,6 +32,9 @@
 		h6 {
 			@include font-size($delta*1.25);
 		}
+		blockquote p {
+			@include font-size($quote);
+		}
 	}
 }
 
@@ -50,10 +53,12 @@
 
 .as-blockquote {
 	position: relative;
-	border-left: 3px solid $default-border-color;
+	border-left: 3px solid $iati-sunset;
 	padding-left: $internal-spacing;
+	padding-top: 1.5em;
 	p {
 		@include font-size($quote);
+		color: $heading-color;
 	}
 	cite {
 		display: block;
@@ -63,6 +68,14 @@
 .is-typeset {
 	blockquote {
 		@extend .as-blockquote;
+		margin: ($para/$rembase) + em 0;
+		@include respond-to($menu-respond) {
+			float: right;
+			clear: right;
+			width: 30em;
+			margin-left: 4em;
+			margin-right: -8em;
+		}
 	}
 }
 

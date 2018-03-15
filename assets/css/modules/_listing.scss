@@ -4,9 +4,11 @@
 
 .listing {
 	@extend %pie-clearfix;
-	margin-top: 4em;
-	padding-bottom: 4em;
-	border-bottom: 3px solid $default-border-color;
+	.l-listing & {
+		margin-top: 4em;
+		padding-bottom: 4em;
+		border-bottom: 3px solid $default-border-color;
+	}
 	&:first-child {
 		margin-top: 1em;
 	}

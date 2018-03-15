@@ -174,9 +174,29 @@
 		@extend .para--typeset;
 	}
 
+	a:not(.button) {
+		border-bottom: 2px solid $action-respond;
+	}
+
 	img {
 		@extend %max-width;
 		margin: ($para/$rembase) + em 0;
+		&.alignleft {
+			@include respond-to($c-vp) {
+				float: left;
+				max-width: 50%;
+				margin-right: 4em;
+				margin-left: -8em;
+			}
+		}
+		&.alignright {
+			@include respond-to($c-vp) {
+				float: right;
+				max-width: 50%;
+				margin-left: 4em;
+				margin-right: -8em;
+			}
+		}
 	}
 
 	// Tear out the initial top margin to allow things to flush together

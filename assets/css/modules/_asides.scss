@@ -6,6 +6,18 @@
     +.aside-m {
         margin-top: 2em;
     }
+    &--clipping {
+        padding: 2em;
+        margin-bottom: 2em;
+        box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.25);
+        display: block;
+        @include respond-to($menu-respond) {
+            float: right;
+            margin-top: -10em;
+            margin-right: -8em;
+            max-width: 25em;
+        }
+    }
 }
 
 .aside-m__header {
@@ -37,6 +49,29 @@
         transition: all, ease-in-out, 0.3s;
         @include link-active-styles {
             background-color: darken($iati-land-light, 5%);
+        }
+    }
+}
+
+.aside-m__meta {
+    @include font-size($zeta);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    li {
+        margin-bottom: 0.75em;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        a {
+            color: $heading-color;
+            border-bottom: 1px solid $heading-color;
+            &:hover {
+                border-color: $iati-air;
+            }
+        }
+        .ico {
+            top: -2px;
+            margin-right: 2px;
         }
     }
 }

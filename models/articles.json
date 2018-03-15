@@ -5,7 +5,7 @@
             "image_name": "content-image3.jpg",
 		    "date": "27 Feb 2018",
 		    "author": "Rohini Simbodyal",
-		    "excerpt": "São Tomé and Príncipe has become the first Portuguese-speaking country to join IATI. They join 86 members of the initiative ..."
+		    "excerpt": "São Tomé and Príncipe has become the first Portuguese-speaking country to join IATI. They join 86 members of the initiative"
 		}
     ],
     "article_list": [
@@ -14,21 +14,37 @@
             "image_name": "content-image.jpg",
 		    "date": "27 Feb 2018",
 		    "author": "Rohini Simbodyal",
-		    "excerpt": "São Tomé and Príncipe has become the first Portuguese-speaking country to join IATI. They join 86 members of the initiative ..."
+		    "excerpt": "São Tomé and Príncipe has become the first Portuguese-speaking country to join IATI. They join 86 members of the initiative"
 		},
         {
 		    "title": "São Tomé and Príncipe is IATI’s first Portuguese-speaking Member",
             "image_name": "content-image2.jpg",
 		    "date": "27 Feb 2018",
 		    "author": "Rohini Simbodyal",
-		    "excerpt": "São Tomé and Príncipe has become the first Portuguese-speaking country to join IATI. They join 86 members of the initiative ..."
+		    "excerpt": "São Tomé and Príncipe has become the first Portuguese-speaking country to join IATI. They join 86 members of the initiative"
 		},
         {
 		    "title": "São Tomé and Príncipe is IATI’s first Portuguese-speaking Member",
             "image_name": "content-image3.jpg",
 		    "date": "27 Feb 2018",
 		    "author": "Rohini Simbodyal",
-		    "excerpt": "São Tomé and Príncipe has become the first Portuguese-speaking country to join IATI. They join 86 members of the initiative ..."
+		    "excerpt": "São Tomé and Príncipe has become the first Portuguese-speaking country to join IATI. They join 86 members of the initiative"
+		}
+    ],
+    "related_article": [
+        {
+		    "title": "São Tomé and Príncipe is IATI’s first Portuguese-speaking Member",
+            "image_name": "content-image3.jpg",
+		    "date": "27 Feb 2018",
+		    "author": "Rohini Simbodyal",
+		    "excerpt": "São Tomé and Príncipe has become the first Portuguese-speaking country to join IATI. They join 86 members of the initiative"
+		},
+        {
+		    "title": "São Tomé and Príncipe is IATI’s first Portuguese-speaking Member",
+            "image_name": "content-image2.jpg",
+		    "date": "27 Feb 2018",
+		    "author": "Rohini Simbodyal",
+		    "excerpt": "São Tomé and Príncipe has become the first Portuguese-speaking country to join IATI. They join 86 members of the initiative"
 		}
     ]
 }

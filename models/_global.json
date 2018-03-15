@@ -11,7 +11,7 @@
 	"spreadsheet_link": "Blank",
 
 	"show_style_guide": true,
-	"show_modules": false,
+	"show_modules": true,
 	"show_developer_guide": true,
 
 	"pages_style_guide": [
@@ -22,7 +22,7 @@
 	],
 
 	"pages_modules": [
-
+        { "name": "Global", "url": "global" }
 	],
 
 	"pages_developer_guide": [
