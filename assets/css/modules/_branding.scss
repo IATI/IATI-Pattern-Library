@@ -7,7 +7,7 @@
     background-image: url(../svg/source/logo-colour.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    width: auto;
+    width: 171px;
     height: 40px;
     display: block;
     span {
@@ -15,6 +15,7 @@
     }
     @include respond-to($menu-respond) {
         height: 60px;
+        width: 260px;
         float: left;
     }
 }

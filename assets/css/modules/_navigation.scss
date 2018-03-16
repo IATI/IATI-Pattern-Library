@@ -107,6 +107,12 @@
 		@include respond-to($menu-respond) {
 			display: inline-block;
 			float: left;
+			margin-left: 1em;
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+		@include respond-to($d-vp) {
 			margin-left: 2em;
 			&:first-child {
 				margin-left: 0;
