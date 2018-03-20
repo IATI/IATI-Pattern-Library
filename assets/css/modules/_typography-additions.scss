@@ -42,7 +42,7 @@
 .is-typeset--additionals {
 	> p:first-of-type {
 		color: $heading-color;
-		font-size: 125%;
+		font-size: 175%;
 		@include leading($base-font-size*1.05);
 	}
 }

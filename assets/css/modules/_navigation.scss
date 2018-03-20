@@ -154,11 +154,9 @@
 		}
 		&--active {
 			a {
-				@include link-active-styles {
-					&:after {
-						transform: scaleX(1);
-	  					transform-origin: bottom left;
-					}
+				&:after {
+					transform: scaleX(1);
+  					transform-origin: bottom left;
 				}
 			}
 		}
@@ -167,6 +165,64 @@
 				display: none;
 			}
 		}
+	}
+}
+
+// ------------------------------------------------------------
+// Secondary navigation
+// used for inpage nav
+// ------------------------------------------------------------
+
+.navigation-secondary-toggle {
+	position: relative;
+	padding: 1em;
+	@include font-size($epsilon);
+	background-color: lighten($iati-sunset, 15%);
+	display: block;
+	width: 100%;
+	color: #fff;
+	outline: none;
+	&:before {
+		content: "Show";
+		margin-right: 5px;
+	}
+	&--active {
+		&:before {
+			content: "Hide";
+		}
+	}
+	@include respond-to-max($menu-respond) {
+		html.js & {
+			display: block;
+		}
+	}
+	@include respond-to($menu-respond) {
+		display: none;
+		html.js & {
+			display: none;
+		}
+	}
+}
+
+.navigation-secondary {
+	display: block;
+	@include respond-to-max($menu-respond) {
+		html.js & {
+			display: none;
+		}
+		&--active {
+			html.js & {
+				display: block;
+			}
+		}
+	}
+	&__item {
+		border-left: 2px solid $iati-sunset;
+		@include font-size($epsilon);
+		padding: 0.75em 1em;
+		margin-top: 1px;
+		color: $heading-color;
+		background-color: #fff;
 	}
 }
 

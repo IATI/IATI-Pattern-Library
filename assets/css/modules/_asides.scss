@@ -21,15 +21,18 @@
 }
 
 .aside-m__header {
-    padding: 1em;
-    padding-top: 4em;
+    padding: 1.5em;
+    padding-top: 6em;
 }
 
-.aside-m__header {
+.aside-m__heading {
     @extend .heading;
     @include font-size($epsilon);
     text-transform: uppercase;
     letter-spacing: 1px;
+    .fill-sunset & {
+        color: #fff;
+    }
 }
 
 
