@@ -4,6 +4,7 @@ import $ from 'jquery';
 import skipLinks from './utils/skipLinks';
 import iframer from './utils/iframer';
 import mNav from './utils/mNav';
+import sNav from './utils/mNav';
 // import instance from './utils/basicScroll';
 
 function globals () {
@@ -23,6 +24,14 @@ function globals () {
         'navigation-primary-toggle--active',
         '#navigation-primary',
         'navigation-primary--active'
+    );
+
+    // Small Screen Navigation
+    sNav(
+        '#navigation-secondary-toggle',
+        'navigation-secondary-toggle--active',
+        '#navigation-secondary',
+        'navigation-secondary--active'
     );
 }
 
