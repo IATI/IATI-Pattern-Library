@@ -6,8 +6,8 @@
     margin-bottom: 5em;
     padding-top: 15em;
     margin-top: -15.5em;
+    position: relative;
     &--image {
-        position: relative;
         padding-bottom: 5em;
         background-size: cover;
         background-position: center center;
@@ -23,12 +23,43 @@
             background: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0));
         }
     }
+    &--minor {
+        background-color: $iati-ocean;
+        padding-bottom: 5em;
+        @include respond-to-max($menu-respond) {
+            &:before {
+                content: "";
+                position: absolute;
+                background-color: $iati-ocean;
+                width: 100%;
+                height: 100%;
+                top: -100%;
+            }
+        }
+    }
     @include respond-to($c-vp) {
         padding-top: 20em;
         margin-bottom: 8em;
         &--image {
             padding-top: 25em;
             margin-bottom: 5em;
+        }
+        &--minor {
+            position: relative;
+            &:after {
+                content: "";
+                background-image: url(../svg/source/marque-white.svg);
+                background-size: 70%;
+                background-repeat: no-repeat;
+                background-position: top right;
+                opacity: 0.25;
+                position: absolute;
+                top: 0;
+                right: 0;
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
         }
     }
     @include respond-to($menu-respond) {
@@ -42,6 +73,9 @@
     }
     @include respond-to($d-vp) {
         padding-top: 35em;
+        &--minor {
+            padding-top: 30em;
+        }
     }
 }
 
@@ -63,7 +97,7 @@
     @extend .heading;
     color: $iati-ocean;
     line-height: 1;
-    .hero--image & {
+    .hero--image &, .hero--minor & {
         color: #fff;
     }
 }
@@ -71,6 +105,9 @@
 .hero__excerpt {
     @include font-size($para);
     margin-top: 1em;
+    .hero--minor & {
+        color: #fff;
+    }
 }
 
 .hero__emblem {
@@ -94,7 +131,10 @@
 }
 
 .hero__emblem__mask {
-    mask-image: url(../svg/source/marque-white.svg);
+    mask-image: url(../img/marque-white.png);
+    html.svg & {
+        mask-image: url(../svg/source/marque-white-animated.svg);
+    }
     mask-mode: alpha;
     mask-repeat: no-repeat;
     mask-size: contain;

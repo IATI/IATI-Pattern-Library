@@ -10,16 +10,13 @@
 
 {% set id = "about" %}
 {% set section = "about" %}
-{% set title = "About IATI" %}
-{% set hero_copy = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. " %}
-{% set hero_image = "hero3.jpg" %}
+{% set title = "Governance" %}
+{% set hero_copy = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." %}
 
 
 {# --------------------------------------- #}
 {# 3. Add models and macros #}
 {# --------------------------------------- #}
-
-{% model 'articles', as="articles" %}
 
 {% import 'macros/button.html' as buttons %}
 {% import 'macros/icon.html' as icons %}
@@ -33,7 +30,7 @@
 {# --------------------------------------- #}
 
 {% block hero %}
-    <div class="hero">
+    <div class="hero hero--minor">
         <div class="row">
             <div class="hero__caption">
                 <h1 class="hero__heading">{{ title }}</h1>
@@ -41,9 +38,7 @@
                     <p class="hero__excerpt">{{ hero_copy }}</p>
                 {% endif %}
             </div>
-            <div class="hero__emblem">
-                <img class="hero__emblem__mask" src="{{ global.assets_root }}/img/{{ hero_image }}" alt="alt tag">
-            </div>
+            <div class="hero__emblem"></div>
         </div>
     </div>
 {% endblock %}
@@ -53,7 +48,7 @@
         <div class="aside-m__header fill-sunset">
             <h3 class="aside-m__heading">In this section</h3>
         </div>
-        {% include 'navigation/secondary.html' %}
+        {% include 'navigation/secondary-child.html' %}
     </div>
 {% endblock %}
 

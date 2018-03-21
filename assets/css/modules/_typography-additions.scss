@@ -32,8 +32,19 @@
 		h6 {
 			@include font-size($delta*1.25);
 		}
-		blockquote p {
-			@include font-size($quote);
+		blockquote {
+			margin-right: -8em;
+			p {
+				@include font-size($quote);
+			}
+		}
+		img {
+			&.alignleft {
+				margin-left: -8em;
+			}
+			&.alignright {
+				margin-right: -8em;
+			}
 		}
 	}
 }
@@ -74,7 +85,6 @@
 			clear: right;
 			width: 30em;
 			margin-left: 4em;
-			margin-right: -8em;
 		}
 	}
 }

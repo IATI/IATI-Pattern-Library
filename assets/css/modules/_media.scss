@@ -31,5 +31,6 @@
 		@include font-size($para - 2);
 		display: block;
 		padding: 0.5em 1em;
+		border-left: 2px solid $iati-sunrise;
 	}
 }

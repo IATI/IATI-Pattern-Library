@@ -11,6 +11,7 @@
 {% set id = "news-single" %}
 {% set section = "news" %}
 {% set title = "São Tomé and Príncipe is IATI’s first Portuguese-speaking Member" %}
+{% set hero_image = "hero-news-article.jpg" %}
 
 
 {# --------------------------------------- #}
@@ -31,7 +32,7 @@
 {# --------------------------------------- #}
 
 {% block hero %}
-    <div class="hero hero--image" style="background-image: url({{ global.assets_root }}/img/hero1.jpg)">
+    <div class="hero hero--image" style="background-image: url({{ global.assets_root }}/img/{{ hero_image }})">
         <div class="row">
             <div class="max-meter max-meter--center">
                 <div class="hero__caption">

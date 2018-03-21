@@ -12,6 +12,10 @@
 		"stage": "Template"
 	},
 	{
+		"name": "01-1-about-subpage",
+		"stage": "Template"
+	},
+	{
 		"name": "03-news",
 		"stage": "Template"
 	},
