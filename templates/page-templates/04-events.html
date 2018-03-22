@@ -67,9 +67,6 @@
 
 {% block main %}
 	<div class="l-listing">
-        {% for item in articles.featured_article %}
-			{% include 'listings/featured-article.html' %}
-		{% endfor %}
 		{% for item in events.event_list %}
 			{% include 'listings/events.html' %}
 		{% endfor %}

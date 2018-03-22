@@ -1,7 +1,7 @@
 {# 1. Extend the relevant layout #}
 {# --------------------------------------- #}
 
-{% extends 'default.html' %}
+{% extends 'sidebar.html' %}
 
 
 {# --------------------------------------- #}
@@ -9,8 +9,8 @@
 {# --------------------------------------- #}
 
 {% set id = "news-single" %}
-{% set section = "news" %}
-{% set title = "São Tomé and Príncipe is IATI’s first Portuguese-speaking Member" %}
+{% set section = "events" %}
+{% set title = "miniTAG™ on Friday 29th, Washington DC" %}
 {% set hero_image = "hero-news-article.jpg" %}
 
 
@@ -18,7 +18,7 @@
 {# 3. Add models and macros #}
 {# --------------------------------------- #}
 
-{% model 'articles', as="articles" %}
+{% model 'events', as="events" %}
 
 {% import 'macros/button.html' as buttons %}
 {% import 'macros/icon.html' as icons %}
@@ -34,7 +34,7 @@
 {% block hero %}
     <div class="hero hero--image" style="background-image: url({{ global.assets_root }}/img/{{ hero_image }})">
         <div class="row">
-            <div class="max-meter max-meter--center">
+            <div class="max-meter">
                 <div class="hero__caption">
                     <h1 class="hero__heading">{{ title }}</h1>
                 </div>
@@ -43,31 +43,80 @@
     </div>
 {% endblock %}
 
-{% block body %}
-    <div class="row">
-        <div class="max-meter max-meter--center">
-            <div class="aside-m aside-m--clipping fill-land">
-                <ul class="aside-m__meta">
-                    <li>{{ icons.icon('ico-calendar-black', '14') }} 28 Feb 2018</li>
-                    <li>{{ icons.icon('ico-bookmark-black', '14') }} <a href="#">Category name</a>, <a href="#">Category name</a></li>
-                </ul>
-            </div>
-            <div class="is-typeset is-typeset--article">
-                {% include 'content/news.html' %}
-            </div>
+{% block aside %}
+	<div class="aside-m aside-m--clipping-event">
+        <div class="aside-m__header fill-land">
+            <h3 class="aside-m__heading">Where &amp; when</h3>
         </div>
+        <ul class="aside-m__list">
+            <li class="aside-m__list-item">
+                <div class="aside-m__list-item-block">
+                    Jisc, Brettenham House, 5 Lancaster Place, London, WC2E 7EN
+                </div>
+            </li>
+            <li class="aside-m__list-item">
+                <div class="aside-m__list-item-block">{{ icons.icon('ico-calendar-ocean', '14') }} <span class="listing__metadata__date">25 Aug&ndash;28 Oct 2017</span></div>
+            </li>
+            <li class="aside-m__list-item">
+                <div class="aside-m__list-item-block">{{ icons.icon('ico-calendar-ocean', '14') }} <span class="listing__metadata__date">09:00–18:00</span></div>
+            </li>
+            <li class="aside-m__list-item">
+                <div class="aside-m__list-item-block">
+                    <a class="button button--tertiary button--large button--block" href="#none">Register</a>
+                </div>
+            </li>
+        </ul>
     </div>
 
-    <div class="section">
-        <div class="row">
-            <h2 class="section__heading">Related news</h2>
-            <div class="l-2up">
-                {% for item in articles.related_article %}
-                    <div class="l-2up__col">
-                        {% include 'listings/article.html' %}
-                    </div>
-                {% endfor %}
-            </div>
+    <div class="aside-m">
+        <div class="aside-m__header fill-land">
+            <h3 class="aside-m__heading">Accomodation</h3>
         </div>
+        <ul class="aside-m__list">
+            <li class="aside-m__list-item">
+                <a href="#none">Secondary links</a>
+            </li>
+            <li class="aside-m__list-item">
+                <a href="#none">Secondary links</a>
+            </li>
+            <li class="aside-m__list-item">
+                <a href="#none">Secondary links</a>
+            </li>
+        </ul>
     </div>
+{% endblock %}
+
+{% block main %}
+
+    <div class="is-typeset is-typeset--article">
+        <p>To take advantage of being in DC to meet with donors, I’m joining up with colleagues working on the Open Ag project to hold a miniTAG in the Open Gov Hub2.</p>
+
+        <p>Increasingly, advance data analysis and machine learning is being used in the processing, publication and, use of foreign assistance data and open data in general.</p>
+
+        <p>This event will gather donors, civil society, and private organisations to share knowledge on existing projects, future plans, and open questions within the use of machine learning in the context of IATI and broader data communities.</p>
+
+        <p>For more information and to register, see the event page:</p>
+
+        <p><a href="#none">https://www.eventbrite.co.uk/e/iati-minitag-session-machine-learning-in-open-data-development-tickets-377317637218</a></p>
+
+        <p>All welcome! 😀</p>
+
+        <div id="eventbrite-widget-container-33395177876" height="285" style="height: 285px;"></div>
+        <script src="https://www.eventbrite.co.uk/static/widgets/eb_widgets.js"></script>
+        <script type="text/javascript">
+            var exampleCallback = function() {
+                console.log('Order complete!');
+            };
+            window.EBWidgets.createWidget({
+                // Required
+                widgetType: 'checkout',
+                eventId: '33395177876',
+                iframeContainerId: 'eventbrite-widget-container-33395177876',
+                // Optional
+                iframeContainerHeight: 285,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+                onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+            });
+        </script>
+    </div>
+
 {% endblock %}
