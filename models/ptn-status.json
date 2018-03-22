@@ -26,5 +26,9 @@
 	{
 		"name": "04-events",
 		"stage": "Template"
+	},
+	{
+		"name": "04-1-events-single",
+		"stage": "Template"
 	}
 ]
