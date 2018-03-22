@@ -22,5 +22,9 @@
 	{
 		"name": "03-1-news-single",
 		"stage": "Template"
+	},
+	{
+		"name": "04-events",
+		"stage": "Template"
 	}
 ]
