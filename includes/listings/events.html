@@ -5,10 +5,8 @@
 		</div>
 	</aside>
 	<div class="listing__body">
-		<h2 class="listing__heading listing__heading--events"><a href=""><span>{{ item.title }}</span></a></h2>
-		{% if item.location %}
-			<h3 class="listing__location">{{ item.location }}</h3>
-		{% endif %}
+		<h3 class="listing__location">{{ item.location }}</h3>
+		<h2 class="listing__heading"><a href=""><span>{{ item.title }}</span></a></h2>
 		<ul class="listing__metadata">
 			<li class="listing__metadata__item">
 				{{ icons.icon('ico-calendar-ocean', '14') }}

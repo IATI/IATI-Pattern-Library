@@ -93,10 +93,14 @@
 	}
 }
 
+.listing__heading--events {
+	margin-bottom: .1em;
+}
 
 .listing__location {
-	@include font-size($zeta);
+	@include font-size($eta);
 	color: $base-color;
+	// margin-bottom: 1em;
 }
 
 .listing__metadata {
