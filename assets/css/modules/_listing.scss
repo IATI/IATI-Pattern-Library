@@ -53,6 +53,10 @@
 			padding: 2.5em;
 			box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1);
 		}
+		.ico {
+			top: -2px;
+			margin-right: 2px;
+		}
 		@include respond-to($menu-respond) {
 			display: block;
 			float: right;
@@ -75,7 +79,7 @@
 			position: relative;
 			&:after {
 				@include font-size($eta);
-				background-color: $iati-sunset;
+				background-color: $iati-sunrise;
 				color: #fff;
 				content: 'Past event';
 				padding: 0.5em 0.75em;
@@ -111,13 +115,10 @@
 	}
 }
 
-.listing__heading--events {
-	margin-bottom: .1em;
-}
-
 .listing__location {
-	@include font-size($eta);
+	@include font-size($zeta);
 	color: $base-color;
+	margin-bottom: 0.2em;
 }
 
 .listing__metadata {
@@ -144,10 +145,6 @@
 		letter-spacing: 1px;
 		display: inline-block;
 		margin-right: 1em;
-		.ico {
-			top: -2px;
-			margin-right: 2px;
-		}
 	}
 }
 

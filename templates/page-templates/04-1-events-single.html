@@ -44,8 +44,12 @@
 {% endblock %}
 
 {% block aside %}
-	<div class="aside-m aside-m--clipping-event">
-        <div class="aside-m__header fill-land">
+    <div class="aside-m">
+        <a class="button button--large button--block" href="#none">Register your place</a>
+    </div>
+
+	<div class="aside-m">
+        <div class="aside-m__header fill-sunset">
             <h3 class="aside-m__heading">Where &amp; when</h3>
         </div>
         <ul class="aside-m__list">
@@ -64,28 +68,6 @@
                     <span class="listing__metadata__date">09:00–18:00</span>
                 </div>
             </li>
-            <li class="aside-m__list-item">
-                <div class="aside-m__list-item-block">
-                    <a class="button button--tertiary button--large button--block" href="#none">Register</a>
-                </div>
-            </li>
-        </ul>
-    </div>
-
-    <div class="aside-m">
-        <div class="aside-m__header fill-land">
-            <h3 class="aside-m__heading">Accomodation</h3>
-        </div>
-        <ul class="aside-m__list">
-            <li class="aside-m__list-item">
-                <a href="#none">Secondary links</a>
-            </li>
-            <li class="aside-m__list-item">
-                <a href="#none">Secondary links</a>
-            </li>
-            <li class="aside-m__list-item">
-                <a href="#none">Secondary links</a>
-            </li>
         </ul>
     </div>
 {% endblock %}
@@ -101,7 +83,7 @@
 
         <p>For more information and to register, see the event page:</p>
 
-        <p><a href="#none">https://www.eventbrite.co.uk/e/iati-minitag-session-machine-learning-in-open-data-development-tickets-377317637218</a></p>
+        <p><a href="https://www.eventbrite.co.uk/e/iati-minitag-session-machine-learning-in-open-data-development-tickets-377317637218">Register your place</a></p>
 
         <p>All welcome! 😀</p>
 
@@ -121,6 +103,16 @@
                 onOrderComplete: exampleCallback  // Method called when an order has successfully completed
             });
         </script>
+    </div>
+
+    <div class="m-additional fill-white">
+        <h2 class="m-additional__heading heading">Additional information</h2>
+        <p class="para m-additional__copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel felis metus. Curabitur laoreet sollicitudin semper. Cras mattis tempus</p>
+        <ul class="unordered-list m-additional__list">
+            <li>Dictum et est. Integer viverra est vel quam cursus</li>
+            <li>Lorem ipsum <a href="#none">here is a link</a></li>
+            <li>In tellus sem, ullamcorper vel ultricies vel, dictum et est. Integer viverra est vel quam cursus</li>
+        </ul>
     </div>
 
 {% endblock %}
