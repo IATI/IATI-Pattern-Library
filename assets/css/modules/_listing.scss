@@ -53,6 +53,10 @@
 			padding: 2.5em;
 			box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1);
 		}
+		.ico {
+			top: -2px;
+			margin-right: 2px;
+		}
 		@include respond-to($menu-respond) {
 			display: block;
 			float: right;
@@ -64,6 +68,24 @@
 				transform: translateY(var(--translateY));
 				transition: transform, linear, 0.3s;
    				will-change: transform;
+			}
+		}
+	}
+}
+
+.listing--archived {
+	.l-listing--past & {
+		.listing__media {
+			position: relative;
+			&:after {
+				@include font-size($eta);
+				background-color: $iati-sunrise;
+				color: #fff;
+				content: 'Past event';
+				padding: 0.5em 0.75em;
+				position: absolute;
+				top: 0;
+				left: 0;
 			}
 		}
 	}
@@ -93,6 +115,12 @@
 	}
 }
 
+.listing__location {
+	@include font-size($zeta);
+	color: $base-color;
+	margin-bottom: 0.2em;
+}
+
 .listing__metadata {
 	position: relative;
 	display: block;
@@ -117,10 +145,6 @@
 		letter-spacing: 1px;
 		display: inline-block;
 		margin-right: 1em;
-		.ico {
-			top: -2px;
-			margin-right: 2px;
-		}
 	}
 }
 

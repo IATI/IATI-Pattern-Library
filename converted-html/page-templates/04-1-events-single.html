@@ -17,7 +17,7 @@
 <link rel="icon" type="image/png" href="/assets/assets/favicons/favicon-16x16.png" sizes="16x16"> 
     
 </head>
-<body class="body body--" id="body-">
+<body class="body body--news-single" id="body-news-single">
 	<div class="ui-base">
 		<a href="#pagecontent" class="skiplink" data-js="skiplink">Skip to main content</a>
 		
@@ -32,7 +32,7 @@
         
     
         
-            <li id="section-events" class='navigation-utility__item'><a href="">Events</a></li>
+            <li id="section-events" class='navigation-utility__item navigation-utility__item--active'><a href="">Events</a></li>
         
     
         
@@ -85,7 +85,7 @@
 			
 		
 			
-				<li id="section-events" class='navigation-primary__item navigation-primary__item--ss-only'><a href="">Events</a></li>
+				<li id="section-events" class='navigation-primary__item navigation-primary__item--ss-only navigation-primary__item--active '><a href="">Events</a></li>
 			
 		
 			
@@ -101,81 +101,93 @@
 		<!-- ID and -nofocus required for proper skiplink operation -->
 		<main id="pagecontent" class="pagecontent -nofocus" role="main" tabindex="-1">
 			
+    <div class="hero hero--image" style="background-image: url(/assets/img/hero-news-article.jpg)">
+        <div class="row">
+            <div class="max-meter">
+                <div class="hero__caption">
+                    <h1 class="hero__heading">miniTAG™ on Friday 29th, Washington DC</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
 			
 <div class="row">
 	<div class="l-sidebar">
 		<div class="l-sidebar__body">
 			
-	<h1 class="type-xl heading">Event listing template</h1>
-	<div class="l-listing">
-		
-			<article class="listing listing--event  listing--archived">
-	<header class="listing__header">
-		<h2 class="listing__heading"><a href="">Health Survey for England: Introductory Workshop</a></h2>
-		<ul class="listing__metadata">
-			<li class="listing__metadata__item"><span class="listing__metadata__date">25 Aug 2017</span>
-			
-			&ndash;<span class="listing__metadata__date">28 Oct 2017</span>
-			</li>
-			<li class="listing__metadata__item"><span class="listing__metadata__time">09:00</span>
-			
-			&ndash;<span class="listing__metadata__date">18:00</span>
-			</li>
-			
-			<li class="listing__metadata__item"><span class="listing__metadata__location">Jisc, Brettenham House, 5 Lancaster Place, London, WC2E 7EN</span></li>
-			
-			
-			<li class="listing__metadata__item"><span class="listing__metadata__location">From &pound;265</span></li>
-			
-		</ul>
-	</header>
-	<div class="listing__excerpt"><p>The following examples include an image of how the example should look in a supporting browser, they each link to a page with more information about the technique being shown, code and a CodePen of the example. Unless otherwise noted these examples work in any browser supporting the up to date Grid Specification</p></div>
-</article>
-		
-			<article class="listing listing--event  listing--archived">
-	<header class="listing__header">
-		<h2 class="listing__heading"><a href="">David Telling Trust call for fellowship and grant applications</a></h2>
-		<ul class="listing__metadata">
-			<li class="listing__metadata__item"><span class="listing__metadata__date">25 Aug 2017</span>
-			</li>
-			<li class="listing__metadata__item"><span class="listing__metadata__time">09:00</span>
-			</li>
-			
-			<li class="listing__metadata__item"><span class="listing__metadata__location">Bristol House, Innovation Way, Manchester, MA25 PN9</span></li>
-			
-			
-		</ul>
-	</header>
-	<div class="listing__excerpt"><p>The following examples include an image of how the example should look in a supporting browser, they each link to a page with more information about the technique being shown, code and a CodePen of the example. Unless otherwise noted these examples work in any browser supporting the up to date Grid Specification</p></div>
-</article>
-		
-			<article class="listing listing--event  listing--archived">
-	<header class="listing__header">
-		<h2 class="listing__heading"><a href="">Advanced Search Strategy Design for Complex Topics training course</a></h2>
-		<ul class="listing__metadata">
-			<li class="listing__metadata__item"><span class="listing__metadata__date">25 Aug 2017</span>
-			</li>
-			<li class="listing__metadata__item"><span class="listing__metadata__time">09:00</span>
-			
-			&ndash;<span class="listing__metadata__date">18:00</span>
-			</li>
-			
-			<li class="listing__metadata__item"><span class="listing__metadata__location">Enterprise House, Innovation Way, University of York, York, YO10 5NQ</span></li>
-			
-			
-			<li class="listing__metadata__item"><span class="listing__metadata__location">Free</span></li>
-			
-		</ul>
-	</header>
-	<div class="listing__excerpt"><p>The following examples include an image of how the example should look in a supporting browser, they each link to a page with more information about the technique being shown, code and a CodePen of the example. Unless otherwise noted these examples work in any browser supporting the up to date Grid Specification</p></div>
-</article>
-		
-	</div>
+
+    <div class="is-typeset is-typeset--article">
+        <p>To take advantage of being in DC to meet with donors, I’m joining up with colleagues working on the Open Ag project to hold a miniTAG in the Open Gov Hub2.</p>
+
+        <p>Increasingly, advance data analysis and machine learning is being used in the processing, publication and, use of foreign assistance data and open data in general.</p>
+
+        <p>This event will gather donors, civil society, and private organisations to share knowledge on existing projects, future plans, and open questions within the use of machine learning in the context of IATI and broader data communities.</p>
+
+        <p>For more information and to register, see the event page:</p>
+
+        <p><a href="https://www.eventbrite.co.uk/e/iati-minitag-session-machine-learning-in-open-data-development-tickets-377317637218">Register your place</a></p>
+
+        <p>All welcome! 😀</p>
+
+        <div id="eventbrite-widget-container-33395177876" height="285" style="height: 285px;"></div>
+        <script src="https://www.eventbrite.co.uk/static/widgets/eb_widgets.js"></script>
+        <script type="text/javascript">
+            var exampleCallback = function() {
+                console.log('Order complete!');
+            };
+            window.EBWidgets.createWidget({
+                // Required
+                widgetType: 'checkout',
+                eventId: '33395177876',
+                iframeContainerId: 'eventbrite-widget-container-33395177876',
+                // Optional
+                iframeContainerHeight: 285,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+                onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+            });
+        </script>
+    </div>
+
+    <div class="m-additional fill-white">
+        <h2 class="m-additional__heading heading">Additional information</h2>
+        <p class="para m-additional__copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel felis metus. Curabitur laoreet sollicitudin semper. Cras mattis tempus</p>
+        <ul class="unordered-list m-additional__list">
+            <li>Dictum et est. Integer viverra est vel quam cursus</li>
+            <li>Lorem ipsum <a href="#none">here is a link</a></li>
+            <li>In tellus sem, ullamcorper vel ultricies vel, dictum et est. Integer viverra est vel quam cursus</li>
+        </ul>
+    </div>
+
 
 		</div>
 		<aside class="l-sidebar__aside">
 			
-	<h2 class="type-l heading">Aside items here</h2>
+    <div class="aside-m">
+        <a class="button button--large button--block" href="#none">Register your place</a>
+    </div>
+
+	<div class="aside-m">
+        <div class="aside-m__header fill-sunset">
+            <h3 class="aside-m__heading">Where &amp; when</h3>
+        </div>
+        <ul class="aside-m__list">
+            <li class="aside-m__list-item">
+                <div class="aside-m__list-item-block">
+                    <i role="presentation" aria-hidden="true" class="ico ico--24 ico-location-ocean"></i>
+                    Jisc, Brettenham House, 5 Lancaster Place, London, WC2E 7EN
+                </div>
+            </li>
+            <li class="aside-m__list-item">
+                <div class="aside-m__list-item-block"><i role="presentation" aria-hidden="true" class="ico ico--24 ico-calendar-ocean"></i> <span class="listing__metadata__date">25 Aug&ndash;28 Oct 2017</span></div>
+            </li>
+            <li class="aside-m__list-item">
+                <div class="aside-m__list-item-block">
+                    <i role="presentation" aria-hidden="true" class="ico ico--24 ico-time-ocean"></i>
+                    <span class="listing__metadata__date">09:00–18:00</span>
+                </div>
+            </li>
+        </ul>
+    </div>
 
 		</aside>
 	</div>

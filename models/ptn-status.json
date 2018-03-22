@@ -22,5 +22,21 @@
 	{
 		"name": "03-1-news-single",
 		"stage": "Template"
+	},
+	{
+		"name": "04-events",
+		"stage": "Template"
+	},
+	{
+		"name": "04a-past-events",
+		"stage": "Template"
+	},
+	{
+		"name": "04-1-events-single",
+		"stage": "Template"
+	},
+	{
+		"name": "04-1a-past-events-single",
+		"stage": "Template"
 	}
 ]

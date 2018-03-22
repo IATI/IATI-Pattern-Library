@@ -34,3 +34,13 @@
 		border-left: 2px solid $iati-sunrise;
 	}
 }
+
+// Bad
+// ------------------------------------------------------------
+
+#eventbrite-widget-container-33395177876 {
+	height: 285px !important;
+	iframe {
+		height: 285px !important;
+	}
+}
