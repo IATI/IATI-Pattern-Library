@@ -93,6 +93,15 @@
 	}
 }
 
+.listing__heading--events {
+	margin-bottom: 0.25em;
+}
+
+.listing__location {
+	@include font-size($epsilon);
+	margin-bottom: 0.75em;
+}
+
 .listing__metadata {
 	position: relative;
 	display: block;
@@ -117,7 +126,6 @@
 		letter-spacing: 1px;
 		display: inline-block;
 		margin-right: 1em;
-		outline: 1px solid red;
 		.ico {
 			top: -2px;
 			margin-right: 2px;

@@ -5,18 +5,16 @@
 		</div>
 	</aside>
 	<div class="listing__body">
-		<h2 class="listing__heading"><a href=""><span>{{ item.title }}</span></a></h2>
+		<h2 class="listing__heading listing__heading--events"><a href=""><span>{{ item.title }}</span></a></h2>
+		{% if item.location %}
+			<h3 class="listing__location">{{ item.location }}</h3>
+		{% endif %}
 		<ul class="listing__metadata">
 			<li class="listing__metadata__item">
 				{{ icons.icon('ico-calendar-ocean', '14') }} <span class="listing__metadata__date">{{ item.date_start }}{% if item.date_end %}&ndash;{{ item.date_end }}{% endif %}</span>
 			</li>
-			{% if item.location %}
-			<li class="listing__metadata__item">
-				{{ icons.icon('ico-bookmark-ocean', '14') }} <span class="listing__metadata__author">{{ item.location }}</span>
-			</li>
-			{% endif %}
 		</ul>
-		<div class="listing__excerpt">{{ item.excerpt }}</div>
+		<p class="listing__excerpt">{{ item.excerpt }}</p>
 		<a href="#" class="button">More details</a>
 	</div>
 </article>
