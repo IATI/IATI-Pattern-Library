@@ -69,6 +69,24 @@
 	}
 }
 
+.listing--archived {
+	.l-listing--past & {
+		.listing__media {
+			position: relative;
+			&:after {
+				@include font-size($eta);
+				background-color: $iati-sunset;
+				color: #fff;
+				content: 'Past event';
+				padding: 0.5em 0.75em;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+	}
+}
+
 .listing__heading {
 	@extend .type-m;
 	@extend .heading;
@@ -100,7 +118,6 @@
 .listing__location {
 	@include font-size($eta);
 	color: $base-color;
-	// margin-bottom: 1em;
 }
 
 .listing__metadata {

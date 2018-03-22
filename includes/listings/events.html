@@ -1,4 +1,4 @@
-<article class="listing listing--article">
+<article class="listing listing--article {% if item.archive == true %} listing--archived{% else %}{% endif %}">
 	<aside class="listing__aside">
 		<div class="listing__media">
 			<img src="{{ global.assets_root }}/img/{{ item.image_name }}" alt="alt tag">

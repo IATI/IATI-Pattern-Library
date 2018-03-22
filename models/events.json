@@ -1,7 +1,7 @@
 {
     "event_list": [
 	    {
-		    "archive": false,
+		    "archive": true,
 			"title": "Health Survey for England: Introductory Workshop",
 			"image_name": "content-image.jpg",
 		    "date_start": "25 Aug 2017",
@@ -25,7 +25,7 @@
 		    "excerpt": "The following examples include an image of how the example should look in a supporting browser, they each link to a page with more information about the technique being shown, code and a CodePen of the example. Unless otherwise noted these examples work in any browser supporting the up to date Grid Specification"
 		},
 		{
-		    "archive": false,
+		    "archive": true,
 			"title": "Advanced Search Strategy Design for Complex Topics training course",
 			"image_name": "content-image3.jpg",
 		    "date_start": "25 Aug 2017",
