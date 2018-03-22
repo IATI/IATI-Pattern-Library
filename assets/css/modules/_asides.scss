@@ -74,6 +74,11 @@
 .aside-m__list-item-block {
     background-color: $iati-land-light;
     padding: 1em;
+    .ico {
+        margin-right: 2px;
+        position: relative;
+        top: -2px;
+    }
 }
 
 .aside-m__meta {

@@ -28,6 +28,10 @@
 		"stage": "Template"
 	},
 	{
+		"name": "04-a-past-events",
+		"stage": "Template"
+	},
+	{
 		"name": "04-1-events-single",
 		"stage": "Template"
 	}
