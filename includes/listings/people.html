@@ -1,0 +1,15 @@
+<article class="listing listing--article">
+	<aside class="listing__aside listing__aside--portrait">
+		<div class="listing__media">
+			<img src="{{ global.assets_root }}/img/{{ item.image_name }}" alt="alt tag">
+		</div>
+	</aside>
+	<div class="listing__body listing__body--people">
+		<header class="listing__header">
+			<h2 class="listing__heading"><span>{{ item.title }}</span></h2>
+			<h3 class="listing__subheading">{{ item.position }}</h3>
+		</header>
+		<div class="listing__excerpt">{{ item.excerpt }}</div>
+	</div>
+	<div class="listing__pullquote fill-air"><p>&ldquo;{{ item.quote }}&rdquo;</p></div>
+</article>

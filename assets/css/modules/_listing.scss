@@ -16,6 +16,11 @@
 			padding-bottom: 2em;
 		}
 	}
+	.l-listing--no-pagination & {
+		&:last-child {
+			border-bottom: 0;
+		}
+	}
 	@include respond-to($menu-respond) {
 		@supports (display: flex) {
 			display: flex;
@@ -37,6 +42,9 @@
 			float: left;
 			width: 35%;
 			margin-right: 5%;
+			&--portrait {
+				width: 20%;
+			}
 			.listing--featured & {
 				position: relative;
 				z-index: 1;
@@ -60,6 +68,7 @@
 		@include respond-to($menu-respond) {
 			display: block;
 			float: right;
+			position: relative;
 			width: 60%;
 			.listing--featured & {
 				width: 55%;
@@ -68,6 +77,9 @@
 				transform: translateY(var(--translateY));
 				transition: transform, linear, 0.3s;
    				will-change: transform;
+			}
+			&--people {
+				width: 80%;
 			}
 		}
 	}
@@ -91,11 +103,32 @@
 	}
 }
 
+.listing__header {
+	margin-bottom: 1.5em;
+	padding-bottom: 1em;
+	position: relative;
+	&:after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: -10%;
+		width: 100%;
+		height: 1px;
+		background-color: $default-border-color;
+		.listing--featured & {
+			left: -7%;
+		}
+	}
+}
+
 .listing__heading {
 	@extend .type-m;
 	@extend .heading;
 	line-height: 1.2;
 	margin-bottom: 0.5em;
+	.listing__header & {
+		margin-bottom: 0.1em;
+	}
 	a {
 		color: $heading-color;
 		font-size: inherit;
@@ -115,9 +148,13 @@
 	}
 }
 
+.listing__subheading,
 .listing__location {
 	@include font-size($zeta);
 	color: $base-color;
+}
+
+.listing__location {
 	margin-bottom: 0.2em;
 }
 
@@ -176,5 +213,17 @@
 				display: block;
 			}
 		}
+	}
+}
+
+.listing__pullquote {
+	@include font-size($delta);
+	padding: .5em 1em;
+	@include respond-to($menu-respond) {
+		align-self: flex-start;
+		margin-left: 5%;
+		padding-top: 1em;
+		padding-bottom: 1em;
+		width: 300px;
 	}
 }

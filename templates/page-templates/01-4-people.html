@@ -10,13 +10,15 @@
 
 {% set id = "about" %}
 {% set section = "about" %}
-{% set title = "Case studies" %}
+{% set title = "Who runs IATI" %}
 {% set hero_copy = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." %}
 
 
 {# --------------------------------------- #}
 {# 3. Add models and macros #}
 {# --------------------------------------- #}
+
+{% model 'people', as="people" %}
 
 {% import 'macros/button.html' as buttons %}
 {% import 'macros/icon.html' as icons %}
@@ -44,7 +46,7 @@
 {% endblock %}
 
 {% block aside %}
-	<div class="aside-m">
+    <div class="aside-m">
         <div class="aside-m__header fill-sunset">
             <h3 class="aside-m__heading">In this section</h3>
         </div>
@@ -56,28 +58,26 @@
                 <li class="navigation-secondary__item"><a href="#">Who is IATI for?</a></li>
                 <li class="navigation-secondary__item"><a href="#">About the standard</a></li>
                 <li class="navigation-secondary__item"><a href="#">History of IATI</a></li>
-                <li class="navigation-secondary__item navigation-secondary__item--active"><a href="#">Case studies</a></li>
-                <li class="navigation-secondary__item"><a href="#">Governance</a></li>
+                <li class="navigation-secondary__item"><a href="#">Case studies</a></li>
+                <li class="navigation-secondary__item navigation-secondary__item--active"><a href="#">Governance</a>
+                    <ul class="navigation-secondary__child">
+                        <li class="navigation-secondary__child__item"><a href="#">Annual reports</a></li>
+                        <li class="navigation-secondary__child__item"><a href="#">Who runs IATI</a></li>
+                        <li class="navigation-secondary__child__item"><a href="#">Finances</a></li>
+                    </ul>
+                </li>
                 <li class="navigation-secondary__item"><a href="#">Promote IATI</a></li>
                 <li class="navigation-secondary__item"><a href="#">Membership</a></li>
                 <li class="navigation-secondary__item"><a href="#">TAG - Technical Advisory Group</a></li>
             </ul>
         </nav>
-
     </div>
 {% endblock %}
 
 {% block main %}
-    <div class="is-typeset is-typeset--additionals">
-        {% include 'content/longform.html' %}
-    </div>
-
-    <div class="m-additional">
-        <h4 class="m-additional__heading heading">Downloads</h2>
-        <ul class="unordered-list m-additional__list">
-            <li><a href="#none">Name of download (PDF 55kb)</a></li>
-            <li><a href="#none">Name of download (PDF 55kb)</a></li>
-            <li><a href="#none">Name of download (PDF 55kb)</a></li>
-        </ul>
+    <div class="l-listing l-listing--no-pagination">
+        {% for item in people.people_list %}
+            {% include 'listings/people.html' %}
+        {% endfor %}
     </div>
 {% endblock %}
