@@ -24,6 +24,10 @@
 		"stage": "Template"
 	},
 	{
+		"name": "01-5-history",
+		"stage": "Template"
+	},
+	{
 		"name": "03-news",
 		"stage": "Template"
 	},
