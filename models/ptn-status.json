@@ -16,6 +16,10 @@
 		"stage": "Template"
 	},
 	{
+		"name": "01-3-download-listing",
+		"stage": "Template"
+	},
+	{
 		"name": "03-news",
 		"stage": "Template"
 	},
