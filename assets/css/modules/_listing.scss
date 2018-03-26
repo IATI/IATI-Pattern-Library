@@ -226,7 +226,7 @@
 }
 
 .listing__pullquote {
-	@include font-size($delta);
+	@include font-size($epsilon);
 	padding: .5em 1em;
 	@include respond-to($menu-respond) {
 		align-self: flex-start;
