@@ -18,19 +18,19 @@
 .is-typeset.is-typeset--article {
 	@include respond-to($menu-respond) {
 		p, li {
-			 @include font-size($para*1.25);
+			 @include font-size($para*1.22);
 		}
 		h1, h2 {
-			@include font-size($beta*1.25);
+			@include font-size($beta*1.22);
 		}
 		h3, h4 {
-			@include font-size($gamma*1.25);
+			@include font-size($gamma*1.22);
 		}
 		h5 {
-			@include font-size($epsilon*1.25);
+			@include font-size($epsilon*1.22);
 		}
 		h6 {
-			@include font-size($delta*1.25);
+			@include font-size($delta*1.22);
 		}
 		blockquote {
 			margin-right: -8em;
