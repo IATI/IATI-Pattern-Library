@@ -26,6 +26,10 @@
     }
 }
 
+.pagination__item--big {
+    @include font-size($epsilon);
+}
+
 .pagination__item--prev {
     float: left;
 }

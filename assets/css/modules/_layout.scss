@@ -84,6 +84,9 @@
 	}
 	&__col {
 		margin-bottom: 3em;
+		&--small {
+			margin-bottom: 1.5em;
+		}
 		@include respond-to($c-vp) {
 			float: left;
 			display: block;
@@ -120,6 +123,9 @@
 	}
 	&__col {
 		margin-bottom: 3em;
+		&--small {
+			margin-bottom: 1.5em;
+		}
 		@include respond-to($c-vp) {
 			float: left;
 			display: block;

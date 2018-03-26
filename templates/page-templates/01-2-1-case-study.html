@@ -1,0 +1,166 @@
+{# 1. Extend the relevant layout #}
+{# --------------------------------------- #}
+
+{% extends 'default.html' %}
+
+
+{# --------------------------------------- #}
+{# 2. Assign Settings and variables #}
+{# --------------------------------------- #}
+
+{% set id = "news-single" %}
+{% set section = "events" %}
+{% set title = "Case study title" %}
+{% set hero_image = "hero-news-article.jpg" %}
+
+
+{# --------------------------------------- #}
+{# 3. Add models and macros #}
+{# --------------------------------------- #}
+
+{% model 'events', as="events" %}
+
+{% import 'macros/button.html' as buttons %}
+{% import 'macros/icon.html' as icons %}
+
+
+{# --------------------------------------- #}
+{#
+   4. Add page content into relevant areas
+      Add/Delete blocks as necessary
+#}
+{# --------------------------------------- #}
+
+{% block hero %}
+    <div class="hero hero--image" style="background-image: url({{ global.assets_root }}/img/{{ hero_image }})">
+        <div class="row">
+            <div class="max-meter">
+                <div class="hero__caption">
+                    <h1 class="hero__heading">{{ title }}</h1>
+
+                    <p class="hero__subheading">Some large introductory text that can provide an overview of what this page is about</p>
+
+                    <span class="hero__type">Event type</span>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block body %}
+    <div class="m-section-body">
+        <div class="row">
+            <div class="m-section">
+                <div class="l-2up">
+                    <div class="l-2up__col">
+                        <div class="is-typeset is-typeset--no-trailing is-typeset--article">
+                            <h2>The outcomes</h2>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum venenatis sollicitudin. Donec a scelerisque ex, at semper magna. Proin mauris sapien, pharetra eget ullamcorper ac, semper quis elit.</p>
+
+                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean fermentum ut ex id porttitor. Etiam vel enim elit. Praesent libero arcu, imperdiet non nisi quis, pulvinar posuere mauris. Mauris egestas maximus faucibus. Ut suscipit velit id est aliquam elementum.</p>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum venenatis sollicitudin.</p>
+                        </div>
+                    </div>
+
+                    <div class="l-2up__col">
+                        <div class="media-figure">
+                            <div class="m-placeholder"></div>
+
+                            <p class="media-figure__caption">Chart name, <a href="#none">original can be found at d-portal</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-section">
+                <div class="l-2up">
+                    <div class="l-2up__col">
+                        <div class="is-typeset is-typeset--no-trailing is-typeset--article">
+                            <h2>What happened</h2>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum venenatis sollicitudin. Donec a scelerisque ex, at semper magna. Proin mauris sapien, pharetra eget ullamcorper ac, semper quis elit.</p>
+
+                            <h3>Step 1</h3>
+
+                            <p>Aenean fermentum ut ex id porttitor. Etiam vel enim elit. Praesent libero arcu, imperdiet non nisi quis, pulvinar posuere mauris.</p>
+
+                            <h3>Step 2</h3>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum venenatis sollicitudin. Donec a scelerisque ex, at semper magna. Proin mauris sapien, pharetra eget ullamcorper ac, semper quis elit.</p>
+                        </div>
+                    </div>
+
+                    <div class="l-2up__col">
+                        <div class="m-quote">
+                            <div class="m-quote__img"></div>
+
+                            <blockquote class="m-quote__quote as-blockquote">
+                                <p>“Vestibulum facilisis venenatis laoreet”</p>
+                                <cite>Source</cite>
+                            </blockquote>
+                        </div>
+
+                        <div class="m-stats">
+                            <div class="l-2up">
+                                <div class="l-2up__col l-2up__col--small">
+                                    <div class="m-stat">
+                                        <h4 class="m-stat__heading type-m heading">Projects</h4>
+                                        <span class="type-s">1024</span>
+                                    </div>
+                                </div>
+                                <div class="l-2up__col l-2up__col--small">
+                                    <div class="m-stat">
+                                        <h4 class="m-stat__heading type-m heading">Category</h4>
+                                        <span class="type-s">824</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="l-3up">
+                                <div class="l-3up__col l-3up__col--small">
+                                    <div class="m-stat">
+                                        <h4 class="m-stat__heading type-s heading">Other</h4>
+                                        <span class="type-xs">1024</span>
+                                    </div>
+                                </div>
+                                <div class="l-3up__col l-3up__col--small">
+                                    <div class="m-stat">
+                                        <h4 class="m-stat__heading type-s heading">Projects</h4>
+                                        <span class="type-xs">1024</span>
+                                    </div>
+                                </div>
+                                <div class="l-3up__col l-3up__col--small">
+                                    <div class="m-stat">
+                                        <h4 class="m-stat__heading type-s heading">Stats</h4>
+                                        <span class="type-xs">622</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="m-additional m-additional--no-trailing">
+                <h2 class="m-additional__heading heading">Additional information</h2>
+                <p class="para m-additional__copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel felis metus. Curabitur laoreet sollicitudin semper. Cras mattis tempus</p>
+                <ul class="m-additional__download-list">
+                    <li class="m-additional__download-list-item"><a href="#none">Name of download (PDF 55kb)</a></li>
+                    <li class="m-additional__download-list-item"><a href="#none">Name of download (PDF 145kb)</a></li>
+                    <li class="m-additional__download-list-item"><a href="#none">Name of download (PDF 79kb)</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="pagination">
+                <a href="#" class="pagination__item pagination__item--big pagination__item--prev">Previous</a>
+                <a href="#" class="pagination__item pagination__item--big pagination__item--next">Next</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
