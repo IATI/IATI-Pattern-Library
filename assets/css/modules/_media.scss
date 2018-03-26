@@ -17,6 +17,10 @@
 	}
 }
 
+.media-wrapper--4-3 {
+	@include maintain-ratio(1 1);
+}
+
 .media-figure {
 	.is-typeset & {
 		margin: 2em 0;

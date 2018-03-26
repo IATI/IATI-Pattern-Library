@@ -33,6 +33,13 @@
 		margin-bottom: 1em;
 		display: block;
 		width: 100%;
+		.media-wrapper {
+			margin-bottom: 1em;
+		}
+		.ico {
+			top: -2px;
+			margin-right: 2px;
+		}
 		.listing--featured & {
 			margin-bottom: 0;
 		}
@@ -80,7 +87,7 @@
 			}
 			.listing--archived & {
 				order: 1;
-				width: 80%;
+				width: 100%;
 			}
 			&--people {
 				width: 80%;
@@ -95,34 +102,16 @@
 	background-color: $iati-sunrise;
 	color: #fff;
 	display: inline-block;
+	margin-top: 1em;
 	letter-spacing: 1px;
 	padding: 0.75em 1em;
 	text-transform: uppercase;
 }
 
 .listing--archived {
-	.l-listing--past & {
-		.listing__media {
-			position: relative;
-			&:after {
-				@include font-size($eta);
-				background-color: $iati-sunrise;
-				color: #fff;
-				content: 'Past event';
-				padding: 0.5em 0.75em;
-				position: absolute;
-				top: 0;
-				left: 0;
-			}
-		}
-		.listing__aside {
-			@include respond-to($menu-respond) {
-				margin-right: 0;
-				margin-left: auto;
-				text-align: right;
-				order: 2;
-				width: 20%;
-			}
+	.l-listing--events & {
+		.listing__badge {
+			display: none;
 		}
 	}
 }
@@ -199,6 +188,7 @@
 		.listing--featured & {
 			left: -7%;
 		}
+		.l-listing--events &,
 		.l-listing--past & {
 			left: 0;
 		}
