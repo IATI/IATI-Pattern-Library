@@ -18,7 +18,7 @@
 }
 
 .media-wrapper--4-3 {
-	@include maintain-ratio(1 1);
+	@include maintain-ratio(4 3);
 }
 
 .media-figure {
