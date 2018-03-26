@@ -1,0 +1,72 @@
+{# 1. Extend the relevant layout #}
+{# --------------------------------------- #}
+
+{% extends 'default.html' %}
+
+
+{# --------------------------------------- #}
+{# 2. Assign Settings and variables #}
+{# --------------------------------------- #}
+
+{% set id = "news-single" %}
+{% set section = "news" %}
+{% set title = "São Tomé and Príncipe is IATI’s first Portuguese-speaking Member" %}
+{% set hero_image = "hero-news-article.jpg" %}
+
+
+{# --------------------------------------- #}
+{# 3. Add models and macros #}
+{# --------------------------------------- #}
+
+{% model 'articles', as="articles" %}
+
+{% import 'macros/button.html' as buttons %}
+{% import 'macros/icon.html' as icons %}
+
+
+{# --------------------------------------- #}
+{#
+   4. Add page content into relevant areas
+      Add/Delete blocks as necessary
+#}
+{# --------------------------------------- #}
+
+{% block hero %}
+    <div class="hero hero--minor">
+        <div class="row">
+            <div class="max-meter max-meter--center">
+                <div class="hero__caption">
+                    <h1 class="hero__heading">{{ title }}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block body %}
+    <div class="row">
+        <div class="max-meter max-meter--center">
+            <div class="aside-m aside-m--clipping fill-land">
+                <ul class="aside-m__meta">
+                    <li>{{ icons.icon('ico-bookmark-black', '14') }} <a href="#">Category name</a>, <a href="#">Category name</a></li>
+                </ul>
+            </div>
+            <div class="is-typeset is-typeset--article">
+                {% include 'content/news.html' %}
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="row">
+            <h2 class="section__heading">Related news</h2>
+            <div class="l-2up">
+                {% for item in articles.related_article %}
+                    <div class="l-2up__col">
+                        {% include 'listings/article.html' %}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

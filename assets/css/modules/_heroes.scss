@@ -86,7 +86,8 @@
     padding-left: 1.5em;
     @include respond-to($c-vp) {
         max-width: 50%;
-        .hero--image & {
+        .hero--image &,
+        .max-meter & {
             max-width: 100%;
         }
     }

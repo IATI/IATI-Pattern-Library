@@ -8,6 +8,10 @@
 		"stage": "approved"
 	},
 	{
+		"name": "0-news-single",
+		"stage": "Template"
+	},
+	{
 		"name": "01-about",
 		"stage": "Template"
 	},
