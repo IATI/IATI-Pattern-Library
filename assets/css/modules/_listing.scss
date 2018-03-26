@@ -78,11 +78,26 @@
 				transition: transform, linear, 0.3s;
    				will-change: transform;
 			}
+			.listing--archived & {
+				order: 1;
+				width: 80%;
+			}
 			&--people {
 				width: 80%;
 			}
 		}
 	}
+}
+
+.listing__badge {
+	@extend .heading;
+	@include font-size($eta);
+	background-color: $iati-sunrise;
+	color: #fff;
+	display: inline-block;
+	letter-spacing: 1px;
+	padding: 0.75em 1em;
+	text-transform: uppercase;
 }
 
 .listing--archived {
@@ -98,6 +113,15 @@
 				position: absolute;
 				top: 0;
 				left: 0;
+			}
+		}
+		.listing__aside {
+			@include respond-to($menu-respond) {
+				margin-right: 0;
+				margin-left: auto;
+				text-align: right;
+				order: 2;
+				width: 20%;
 			}
 		}
 	}
@@ -174,6 +198,9 @@
 		background-color: $default-border-color;
 		.listing--featured & {
 			left: -7%;
+		}
+		.l-listing--past & {
+			left: 0;
 		}
 	}
 	&__item {
