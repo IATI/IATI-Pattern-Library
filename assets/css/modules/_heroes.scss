@@ -105,8 +105,8 @@
 .hero__subheading {
     @include font-size($delta);
     color: #fff;
-    margin-top: 0.5em;
-    margin-bottom: 0.25em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
 }
 
 .hero__excerpt {
