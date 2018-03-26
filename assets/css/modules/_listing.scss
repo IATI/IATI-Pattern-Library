@@ -96,6 +96,13 @@
 	}
 }
 
+.listing--article-alt {
+	@include respond-to($menu-respond) {
+		border-left: 1px solid $default-border-color;
+		padding-left: 4em;
+	}
+}
+
 .listing__badge {
 	@extend .heading;
 	@include font-size($eta);
