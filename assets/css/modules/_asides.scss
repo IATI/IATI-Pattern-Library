@@ -41,7 +41,7 @@
 }
 
 .aside-m__list {
-
+    margin-bottom: 1em;
 }
 
 .aside-m__list-item {
@@ -70,6 +70,11 @@
     }
 }
 
+.aside-m__body {
+    background-color: #fff;
+    padding: 1em;
+}
+
 .aside-m__list-item-block {
     background-color: #fff;
     padding: 1em;
@@ -77,6 +82,11 @@
         margin-right: 2px;
         top: -2px;
     }
+}
+
+.aside-m__copy {
+    @include font-size($para);
+    margin-bottom: 1em;
 }
 
 .aside-m__meta {

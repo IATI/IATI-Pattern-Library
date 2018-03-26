@@ -36,6 +36,43 @@
     }
 }
 
+.m-blocks {
+    @include respond-to($menu-respond) {
+        display: grid;
+        grid-column-gap: 2em;
+        grid-row-gap: 2em;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 4em;
+    }
+}
+
+.m-block {
+    background-color: #fff;
+    border-left: 2px solid $iati-air;
+    box-shadow: 0 0 50px 0 rgba(#000, 0.1);
+    padding: 2em;
+    &:not(:last-child) {
+        margin-bottom: 2em;
+    }
+    @include respond-to($menu-respond) {
+        &:not(:last-child) {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.m-block__heading {
+    @extend .heading;
+    @include font-size($delta);
+    margin-bottom: 0.5em;
+}
+
+.m-block__copy {
+    @include font-size($para);
+    margin-bottom: 1em;
+}
+
+
 .m-timeline {
     margin-top: 3em;
     position: relative;

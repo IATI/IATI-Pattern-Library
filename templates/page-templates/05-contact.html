@@ -1,0 +1,98 @@
+{# 1. Extend the relevant layout #}
+{# --------------------------------------- #}
+
+{% extends 'sidebar.html' %}
+
+
+{# --------------------------------------- #}
+{# 2. Assign Settings and variables #}
+{# --------------------------------------- #}
+
+{% set id = "contact" %}
+{% set section = "contact" %}
+{% set title = "Contact" %}
+{% set hero_copy = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. " %}
+{% set hero_image = "hero1.jpg" %}
+
+
+{# --------------------------------------- #}
+{# 3. Add models and macros #}
+{# --------------------------------------- #}
+
+{% import 'macros/button.html' as buttons %}
+{% import 'macros/icon.html' as icons %}
+
+
+{# --------------------------------------- #}
+{#
+   4. Add page content into relevant areas
+      Add/Delete blocks as necessary
+#}
+{# --------------------------------------- #}
+
+{% block hero %}
+    <div class="hero">
+        <div class="row">
+            <div class="hero__caption">
+                <h1 class="hero__heading">{{ title }}</h1>
+                {% if hero_copy %}
+                    <p class="hero__excerpt">{{ hero_copy }}</p>
+                {% endif %}
+            </div>
+            <div class="hero__emblem">
+                <img class="hero__emblem__mask" src="{{ global.assets_root }}/img/{{ hero_image }}" alt="alt tag">
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block aside %}
+{% endblock %}
+
+{% block main %}
+    <div class="is-typeset">
+        <p>Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
+
+        <ul>
+            <li>United Nations Development Programme (UNDP)</li>
+            <li>Govermentment of Ghana</li>
+            <li>Govermentment of Sweden</li>
+        </ul>
+
+        <p>Follow us on Twitter for the latest updates on new publishers, events and updates to the <a href="#none">@IATI_aid</a> and <a href="#none">#IATI</a></p>
+    </div>
+
+    <div class="m-blocks">
+        <div class="m-block">
+            <h2 class="m-block__heading">General enquiries about IATI, membership or governance</h2>
+
+            <p class="m-block__copy">Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris </p>
+
+            <a class="button" href="#none">info@iatistandard.org</a>
+        </div>
+
+        <div class="m-block">
+            <h2 class="m-block__heading">Media enquiries</h2>
+
+            <p class="m-block__copy">Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris </p>
+
+            <a class="button" href="#none">media@iatistandard.org</a>
+        </div>
+
+        <div class="m-block">
+            <h2 class="m-block__heading">Information and support on how to publish data to the IATI standard or any other technical enquiries.</h2>
+
+            <p class="m-block__copy">Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris </p>
+
+            <a class="button" href="#non">support@iatistandard.org</a>
+        </div>
+
+        <div class="m-block">
+            <h2 class="m-block__heading">Information and support for developers</h2>
+
+            <p class="m-block__copy">Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris </p>
+
+            <a class="button" href="#none">code@iatistandard.org</a>
+        </div>
+    </div>
+{% endblock %}

@@ -54,5 +54,9 @@
 	{
 		"name": "04-1a-past-events-single",
 		"stage": "Template"
+	},
+	{
+		"name": "05-contact",
+		"stage": "Template"
 	}
 ]
