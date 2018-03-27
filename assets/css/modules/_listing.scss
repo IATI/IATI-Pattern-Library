@@ -33,6 +33,7 @@
 		margin-bottom: 1em;
 		display: block;
 		width: 100%;
+		.listing__media,
 		.media-wrapper {
 			margin-bottom: 1em;
 		}
@@ -182,10 +183,6 @@
 		background-color: $default-border-color;
 		.listing--featured & {
 			left: -7%;
-		}
-		.l-listing--events &,
-		.l-listing--past & {
-			left: 0;
 		}
 	}
 	&__item {
