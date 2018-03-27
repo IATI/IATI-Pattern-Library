@@ -85,10 +85,6 @@
 				transition: transform, linear, 0.3s;
    				will-change: transform;
 			}
-			.listing--archived & {
-				order: 1;
-				width: 100%;
-			}
 			&--people {
 				width: 80%;
 			}
