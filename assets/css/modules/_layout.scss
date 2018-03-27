@@ -39,7 +39,8 @@
 	@extend %l;
 	margin-bottom: 5em;
 	&__aside {
-		.l-sidebar--reverse & {
+		.l-sidebar--reverse &,
+		.l-sidebar--mobile & {
 			margin-bottom: 3em;
 		}
 		@include respond-to($sidebar-respond) {
@@ -49,7 +50,6 @@
 			.l-sidebar--reverse & {
 				float: left;
 				margin-bottom: 0;
-				order: 2;
 			}
 		}
 	}
