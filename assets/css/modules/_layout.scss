@@ -37,11 +37,15 @@
 
 .l-sidebar {
 	@extend %l;
-	margin-bottom: 5em;
+	@include respond-to($sidebar-respond) {
+		margin-bottom: 5em;
+	}
 	&__aside {
+		margin-bottom: 5em;
 		.l-sidebar--reverse &,
 		.l-sidebar--mobile & {
 			margin-bottom: 3em;
+			outline: 1px solid red;
 		}
 		@include respond-to($sidebar-respond) {
 			float: right;
