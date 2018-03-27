@@ -45,7 +45,6 @@
 		.l-sidebar--reverse &,
 		.l-sidebar--mobile & {
 			margin-bottom: 3em;
-			outline: 1px solid red;
 		}
 		@include respond-to($sidebar-respond) {
 			float: right;
