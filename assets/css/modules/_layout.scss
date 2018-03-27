@@ -49,6 +49,7 @@
 			.l-sidebar--reverse & {
 				float: left;
 				margin-bottom: 0;
+				order: 2;
 			}
 		}
 	}
@@ -64,6 +65,7 @@
 				float: right;
 				padding-right: 0;
 				padding-left: 5em;
+				order: 1;
 			}
 		}
 	}

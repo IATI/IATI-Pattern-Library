@@ -1,7 +1,7 @@
 {# 1. Extend the relevant layout #}
 {# --------------------------------------- #}
 
-{% extends 'sidebar.html' %}
+{% extends 'sidebar-reverse.html' %}
 
 
 {# --------------------------------------- #}
@@ -48,10 +48,6 @@
 {% endblock %}
 
 {% block aside %}
-    <div class="aside-m">
-        <a class="button button--large button--block" href="#none">Register your place</a>
-    </div>
-
 	<div class="aside-m">
         <div class="aside-m__header fill-sunset">
             <h3 class="aside-m__heading">Where &amp; when</h3>
@@ -73,6 +69,10 @@
                 </div>
             </li>
         </ul>
+    </div>
+
+    <div class="aside-m">
+        <a class="button button--large button--block" href="#none">Register your place</a>
     </div>
 {% endblock %}
 
