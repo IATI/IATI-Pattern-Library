@@ -54,6 +54,10 @@
 	}
 }
 
+.form-flex {
+	@extend %l-flexbox;
+}
+
 // Standard form elements
 .form-item {
 	padding: 0 $form-padding/2;
@@ -73,6 +77,8 @@
 	}
 	.footer & {
 		border: none;
+		display: inline-block;
+		width: 77%;
 	}
 }
 
