@@ -1,7 +1,7 @@
-<article class="listing listing--article">
+<article class="listing listing--article listing--people">
 	<aside class="listing__aside">
 		<div class="listing__media">
-			<div class="m-placeholder m-placeholder--landscape"></div>
+			<img src="{{ global.assets_root }}/img/portrait.png" alt="alt tag">
 		</div>
 	</aside>
 	<div class="listing__body">
@@ -13,5 +13,6 @@
 			</ul>
 		</header>
 		<div class="listing__excerpt">{{ item.excerpt }}</div>
+		<img class="listing__body-img" src="{{ global.assets_root }}/img/{{ item.image_name }}" alt="alt tag">
 	</div>
 </article>

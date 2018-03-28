@@ -68,6 +68,10 @@
     height: 200px;
 }
 
+.m-placeholder--logo {
+    height: 400px;
+}
+
 .m-quote {
     margin-bottom: 1em;
     @include respond-to($menu-respond) {
