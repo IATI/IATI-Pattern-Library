@@ -73,7 +73,7 @@
 
 .aside-m__body {
     background-color: #fff;
-    padding: 1em;
+    padding: 1.6em;
 }
 
 .aside-m__list-item-block {
@@ -87,7 +87,7 @@
 
 .aside-m__copy {
     @include font-size($para);
-    margin-bottom: 1em;
+    margin-bottom: 0.75em;
 }
 
 .aside-m__meta {
