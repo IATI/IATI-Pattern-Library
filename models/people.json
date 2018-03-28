@@ -2,16 +2,16 @@
     "gov_team": [
 	    {
 			"title": "John Smith",
-			"position": "CEO",
-			"company": "Oxfam",
+			"position": "CEO of IATI",
+			"role": "Chairman at Oxfam",
             "image_name": "portrait.png",
 			"excerpt": "São Tomé and Príncipe has become the first Portuguese-speaking country to join IATI. They join 86 members of the initiative",
 			"quote": "Vestibulum facilisis venenatis laoreet"
 		},
         {
 			"title": "Elena Croft",
-			"position": "CTO",
-			"company": "Oxfam",
+			"position": "CTO of IATI",
+			"role": "Policy Officer at Oxfam",
             "image_name": "portrait.png",
 		    "author": "Rohini Simbodyal",
 			"excerpt": "São Tomé and Príncipe has become the first Portuguese-speaking country to join IATI. They join 86 members of the initiative",
@@ -19,16 +19,16 @@
 		},
         {
 			"title": "Joe Bloggs",
-			"position": "COO",
-			"company": "IATI",
+			"position": "COO of IATI",
+			"role": "Chairman at IATI",
             "image_name": "portrait.png",
 			"excerpt": "São Tomé and Príncipe has become the first Portuguese-speaking country to join IATI. They join 86 members of the initiative",
 			"quote": "Aenean nec felis mollis augue accumsan tempus consequat vitae purus"
 		},
         {
 			"title": "Cloe Hill",
-			"position": "MD",
-			"company": "Oxfam",
+			"position": "MD of IATI",
+			"role": "Chairman at Oxfam",
             "image_name": "portrait.png",
 			"excerpt": "São Tomé and Príncipe has become the first Portuguese-speaking country to join IATI. They join 86 members of the initiative",
 			"quote": "Laoreet nec felis mollis lacinia interdum pretium"
@@ -37,8 +37,8 @@
 	"tech_team": [
 	    {
 			"title": "John Smith",
-			"position": "CEO",
-			"company": "Oxfam",
+			"position": "CEO of IATI",
+			"role": "Chairman at Oxfam",
             "image_name": "portrait.png",
 			"excerpt": "São Tomé and Príncipe has become the first Portuguese-speaking country to join IATI. They join 86 members of the initiative",
 			"quote": "Vestibulum facilisis venenatis laoreet"
@@ -46,7 +46,7 @@
         {
 			"title": "Elena Croft",
 			"position": "CTO",
-			"company": "Oxfam",
+			"role": "Chairman at Oxfam",
             "image_name": "portrait.png",
 		    "author": "Rohini Simbodyal",
 			"excerpt": "São Tomé and Príncipe has become the first Portuguese-speaking country to join IATI. They join 86 members of the initiative",

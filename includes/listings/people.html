@@ -7,7 +7,10 @@
 	<div class="listing__body">
 		<header class="listing__header">
 			<h2 class="listing__heading"><span>{{ item.title }}</span></h2>
-			<h3 class="listing__subheading">{{ item.position }} at {{ item.company}}</h3>
+			<ul class="listing__metadata">
+				<li class="listing__metadata__item">{{ item.position }}</li>
+				<li class="listing__metadata__item">{{ item.role}}</li>
+			</ul>
 		</header>
 		<div class="listing__excerpt">{{ item.excerpt }}</div>
 	</div>
