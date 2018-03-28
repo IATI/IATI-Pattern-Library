@@ -37,8 +37,7 @@
 		margin-bottom: 1em;
 		display: block;
 		width: 100%;
-		.listing__media,
-		.media-wrapper {
+		.listing__media {
 			margin-bottom: 1em;
 		}
 		.ico {
@@ -54,14 +53,14 @@
 			float: left;
 			width: 35%;
 			margin-right: 5%;
-			&--portrait {
-				width: 20%;
-			}
 			.listing--featured & {
 				position: relative;
 				z-index: 1;
 				margin-right: 0;
 				width: 50%;
+			}
+			.listing--people & {
+				width: 25%;
 			}
 		}
 	}
@@ -90,7 +89,7 @@
 				transition: transform, linear, 0.3s;
    				will-change: transform;
 			}
-			&--people {
+			.listing--people & {
 				width: 80%;
 			}
 		}
@@ -218,4 +217,8 @@
 			}
 		}
 	}
+}
+
+.listing__body-img {
+	width: 12%;
 }
