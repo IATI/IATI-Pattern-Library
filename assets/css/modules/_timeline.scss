@@ -84,7 +84,7 @@
 
 .timeline__date-panel {
     background-color: #fff;
-    box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 30px -10px rgba(0, 0, 0, 0.2);
     position: relative;
     @include respond-to($menu-respond) {
         transition: all 0.3s ease-in-out;
