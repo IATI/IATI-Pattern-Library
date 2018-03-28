@@ -3,8 +3,6 @@
 // ------------------------------------------------------------
 
 .hero {
-    box-shadow: 0 10px 50px rgba(#000, 0.15);
-    // border-bottom: 3px solid $default-border-color;
     margin-bottom: 5em;
     padding-top: 15em;
     padding-bottom: 5em;
@@ -44,15 +42,12 @@
     }
     @include respond-to($c-vp) {
         padding-top: 20em;
-        // padding-bottom: 8em;
         margin-bottom: 8em;
         &--image {
             padding-top: 25em;
-            // padding-bottom: 5em;
             margin-bottom: 5em;
         }
         &--minor {
-            // padding-bottom: 5em;
             position: relative;
             &:after {
                 content: "";
