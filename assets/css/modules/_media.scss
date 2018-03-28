@@ -36,6 +36,9 @@
 		display: block;
 		padding: 0.5em 1em;
 		border-left: 2px solid $iati-sunrise;
+		a {
+			border-bottom: 2px solid #06dbe4;
+		}
 	}
 }
 
