@@ -72,7 +72,7 @@
     </div>
 
     <div class="aside-m">
-        <a class="button button--large button--block" href="#none">Register your place</a>
+        <a class="button button--large button--block" id="button-register" href="https://www.eventbrite.co.uk/e/iati-minitag-session-machine-learning-in-open-data-development-tickets-377317637218">Register your place</a>
     </div>
 {% endblock %}
 
@@ -80,33 +80,9 @@
 
     <div class="is-typeset is-typeset--article">
         <p>To take advantage of being in DC to meet with donors, I’m joining up with colleagues working on the Open Ag project to hold a miniTAG in the Open Gov Hub2.</p>
-
         <p>Increasingly, advance data analysis and machine learning is being used in the processing, publication and, use of foreign assistance data and open data in general.</p>
-
         <p>This event will gather donors, civil society, and private organisations to share knowledge on existing projects, future plans, and open questions within the use of machine learning in the context of IATI and broader data communities.</p>
-
-        <p>For more information and to register, see the event page:</p>
-
-        <p><a href="https://www.eventbrite.co.uk/e/iati-minitag-session-machine-learning-in-open-data-development-tickets-377317637218">Register your place</a></p>
-
-        <p>All welcome! 😀</p>
-
-        <div id="eventbrite-widget-container-33395177876" height="285" style="height: 285px;"></div>
-        <script src="https://www.eventbrite.co.uk/static/widgets/eb_widgets.js"></script>
-        <script type="text/javascript">
-            var exampleCallback = function() {
-                console.log('Order complete!');
-            };
-            window.EBWidgets.createWidget({
-                // Required
-                widgetType: 'checkout',
-                eventId: '33395177876',
-                iframeContainerId: 'eventbrite-widget-container-33395177876',
-                // Optional
-                iframeContainerHeight: 285,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
-                onOrderComplete: exampleCallback  // Method called when an order has successfully completed
-            });
-        </script>
+        <div id="eventbrite-widget-container"></div>
     </div>
 
     <div class="m-additional">
