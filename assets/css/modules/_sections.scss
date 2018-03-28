@@ -15,7 +15,7 @@
 .section-border {
     @extend .space-section-bottom;
     &:not(:last-child) {
-        border-bottom: 1px solid $default-border-color;
+        border-bottom: 3px solid $default-border-color;
         @extend .padd-section-bottom;
     }
 }

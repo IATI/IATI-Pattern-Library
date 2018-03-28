@@ -16,6 +16,10 @@
 			padding-bottom: 2em;
 		}
 	}
+	.l-listing--people & {
+		border-bottom: 0;
+		padding-bottom: 0;
+	}
 	.l-listing--no-pagination & {
 		&:last-child {
 			border-bottom: 0;
@@ -99,6 +103,14 @@
 		padding-left: 4em;
 	}
 }
+
+.listing-quote {
+	p {
+		display: inline-block;
+		margin-bottom: 0.5em;
+	}
+}
+
 
 .listing__badge {
 	@extend .heading;
@@ -222,17 +234,5 @@
 				display: block;
 			}
 		}
-	}
-}
-
-.listing__pullquote {
-	@include font-size($epsilon);
-	padding: .5em 1em;
-	@include respond-to($menu-respond) {
-		align-self: flex-start;
-		margin-left: 5%;
-		padding-top: 1em;
-		padding-bottom: 1em;
-		width: 50%;
 	}
 }
