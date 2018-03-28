@@ -2,12 +2,23 @@
 // Sections
 // ------------------------------------------------------------
 
+.sections {
+    margin-bottom: 5em;
+}
+
 .section {
     @extend .space-section-top;
     @extend .padd-section-both;
     background-color: #fff;
 }
 
+.section-border {
+    @extend .space-section-bottom;
+    &:not(:last-child) {
+        border-bottom: 1px solid $default-border-color;
+        @extend .padd-section-bottom;
+    }
+}
 
 .section__heading {
     @extend .type-l;

@@ -59,18 +59,6 @@
     margin-bottom: 1em;
 }
 
-.m-section-body {
-    margin-bottom: 5em;
-}
-
-.m-section {
-    margin-bottom: 4.5em;
-    &:not(:last-child) {
-        border-bottom: 1px solid $default-border-color;
-        padding-bottom: 4.5em;
-    }
-}
-
 .m-placeholder {
     background-color: $default-border-color;
     height: 400px;
