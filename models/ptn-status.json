@@ -60,6 +60,10 @@
 		"stage": "Template"
 	},
 	{
+		"name": "04-1b-past-events-single",
+		"stage": "Template"
+	},
+	{
 		"name": "05-contact",
 		"stage": "Template"
 	}
