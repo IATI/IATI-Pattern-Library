@@ -241,8 +241,9 @@
 			}
 		}
 		&--active a {
-			background-color: lighten($iati-sunset, 24%);
-			border-left-width: 4px;
+			background-color: lighten($iati-sunset, 6%);
+			border-left-width: 6px;
+			color: #fff;
 		}
 	}
 }
@@ -250,11 +251,10 @@
 .navigation-secondary__child {
 	&__item {
 		a {
-			background-color: lighten($iati-sunset, 10%);
+			background-color: lighten($iati-sunset, 34%);
 			border-left-width: 8px;
-			color: #fff;
+			color: $heading-color;
 			padding-left: 1.25em;
-			text-decoration: none;
 		}
 		&--active a {
 			border-left-width: 4px;

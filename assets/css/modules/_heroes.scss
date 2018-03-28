@@ -3,11 +3,14 @@
 // ------------------------------------------------------------
 
 .hero {
+    border-bottom: 3px solid $default-border-color;
     margin-bottom: 5em;
     padding-top: 15em;
+    padding-bottom: 5em;
     margin-top: -15.5em;
     position: relative;
     &--image {
+        border-bottom: 0;
         padding-bottom: 5em;
         background-size: cover;
         background-position: center center;
@@ -24,6 +27,7 @@
         }
     }
     &--minor {
+        border-bottom: 0;
         background-color: $iati-ocean;
         padding-bottom: 5em;
         @include respond-to-max($menu-respond) {
