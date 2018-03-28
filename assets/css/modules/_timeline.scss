@@ -84,7 +84,7 @@
 
 .timeline__date-panel {
     background-color: #fff;
-    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.15);
     position: relative;
     @include respond-to($menu-respond) {
         transition: all 0.3s ease-in-out;
@@ -100,7 +100,8 @@
             width: 0;
         }
         &:hover {
-            transform: scale(1.04);
+            box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.15);
+            transform: scale(1.03);
         }
         .timeline__date--right & {
             float: right;
