@@ -241,22 +241,23 @@
 			}
 		}
 		&--active a {
+			background-color: lighten($iati-sunset, 24%);
 			border-left-width: 4px;
-			text-decoration: underline;
 		}
 	}
 }
 
 .navigation-secondary__child {
-	margin-left: 1.2em;
 	&__item {
 		a {
-			border-left-width: 2px;
+			background-color: lighten($iati-sunset, 10%);
+			border-left-width: 8px;
+			color: #fff;
+			padding-left: 1.25em;
 			text-decoration: none;
 		}
 		&--active a {
 			border-left-width: 4px;
-			text-decoration: underline;
 		}
 	}
 }
