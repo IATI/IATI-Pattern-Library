@@ -241,8 +241,8 @@
 			}
 		}
 		&--active a {
-			background-color: lighten($iati-sunset, 6%);
-			border-left-width: 6px;
+			background-color: $iati-sunset;
+			border-left-width: 4px;
 			color: #fff;
 		}
 	}
@@ -252,9 +252,9 @@
 	&__item {
 		a {
 			background-color: lighten($iati-sunset, 34%);
-			border-left-width: 8px;
+			border-left-width: 6px;
 			color: $heading-color;
-			padding-left: 1.25em;
+			padding-left: 1.5em;
 		}
 		&--active a {
 			border-left-width: 4px;

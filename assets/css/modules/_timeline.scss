@@ -87,6 +87,7 @@
     box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1);
     position: relative;
     @include respond-to($menu-respond) {
+        transition: all 0.3s ease-in-out;
         width: 90%;
         &:before {
             border-style: solid;
@@ -97,6 +98,9 @@
             position: absolute;
             top: 50%;
             width: 0;
+        }
+        &:hover {
+            transform: scale(1.04);
         }
         .timeline__date--right & {
             float: right;
