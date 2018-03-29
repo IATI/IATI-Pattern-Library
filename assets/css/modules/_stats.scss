@@ -46,13 +46,15 @@
 
 .stat__body {
     align-self: flex-start;
-    // outline: 1px solid red;
     padding: 3em 6em;
+    + .stat__body {
+        border-top: 3px solid $default-border-color;
+    }
     @include respond-to($menu-respond) {
-        padding-top: 4em;
-        padding-bottom: 4em;
+        padding: 4em 8em;
         width: 50%;
         + .stat__body {
+            border-top: 0;
             border-left: 3px solid $default-border-color;
         }
     }
@@ -102,7 +104,8 @@
     margin-right: 5%;
     width: 80px;
     @include respond-to($menu-respond) {
-        margin-right: 8%;
+        margin-right: 7%;
+        width: 120px;
     }
 }
 
