@@ -12,6 +12,10 @@
 		"stage": "Template"
 	},
 	{
+		"name": "0-home",
+		"stage": "Template"
+	},
+	{
 		"name": "01-about",
 		"stage": "Template"
 	},
