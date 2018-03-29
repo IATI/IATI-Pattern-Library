@@ -104,10 +104,12 @@
 }
 
 .listing-quote {
-	margin-top: 2em;
 	p {
 		display: inline-block;
 		margin-bottom: 0.5em;
+	}
+	.l-listing--people & {
+		margin-top: 2em;
 	}
 }
 
