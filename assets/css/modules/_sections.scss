@@ -16,6 +16,14 @@
     @extend .space-section-bottom;
 }
 
+.section-alt-top {
+    @extend .space-section-top;
+}
+
+.section-alt-bottom {
+    @extend .space-section-bottom;
+}
+
 .section-border {
     @extend .space-section-bottom;
     &:not(:last-child) {

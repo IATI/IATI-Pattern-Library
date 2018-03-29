@@ -20,3 +20,18 @@
 .stat__copy {
     @include font-size($delta);
 }
+
+.stat-quote {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.stat-quote__media {
+    align-self: flex-start;
+    margin-right: 5%;
+}
+
+.stat-quote__copy {
+    margin-bottom: 0.5em;
+}

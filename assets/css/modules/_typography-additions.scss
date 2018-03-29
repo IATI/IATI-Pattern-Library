@@ -72,6 +72,7 @@
 		color: $heading-color;
 	}
 	cite {
+		@include font-size($zeta);
 		display: block;
 	}
 }
