@@ -1,6 +1,6 @@
 .stat {
     background-color: #fff;
-    border-left: 2px solid $iati-ocean;
+    border-left: 3px solid $iati-ocean;
     box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1);
     padding: 1.5em 1.5em 1.5em 2em;
     @include respond-to($menu-respond) {
@@ -12,6 +12,11 @@
     color: $iati-ocean;
 }
 
+.stat__heading--large {
+    @include font-size($alpha);
+    // outline: 1px solid red;
+}
+
 .stat__copy {
-    @include font-size($para);
+    @include font-size($delta);
 }
