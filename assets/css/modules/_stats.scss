@@ -1,10 +1,36 @@
+.stats--standout {
+    text-align: center;
+}
+
 .stat {
     background-color: #fff;
-    border-left: 3px solid $iati-ocean;
     box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1);
-    padding: 1.5em 1.5em 1.5em 2em;
+    .stats--grid & {
+        border-left: 3px solid $iati-ocean;
+        padding: 1.5em 1.5em 1.5em 2em;
+    }
+    .stats--standout & {
+        margin-bottom: 3em;
+        padding: 3em 10em;
+    }
     @include respond-to($menu-respond) {
-        margin-bottom: 2em;
+        .stats--grid & {
+            margin-bottom: 2em;
+        }
+        .stats--standout & {
+            &:not(:last-child) {
+                margin-right: 3em;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.stat--center {
+    display: inline-block;
+    text-align: center;
+    @include respond-to($menu-respond) {
+        width: 40%;
     }
 }
 
@@ -18,7 +44,7 @@
 }
 
 .stat__copy {
-    @include font-size($delta);
+    @include font-size($epsilon);
 }
 
 .stat-quote {
