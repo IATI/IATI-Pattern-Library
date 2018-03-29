@@ -3,6 +3,8 @@
 // ------------------------------------------------------------
 
 .hero {
+    // background: linear-gradient(180deg, $iati-ocean, $iati-ocean, #F6F6F6);
+    background: linear-gradient(0deg, darken($iati-ocean, 4%) 4%, $iati-ocean 20%);
     margin-bottom: 5em;
     padding-top: 15em;
     padding-bottom: 5em;
@@ -99,7 +101,8 @@
 .hero__heading {
     @extend .type-xl;
     @extend .heading;
-    color: $iati-ocean;
+    color: #fff;
+    // color: $iati-ocean;
     line-height: 1;
     .hero--image &, .hero--minor & {
         color: #fff;
@@ -115,6 +118,7 @@
 
 .hero__excerpt {
     @include font-size($para);
+    color: #fff;
     margin-top: 1em;
     .hero--minor & {
         color: #fff;

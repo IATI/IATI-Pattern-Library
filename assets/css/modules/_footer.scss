@@ -17,9 +17,12 @@
 }
 
 .footer__meta {
-    overflow: hidden;
     border-top: 1px solid lighten($iati-ocean, 10%);
     padding: 2em 0;
+    .row {
+        align-items: center;
+        display: flex;
+    }
 }
 
 .footer__heading {

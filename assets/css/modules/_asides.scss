@@ -36,6 +36,7 @@
     @include font-size($epsilon);
     text-transform: uppercase;
     letter-spacing: 1px;
+    .fill-sunrise &,
     .fill-sunset & {
         color: #fff;
     }

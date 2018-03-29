@@ -229,7 +229,7 @@
 		margin-top: 1px;
 		@include font-size($epsilon);
 		a {
-			border-left: 2px solid $iati-sunset;
+			border-left: 2px solid $iati-sunrise;
 			padding: 0.75em 1em;
 			margin-top: 1px;
 			color: $heading-color;
@@ -241,7 +241,7 @@
 			}
 		}
 		&--active a {
-			background-color: $iati-sunset;
+			background-color: $iati-sunrise;
 			border-left-width: 4px;
 			color: #fff;
 		}
@@ -251,7 +251,7 @@
 .navigation-secondary__child {
 	&__item {
 		a {
-			background-color: lighten($iati-sunset, 34%);
+			background-color: lighten($iati-sunrise, 24%);
 			border-left-width: 6px;
 			color: $heading-color;
 			padding-left: 1.5em;
