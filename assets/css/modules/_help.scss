@@ -19,7 +19,6 @@
     background-color: #fff;
     box-shadow: 0 0 50px rgba(#000, 0.15);
     margin-top: -4em;
-    // margin-right: 1.5em;
     margin-left: 1.5em;
     padding: 1.75em;
     position: relative;
@@ -36,6 +35,6 @@
 }
 
 .help__copy {
-    @include font-size($zeta);
+    @include font-size($epsilon);
     margin-bottom: 1em;
 }
