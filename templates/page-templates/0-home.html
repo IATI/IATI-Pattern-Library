@@ -32,14 +32,15 @@
 {# --------------------------------------- #}
 
 {% block hero %}
-    <div class="hero hero--image" style="background-image: url({{ global.assets_root }}/img/{{ hero_image }})">
+    <div class="hero">
         <div class="row">
-            <div class="max-meter">
-                <div class="hero__caption">
-                    <h1 class="hero__heading">{{ title }}</h1>
+            <div class="hero__caption">
+                <h1 class="hero__heading">{{ title }}</h1>
 
-                    <p class="hero__subheading">IATI is a common format to share data on aid and development for better decision making and outcomes</p>
-                </div>
+                <p class="hero__subheading">IATI is a common format to share data on aid and development for better decision making and outcomes</p>
+            </div>
+            <div class="hero__emblem">
+                <img class="hero__emblem__mask" src="{{ global.assets_root }}/img/{{ hero_image }}" alt="alt tag">
             </div>
         </div>
     </div>
@@ -49,18 +50,21 @@
     <div class="row">
         <div class="l-3up">
             <div class="l-3up__col">
-
+                <blockquote class="as-blockquote">
+                    <p class="">Everyone should use the IATI Standard</p>
+                    <cite>Person name</cite>
+                </blockquote>
             </div>
             <div class="l-3up__col">
-                <div class="m-stat">
-                   <h2 class="m-stat__heading type-m heading">1,000,000</h2>
-                   <p class="m-stat__copy">Humanitarian and developlemnt activies published to the IATI Standard</p>
+                <div class="stat">
+                   <h2 class="stat__heading type-l heading">1,000,000</h2>
+                   <p class="stat__copy">Humanitarian and developlemnt activies published to the IATI Standard</p>
                 </div>
             </div>
             <div class="l-3up__col">
-                <div class="m-stat">
-                    <h2 class="m-stat__heading type-m heading">700</h2>
-                    <p class="m-stat__copy">Publishers and counting that contribute data to make the world a better place</p>
+                <div class="stat">
+                    <h2 class="stat__heading type-l heading">700</h2>
+                    <p class="stat__copy">Publishers and counting that contribute data to make the world a better place</p>
                  </div>
             </div>
         </div>
