@@ -1,5 +1,10 @@
 .stats--standout {
-    text-align: center;
+    @include respond-to($menu-respond) {
+        align-items: center;
+        display: flex;
+        // display: inline-block;
+        // width: 60%;
+    }
 }
 
 .stat {
@@ -10,8 +15,7 @@
         padding: 1.5em 1.5em 1.5em 2em;
     }
     .stats--standout & {
-        margin-bottom: 3em;
-        padding: 3em 10em;
+        // margin-bottom: 3em;
     }
     @include respond-to($menu-respond) {
         .stats--grid & {
@@ -26,12 +30,36 @@
     }
 }
 
+.stat--flex {
+    @include respond-to($menu-respond) {
+        align-self: flex-start;
+        display: flex;
+    }
+}
+
 .stat--center {
     display: inline-block;
-    text-align: center;
     @include respond-to($menu-respond) {
-        width: 40%;
+        width: 42%;
     }
+}
+
+.stat__body {
+    align-self: flex-start;
+    // outline: 1px solid red;
+    padding: 3em 6em;
+    @include respond-to($menu-respond) {
+        padding-top: 4em;
+        padding-bottom: 4em;
+        width: 50%;
+        + .stat__body {
+            border-left: 3px solid $default-border-color;
+        }
+    }
+}
+
+.stat__body--center {
+    text-align: center;
 }
 
 .stat__heading {
@@ -40,7 +68,8 @@
 
 .stat__heading--large {
     @include font-size($alpha);
-    // outline: 1px solid red;
+    line-height: 1.2;
+    margin-bottom: 0.15em;
 }
 
 .stat__copy {
@@ -48,14 +77,37 @@
 }
 
 .stat-quote {
-    align-items: center;
+    align-self: flex-start;
+    color: #fff;
     display: flex;
-    justify-content: center;
+    padding: 2em;
+    z-index: 100;
+    blockquote {
+        align-self: center;
+        p {
+            @include font-size($delta);
+        }
+        cite {
+            @include font-size($zeta);
+        }
+    }
+    @include respond-to($menu-respond) {
+        align-self: center;
+        margin-right: -2em;
+    }
 }
 
 .stat-quote__media {
     align-self: flex-start;
     margin-right: 5%;
+    width: 80px;
+    @include respond-to($menu-respond) {
+        margin-right: 8%;
+    }
+}
+
+.stat-quote__img {
+    width: 100%;
 }
 
 .stat-quote__copy {
