@@ -47,3 +47,8 @@
         background-color: $iati-air;
     }
 }
+
+.section__copy {
+    @include font-size($para);
+    margin-bottom: 1em;
+}
