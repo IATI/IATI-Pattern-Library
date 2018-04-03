@@ -113,6 +113,9 @@
 	}
 }
 
+.listing__header {
+	position: relative;
+}
 
 .listing__badge {
 	@extend .heading;
@@ -222,5 +225,8 @@
 }
 
 .listing__body-img {
-	width: 12%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 13%;
 }
