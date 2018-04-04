@@ -177,11 +177,13 @@
 		position: absolute;
 		bottom: 0;
 		left: -8%;
-		width: 100%;
+		width: 108%;
 		height: 1px;
 		background-color: $default-border-color;
+		z-index: 0;
 		.listing--featured & {
 			left: -7%;
+			width: 107%;
 		}
 	}
 	&__item {
@@ -202,6 +204,8 @@
 	img {
 		width: 100%;
 		display: block;
+		position: relative;
+		z-index: 1;
 	}
 	.listing--featured & {
 		@include respond-to($menu-respond) {
