@@ -1,0 +1,73 @@
+{# 1. Extend the relevant layout #}
+{# --------------------------------------- #}
+
+{% extends 'sidebar.html' %}
+
+
+{# --------------------------------------- #}
+{# 2. Assign Settings and variables #}
+{# --------------------------------------- #}
+
+{% set id = "events" %}
+{% set section = "events" %}
+{% set title = "IATI Events" %}
+{% set hero_copy = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. " %}
+{% set hero_image = "hero1.jpg" %}
+
+
+{# --------------------------------------- #}
+{# 3. Add models and macros #}
+{# --------------------------------------- #}
+
+{% model 'events', as="events" %}
+
+{% import 'macros/button.html' as buttons %}
+{% import 'macros/icon.html' as icons %}
+
+
+{# --------------------------------------- #}
+{#
+   4. Add page content into relevant areas
+      Add/Delete blocks as necessary
+#}
+{# --------------------------------------- #}
+
+{% block hero %}
+    <div class="hero">
+        <div class="row">
+            <div class="hero__caption">
+                <h1 class="hero__heading">{{ title }}</h1>
+                {% if hero_copy %}
+                    <p class="hero__excerpt">{{ hero_copy }}</p>
+                {% endif %}
+            </div>
+            <div class="hero__emblem">
+                <img class="hero__emblem__mask" src="{{ global.assets_root }}/img/{{ hero_image }}" alt="alt tag">
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block aside %}
+    <div class="aside-m">
+        <div class="aside-m__header fill-land">
+            <h3 class="aside-m__heading">Event types</h3>
+        </div>
+        <ul class="aside-m__list">
+            <li class="aside-m__list-item"><a href="#">Event type</a></li>
+            <li class="aside-m__list-item"><a href="#">Event type</a></li>
+            <li class="aside-m__list-item"><a href="#">Event type</a></li>
+            <li class="aside-m__list-item"><a href="#">Event type</a></li>
+            <li class="aside-m__list-item"><a href="#">Event type</a></li>
+        </ul>
+    </div>
+{% endblock %}
+
+{% block main %}
+	<div class="l-listing l-listing--events">
+		{% for item in events.event_list %}
+			{% include 'listings/events.html' %}
+		{% endfor %}
+	</div>
+    {% include 'partials/pagination.html' %}
+{% endblock %}

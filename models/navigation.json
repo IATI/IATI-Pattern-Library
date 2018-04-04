@@ -2,27 +2,27 @@
     "primary": [
 	    {
 		    "label": "About",
-		    "in_section": "",
+		    "in_section": "about",
 		    "hidden": false
 		},
 		{
 		    "label": "IATI Standard",
-		    "in_section": "",
+		    "in_section": "standard",
 		    "hidden": false
 		},
 		{
 		    "label": "Data",
-		    "in_section": "",
+		    "in_section": "data",
 		    "hidden": false
 		},
 		{
 		    "label": "Guidance & Support",
-		    "in_section": "",
+		    "in_section": "support",
 		    "hidden": false
 		},
 		{
 		    "label": "Community",
-		    "in_section": "",
+		    "in_section": "community",
 		    "hidden": false
 		}
     ],

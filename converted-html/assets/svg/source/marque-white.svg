@@ -27,19 +27,6 @@
 		c0,23.2-3.1,45.7-8.8,67.1c-5.9,22.1-14.7,43.1-25.9,62.5c-11.4,19.7-25.2,37.7-41.2,53.7c-16,16-34,29.8-53.7,41.2
 		c-19.4,11.2-40.4,20-62.5,25.9c-21.4,5.7-43.9,8.8-67.1,8.8s-45.7-3.1-67.1-8.8l-9.9,37.1c24.6,6.6,50.4,10.1,77,10.1
 		C257.3,555.4,283.1,551.9,307.7,545.3z">
-		<animateTransform
-			attributeType="xml"
-			dur="1.5s"
-			additive="sum"
-			attributeName="transform"
-			type="rotate"
-			from="-80 230 258"
-			to="0 230 258"
-			values="-80 230 258; -40 230 258; -20 230 258; -10 230 258; 0 230 258"
-			keyTimes="0;0.25;0.5;0.75;1"
-			keySplines=".42 0 1 1;
-                0 0 .59 1;"
-			repeatCount=""/>
 	</path>
 	<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-6.5182" y1="477.4318" x2="549.1899" y2="156.5936">
 		<stop  offset="0.6" style="stop-color:#FFFFFF"/>

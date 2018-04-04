@@ -1,0 +1,69 @@
+{# 1. Extend the relevant layout #}
+{# --------------------------------------- #}
+
+{% extends 'sidebar-reverse.html' %}
+
+
+{# --------------------------------------- #}
+{# 2. Assign Settings and variables #}
+{# --------------------------------------- #}
+
+{% set id = "about" %}
+{% set section = "about" %}
+{% set title = "Governance" %}
+{% set hero_copy = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." %}
+
+
+{# --------------------------------------- #}
+{# 3. Add models and macros #}
+{# --------------------------------------- #}
+
+{% import 'macros/button.html' as buttons %}
+{% import 'macros/icon.html' as icons %}
+
+
+{# --------------------------------------- #}
+{#
+   4. Add page content into relevant areas
+      Add/Delete blocks as necessary
+#}
+{# --------------------------------------- #}
+
+{% block hero %}
+    <div class="hero hero--minor">
+        <div class="row">
+            <div class="hero__caption">
+                <h1 class="hero__heading">{{ title }}</h1>
+                {% if hero_copy %}
+                    <p class="hero__excerpt">{{ hero_copy }}</p>
+                {% endif %}
+            </div>
+            <div class="hero__emblem"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block aside %}
+	<div class="aside-m">
+        <div class="aside-m__header fill-sunrise">
+            <h3 class="aside-m__heading">In this section</h3>
+        </div>
+        {% include 'navigation/secondary-child.html' %}
+    </div>
+
+    <div class="aside-m">
+        <div class="aside-m__header fill-sunset">
+            <h3 class="aside-m__heading">Members assembly events 2017</h3>
+        </div>
+        <div class="aside-m__body">
+            <p class="aside-m__copy">Information and presentations from the event held in Rome in July</p>
+            <a class="button" href="#none">View report</a>
+        </div>
+    </div>
+{% endblock %}
+
+{% block main %}
+    <div class="is-typeset is-typeset--additionals">
+        {% include 'content/longform.html' %}
+    </div>
+{% endblock %}

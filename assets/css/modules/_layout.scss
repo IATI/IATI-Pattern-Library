@@ -37,11 +37,23 @@
 
 .l-sidebar {
 	@extend %l;
+	@include respond-to($sidebar-respond) {
+		margin-bottom: 5em;
+	}
 	&__aside {
+		margin-bottom: 5em;
+		.l-sidebar--reverse &,
+		.l-sidebar--mobile & {
+			margin-bottom: 3em;
+		}
 		@include respond-to($sidebar-respond) {
 			float: right;
 			display: inline-block;
 			width: $sidebar-aside-width;
+			.l-sidebar--reverse & {
+				float: left;
+				margin-bottom: 0;
+			}
 		}
 	}
 	&__body {
@@ -51,6 +63,13 @@
 			display: inline-block;
 			width: $sidebar-body-width;
 			padding-right: 5em;
+			margin-bottom: 0;
+			.l-sidebar--reverse & {
+				float: right;
+				padding-right: 0;
+				padding-left: 5em;
+				order: 1;
+			}
 		}
 	}
 }
@@ -70,6 +89,9 @@
 	}
 	&__col {
 		margin-bottom: 3em;
+		&--small {
+			margin-bottom: 1.5em;
+		}
 		@include respond-to($c-vp) {
 			float: left;
 			display: block;
@@ -106,6 +128,9 @@
 	}
 	&__col {
 		margin-bottom: 3em;
+		&--small {
+			margin-bottom: 1.5em;
+		}
 		@include respond-to($c-vp) {
 			float: left;
 			display: block;

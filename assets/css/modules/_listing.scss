@@ -16,6 +16,15 @@
 			padding-bottom: 2em;
 		}
 	}
+	.l-listing--people & {
+		border-bottom: 0;
+		padding-bottom: 0;
+	}
+	.l-listing--no-pagination & {
+		&:last-child {
+			border-bottom: 0;
+		}
+	}
 	@include respond-to($menu-respond) {
 		@supports (display: flex) {
 			display: flex;
@@ -28,6 +37,13 @@
 		margin-bottom: 1em;
 		display: block;
 		width: 100%;
+		.listing__media {
+			margin-bottom: 1em;
+		}
+		.ico {
+			top: -2px;
+			margin-right: 2px;
+		}
 		.listing--featured & {
 			margin-bottom: 0;
 		}
@@ -43,6 +59,9 @@
 				margin-right: 0;
 				width: 50%;
 			}
+			.listing--people & {
+				width: 25%;
+			}
 		}
 	}
 	&__body {
@@ -53,9 +72,14 @@
 			padding: 2.5em;
 			box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1);
 		}
+		.ico {
+			top: -2px;
+			margin-right: 2px;
+		}
 		@include respond-to($menu-respond) {
 			display: block;
 			float: right;
+			position: relative;
 			width: 60%;
 			.listing--featured & {
 				width: 55%;
@@ -65,8 +89,44 @@
 				transition: transform, linear, 0.3s;
    				will-change: transform;
 			}
+			.listing--people & {
+				width: 80%;
+			}
 		}
 	}
+}
+
+.listing--article-alt {
+	@include respond-to($menu-respond) {
+		border-left: 1px solid $default-border-color;
+		padding-left: 4em;
+	}
+}
+
+.listing-quote {
+	p {
+		display: inline-block;
+		margin-bottom: 0.5em;
+	}
+	.l-listing--people & {
+		margin-top: 2em;
+	}
+}
+
+.listing__header {
+	position: relative;
+}
+
+.listing__badge {
+	@extend .heading;
+	@include font-size($eta);
+	background-color: $iati-sunrise;
+	color: #fff;
+	display: inline-block;
+	margin-top: 1em;
+	letter-spacing: 1px;
+	padding: 0.75em 1em;
+	text-transform: uppercase;
 }
 
 .listing__heading {
@@ -74,6 +134,9 @@
 	@extend .heading;
 	line-height: 1.2;
 	margin-bottom: 0.5em;
+	.listing__header & {
+		margin-bottom: 0.1em;
+	}
 	a {
 		color: $heading-color;
 		font-size: inherit;
@@ -91,6 +154,16 @@
 			}
 		}
 	}
+}
+
+.listing__subheading,
+.listing__location {
+	@include font-size($zeta);
+	color: $base-color;
+}
+
+.listing__location {
+	margin-bottom: 0.2em;
 }
 
 .listing__metadata {
@@ -117,10 +190,6 @@
 		letter-spacing: 1px;
 		display: inline-block;
 		margin-right: 1em;
-		.ico {
-			top: -2px;
-			margin-right: 2px;
-		}
 	}
 }
 
@@ -153,4 +222,11 @@
 			}
 		}
 	}
+}
+
+.listing__body-img {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 13%;
 }

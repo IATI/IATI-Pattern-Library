@@ -167,6 +167,7 @@
 
 	ul {
 		@extend .unordered-list;
+		margin-bottom: 2em;
 	}
 
 	p {
@@ -186,7 +187,6 @@
 				float: left;
 				max-width: 50%;
 				margin-right: 4em;
-				margin-left: -8em;
 			}
 		}
 		&.alignright {
@@ -194,7 +194,6 @@
 				float: right;
 				max-width: 50%;
 				margin-left: 4em;
-				margin-right: -8em;
 			}
 		}
 	}

@@ -1,18 +1,74 @@
 [
 	{
 		"name": "e1-error",
-		"stage": "review"
+		"stage": "approved"
 	},
 	{
 		"name": "e2-500",
 		"stage": "approved"
 	},
 	{
+		"name": "0-home",
+		"stage": "review"
+	},
+	{
+		"name": "01-about",
+		"stage": "approved"
+	},
+	{
+		"name": "01-1-about-subpage",
+		"stage": "approved"
+	},
+	{
+		"name": "01-2-case-studies",
+		"stage": "review"
+	},
+	{
+		"name": "01-2-1-case-study",
+		"stage": "approved"
+	},
+	{
+		"name": "01-3-download-listing",
+		"stage": "approved"
+	},
+	{
+		"name": "01-4-people",
+		"stage": "review"
+	},
+	{
+		"name": "01-5-history",
+		"stage": "approved"
+	},
+	{
 		"name": "03-news",
-		"stage": "Template"
+		"stage": "approved"
 	},
 	{
 		"name": "03-1-news-single",
-		"stage": "Template"
+		"stage": "approved"
+	},
+	{
+		"name": "04-events",
+		"stage": "approved"
+	},
+	{
+		"name": "04a-past-events",
+		"stage": "approved"
+	},
+	{
+		"name": "04-1-events-single",
+		"stage": "approved"
+	},
+	{
+		"name": "04-1a-past-events-single",
+		"stage": "approved"
+	},
+	{
+		"name": "04-1b-past-events-single",
+		"stage": "review"
+	},
+	{
+		"name": "05-contact",
+		"stage": "approved"
 	}
 ]

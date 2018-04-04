@@ -34,6 +34,7 @@
 button.button {
 	width: 100%;
 	.footer & {
+		display: inline-block;
 		width: auto;
 	}
 }
@@ -80,6 +81,11 @@ button.button {
 		background-color: $iati-sunset;
 		background: linear-gradient(30deg, $iati-sunset, $iati-sunset);
 	}
+}
+
+.button--large {
+	@include font-size($epsilon);
+	text-align: center;
 }
 
 .button--disabled {
