@@ -104,6 +104,9 @@
     color: #fff;
     // color: $iati-ocean;
     line-height: 1;
+    word-wrap: break-word;
+    word-break: keep-all;
+    hyphens: auto;
     .hero--image &, .hero--minor & {
         color: #fff;
     }

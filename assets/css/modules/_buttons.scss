@@ -36,6 +36,11 @@ button.button {
 	.footer & {
 		display: inline-block;
 		width: auto;
+		margin-top: 0.5em;
+		@include respond-to($d-vp) {
+			height: $form-item-height;
+			margin-top: 0;
+		}
 	}
 }
 

@@ -78,7 +78,11 @@
 	.footer & {
 		border: none;
 		display: inline-block;
-		width: 77%;
+		width: 100%;
+		@include respond-to($d-vp) {
+			width: 70%;
+			float: left;
+		}
 	}
 }
 

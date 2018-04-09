@@ -144,6 +144,9 @@
 					margin-left: 0;
 				}
 			}
+			&--small {
+				margin-bottom: 1.5em;
+			}
 			@supports (display: grid) {
 				margin-left: 0;
 				width: auto;

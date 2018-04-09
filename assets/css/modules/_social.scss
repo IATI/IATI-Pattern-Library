@@ -5,7 +5,12 @@
 .social-list {
     @extend %clearfix;
     .footer & {
-        margin-left: auto;
+        display: block;
+        margin-top: 1em;
+        @include respond-to($b-vp) {
+            float: right;
+            margin-top: 0;
+        }
     }
 }
 
