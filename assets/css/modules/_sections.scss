@@ -2,12 +2,35 @@
 // Sections
 // ------------------------------------------------------------
 
+.sections {
+    margin-bottom: 5em;
+}
+
 .section {
     @extend .space-section-top;
     @extend .padd-section-both;
     background-color: #fff;
 }
 
+.section-alt {
+    @extend .space-section-bottom;
+}
+
+.section-alt-top {
+    @extend .space-section-top;
+}
+
+.section-alt-bottom {
+    @extend .space-section-bottom;
+}
+
+.section-border {
+    @extend .space-section-bottom;
+    &:not(:last-child) {
+        border-bottom: 3px solid $default-border-color;
+        @extend .padd-section-bottom;
+    }
+}
 
 .section__heading {
     @extend .type-l;
@@ -23,4 +46,9 @@
         height: 3px;
         background-color: $iati-air;
     }
+}
+
+.section__copy {
+    @include font-size($para);
+    margin-bottom: 1em;
 }

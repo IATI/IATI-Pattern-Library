@@ -229,7 +229,7 @@
 		margin-top: 1px;
 		@include font-size($epsilon);
 		a {
-			border-left: 2px solid $iati-sunset;
+			border-left: 2px solid $iati-sunrise;
 			padding: 0.75em 1em;
 			margin-top: 1px;
 			color: $heading-color;
@@ -241,22 +241,23 @@
 			}
 		}
 		&--active a {
+			background-color: $iati-sunrise;
 			border-left-width: 4px;
-			text-decoration: underline;
+			color: #fff;
 		}
 	}
 }
 
 .navigation-secondary__child {
-	margin-left: 1.2em;
 	&__item {
 		a {
-			border-left-width: 2px;
-			text-decoration: none;
+			background-color: lighten($iati-sunrise, 24%);
+			border-left-width: 6px;
+			color: $heading-color;
+			padding-left: 1.5em;
 		}
 		&--active a {
 			border-left-width: 4px;
-			text-decoration: underline;
 		}
 	}
 }

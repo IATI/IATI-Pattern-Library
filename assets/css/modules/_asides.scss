@@ -3,6 +3,7 @@
 // ------------------------------------------------------------
 
 .aside-m {
+    box-shadow: 0 0 50px 0 rgba(#000, 0.15);
     +.aside-m {
         margin-top: 2em;
     }
@@ -35,13 +36,14 @@
     @include font-size($epsilon);
     text-transform: uppercase;
     letter-spacing: 1px;
+    .fill-sunrise &,
     .fill-sunset & {
         color: #fff;
     }
 }
 
 .aside-m__list {
-
+    margin-bottom: 1em;
 }
 
 .aside-m__list-item {
@@ -70,6 +72,11 @@
     }
 }
 
+.aside-m__body {
+    background-color: #fff;
+    padding: 1.6em;
+}
+
 .aside-m__list-item-block {
     background-color: #fff;
     padding: 1em;
@@ -77,6 +84,11 @@
         margin-right: 2px;
         top: -2px;
     }
+}
+
+.aside-m__copy {
+    @include font-size($para);
+    margin-bottom: 0.75em;
 }
 
 .aside-m__meta {

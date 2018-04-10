@@ -22,6 +22,6 @@
 %max-width 				{ max-width: 100%; height: auto; display: block; }
 
 // Fonts
-%font-sans				{ font-family: "maax-regular", sans-serif; }
+%font-sans				{ font-family: "chalet-london-sixty", sans-serif; font-weight: 400; }
 %font-body 				{ @extend %font-sans; }
-%font-heading           { font-family: "maax-bold", sans-serif; }
+%font-heading           { font-family: "pragmatica", sans-serif; font-weight: 700; }

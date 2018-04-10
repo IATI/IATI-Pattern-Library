@@ -37,9 +37,13 @@
 
 .l-sidebar {
 	@extend %l;
-	margin-bottom: 5em;
+	@include respond-to($sidebar-respond) {
+		margin-bottom: 5em;
+	}
 	&__aside {
-		.l-sidebar--reverse & {
+		margin-bottom: 5em;
+		.l-sidebar--reverse &,
+		.l-sidebar--mobile & {
 			margin-bottom: 3em;
 		}
 		@include respond-to($sidebar-respond) {
@@ -64,6 +68,7 @@
 				float: right;
 				padding-right: 0;
 				padding-left: 5em;
+				order: 1;
 			}
 		}
 	}
@@ -84,6 +89,9 @@
 	}
 	&__col {
 		margin-bottom: 3em;
+		&--small {
+			margin-bottom: 1.5em;
+		}
 		@include respond-to($c-vp) {
 			float: left;
 			display: block;
@@ -120,6 +128,9 @@
 	}
 	&__col {
 		margin-bottom: 3em;
+		&--small {
+			margin-bottom: 1.5em;
+		}
 		@include respond-to($c-vp) {
 			float: left;
 			display: block;
@@ -132,6 +143,9 @@
 				@supports (display: grid) {
 					margin-left: 0;
 				}
+			}
+			&--small {
+				margin-bottom: 1.5em;
 			}
 			@supports (display: grid) {
 				margin-left: 0;

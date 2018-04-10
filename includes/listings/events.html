@@ -3,9 +3,12 @@
 		<div class="listing__media">
 			<img src="{{ global.assets_root }}/img/{{ item.image_name }}" alt="alt tag">
 		</div>
+
+		<h3 class="listing__location"><i role="presentation" aria-hidden="true" class="ico ico--14 ico-location-ocean"></i>{{ item.location }}</h3>
+
+		{% if item.archive == true %}<span class="badge">Past event</span>{% else %}{% endif %}
 	</aside>
 	<div class="listing__body">
-		<h3 class="listing__location"><i role="presentation" aria-hidden="true" class="ico ico--14 ico-location-ocean"></i>{{ item.location }}</h3>
 		<h2 class="listing__heading"><a href=""><span>{{ item.title }}</span></a></h2>
 		<ul class="listing__metadata">
 			<li class="listing__metadata__item">

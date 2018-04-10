@@ -3,11 +3,15 @@
 // ------------------------------------------------------------
 
 .hero {
+    // background: linear-gradient(180deg, $iati-ocean, $iati-ocean, #F6F6F6);
+    background: linear-gradient(0deg, darken($iati-ocean, 4%) 4%, $iati-ocean 20%);
     margin-bottom: 5em;
     padding-top: 15em;
+    padding-bottom: 5em;
     margin-top: -15.5em;
     position: relative;
     &--image {
+        border-bottom: 0;
         padding-bottom: 5em;
         background-size: cover;
         background-position: center center;
@@ -24,6 +28,7 @@
         }
     }
     &--minor {
+        border-bottom: 0;
         background-color: $iati-ocean;
         padding-bottom: 5em;
         @include respond-to-max($menu-respond) {
@@ -39,7 +44,7 @@
     }
     @include respond-to($c-vp) {
         padding-top: 20em;
-        margin-bottom: 8em;
+        // margin-bottom: 8em;
         &--image {
             padding-top: 25em;
             margin-bottom: 5em;
@@ -86,7 +91,8 @@
     padding-left: 1.5em;
     @include respond-to($c-vp) {
         max-width: 50%;
-        .hero--image & {
+        .hero--image &,
+        .max-meter & {
             max-width: 100%;
         }
     }
@@ -95,19 +101,39 @@
 .hero__heading {
     @extend .type-xl;
     @extend .heading;
-    color: $iati-ocean;
+    color: #fff;
+    // color: $iati-ocean;
     line-height: 1;
+    word-wrap: break-word;
+    word-break: keep-all;
+    hyphens: auto;
     .hero--image &, .hero--minor & {
         color: #fff;
     }
 }
 
+.hero__subheading {
+    @include font-size($delta);
+    color: #fff;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
 .hero__excerpt {
     @include font-size($para);
+    color: #fff;
     margin-top: 1em;
     .hero--minor & {
         color: #fff;
     }
+}
+
+.hero__type {
+    @extend .heading;
+    @include font-size($para);
+    color: #fff;
+    display: block;
+    text-transform: uppercase;
 }
 
 .hero__emblem {

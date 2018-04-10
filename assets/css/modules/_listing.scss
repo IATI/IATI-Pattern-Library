@@ -16,6 +16,15 @@
 			padding-bottom: 2em;
 		}
 	}
+	.l-listing--people & {
+		border-bottom: 0;
+		padding-bottom: 0;
+	}
+	.l-listing--no-pagination & {
+		&:last-child {
+			border-bottom: 0;
+		}
+	}
 	@include respond-to($menu-respond) {
 		@supports (display: flex) {
 			display: flex;
@@ -28,6 +37,13 @@
 		margin-bottom: 1em;
 		display: block;
 		width: 100%;
+		.listing__media {
+			margin-bottom: 1em;
+		}
+		.ico {
+			top: -2px;
+			margin-right: 2px;
+		}
 		.listing--featured & {
 			margin-bottom: 0;
 		}
@@ -42,6 +58,9 @@
 				z-index: 1;
 				margin-right: 0;
 				width: 50%;
+			}
+			.listing--people & {
+				width: 25%;
 			}
 		}
 	}
@@ -60,6 +79,7 @@
 		@include respond-to($menu-respond) {
 			display: block;
 			float: right;
+			position: relative;
 			width: 60%;
 			.listing--featured & {
 				width: 55%;
@@ -69,26 +89,44 @@
 				transition: transform, linear, 0.3s;
    				will-change: transform;
 			}
+			.listing--people & {
+				width: 80%;
+			}
 		}
 	}
 }
 
-.listing--archived {
-	.l-listing--past & {
-		.listing__media {
-			position: relative;
-			&:after {
-				@include font-size($eta);
-				background-color: $iati-sunrise;
-				color: #fff;
-				content: 'Past event';
-				padding: 0.5em 0.75em;
-				position: absolute;
-				top: 0;
-				left: 0;
-			}
-		}
+.listing--article-alt {
+	@include respond-to($menu-respond) {
+		border-left: 1px solid $default-border-color;
+		padding-left: 4em;
 	}
+}
+
+.listing-quote {
+	p {
+		display: inline-block;
+		margin-bottom: 0.5em;
+	}
+	.l-listing--people & {
+		margin-top: 2em;
+	}
+}
+
+.listing__header {
+	position: relative;
+}
+
+.listing__badge {
+	@extend .heading;
+	@include font-size($eta);
+	background-color: $iati-sunrise;
+	color: #fff;
+	display: inline-block;
+	margin-top: 1em;
+	letter-spacing: 1px;
+	padding: 0.75em 1em;
+	text-transform: uppercase;
 }
 
 .listing__heading {
@@ -96,6 +134,9 @@
 	@extend .heading;
 	line-height: 1.2;
 	margin-bottom: 0.5em;
+	.listing__header & {
+		margin-bottom: 0.1em;
+	}
 	a {
 		color: $heading-color;
 		font-size: inherit;
@@ -115,9 +156,13 @@
 	}
 }
 
+.listing__subheading,
 .listing__location {
 	@include font-size($zeta);
 	color: $base-color;
+}
+
+.listing__location {
 	margin-bottom: 0.2em;
 }
 
@@ -132,11 +177,13 @@
 		position: absolute;
 		bottom: 0;
 		left: -8%;
-		width: 100%;
+		width: 108%;
 		height: 1px;
 		background-color: $default-border-color;
+		z-index: 0;
 		.listing--featured & {
 			left: -7%;
+			width: 107%;
 		}
 	}
 	&__item {
@@ -157,6 +204,8 @@
 	img {
 		width: 100%;
 		display: block;
+		position: relative;
+		z-index: 1;
 	}
 	.listing--featured & {
 		@include respond-to($menu-respond) {
@@ -177,4 +226,11 @@
 			}
 		}
 	}
+}
+
+.listing__body-img {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 13%;
 }
