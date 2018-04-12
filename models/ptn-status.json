@@ -40,6 +40,14 @@
 		"stage": "approved"
 	},
 	{
+		"name": "02a-guidance-support",
+		"stage": "template"
+	},
+	{
+		"name": "02-2-guidance-section",
+		"stage": "template"
+	},
+	{
 		"name": "03-news",
 		"stage": "approved"
 	},
