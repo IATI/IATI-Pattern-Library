@@ -1,0 +1,25 @@
+{
+    "guidance_parent": [
+        {
+		    "title": "Preparing your organisation",
+            "image_name": "content-image3.jpg",
+		    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "excerpt_list": true,
+            "button_text": "Find out how to prepare your organisation"
+		},
+        {
+		    "title": "Preparing your data",
+            "image_name": "content-image.jpg",
+		    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "excerpt_list": true,
+            "button_text": "Collating and preparing your data"
+		},
+        {
+		    "title": "Publish your data to the IATI Standard",
+            "image_name": "content-image2.jpg",
+		    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "excerpt_list": true,
+            "button_text": "Publishing your data to the IATI Standard"
+		}
+    ]
+}

@@ -1,3 +1,8 @@
+// ------------------------------------------------------------
+// Modules
+// prefix with m-
+// ------------------------------------------------------------
+
 .m-additional {
     background-color: #fff;
     box-shadow: 0 0 50px 0 rgba(#000, 0.15);
@@ -100,5 +105,31 @@
     align-self: flex-start;
     @include respond-to($menu-respond) {
         margin-left: auto;
+    }
+}
+
+// ------------------------------------------------------------
+// Styled block list
+// ------------------------------------------------------------
+
+.m-block-list {
+    @extend %pie-clearfix;
+    @include font-size($para);
+    li {
+        padding: 1em;
+        text-align: center;
+        border-bottom: 3px solid $default-border-color;
+        margin-bottom: 1em;
+        @include respond-to($c-vp) {
+            display: inline-block;
+            float: left;
+            width: 32%;
+            margin-left: 2%;
+            margin-bottom: 0;
+            &:nth-child(3n+1) {
+                margin-left: 0;
+                clear: left;
+            }
+        }
     }
 }
