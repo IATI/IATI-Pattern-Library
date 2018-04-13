@@ -1,0 +1,119 @@
+{# 1. Extend the relevant layout #}
+{# --------------------------------------- #}
+
+{% extends 'sidebar-after.html' %}
+
+
+{# --------------------------------------- #}
+{# 2. Assign Settings and variables #}
+{# --------------------------------------- #}
+
+{% set id = "support" %}
+{% set section = "support" %}
+{% set title = "What data should I publish?" %}
+{% set hero_copy = "" %}
+{% set hero_image = "" %}
+
+
+{# --------------------------------------- #}
+{# 3. Add models and macros #}
+{# --------------------------------------- #}
+
+{% model 'guidance', as="guidance" %}
+{% model 'form-support', as="form" %}
+
+{% import 'macros/button.html' as buttons %}
+{% import 'macros/icon.html' as icons %}
+
+
+{# --------------------------------------- #}
+{#
+   4. Add page content into relevant areas
+      Add/Delete blocks as necessary
+#}
+{# --------------------------------------- #}
+
+{% block hero %}
+    <div class="hero hero--minor">
+        <div class="row">
+            <div class="hero__caption">
+                <h1 class="hero__heading">{{ title }}</h1>
+                {% if hero_copy %}
+                    <p class="hero__excerpt">{{ hero_copy }}</p>
+                {% endif %}
+            </div>
+            <div class="hero__emblem"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block aside %}
+    <div class="aside-m">
+        <div class="aside-m__header fill-sunset">
+            <h3 class="aside-m__heading">Contact support</h3>
+        </div>
+        <div class="aside-m__body">
+            <p class="aside-m__copy">Our technical team are ready to help you.</p>
+            <a class="button" href="#support">Get help</a>
+        </div>
+    </div>
+{% endblock %}
+
+{% block main %}
+    {% include 'partials/breadcrumb.html' %}
+    <div class="is-typeset is-typeset--article">
+        {% include 'content/longform.html' %}
+    </div>
+    <div class="l-cards-offset space-section-top">
+        <a class="card card--link" href="#">
+            <div class="card__step">
+                <span class="card__step__text">Next Step</span>
+                {{ icons.icon('ico-play-white', '32') }}
+            </div>
+        </a>
+        {% for item in guidance.guidance_next %}
+            {% include 'partials/card-guidance.html' %}
+        {% endfor %}
+    </div>
+{% endblock %}
+
+{% block after %}
+    <div class="row">
+        <h2 class="section__heading">Related guidance</h2>
+        <div class="l-cards">
+            {% for item in guidance.related_guidance %}
+                {% include 'partials/card-guidance.html' %}
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="section" id="supprt">
+        <div class="row">
+            <h2 class="section__heading">Contact support</h2>
+            <p class="para para--typeset">Please complete the form below and our team will be able to help you</p>
+            <form class="form form--support">
+                <div class="l-2up">
+                    <div class="l-2up__col">
+                        {% for item in form.input %}
+                            {% include 'forms/partials/input-types.html' %}
+                        {% endfor %}
+                        <div class="form-field form-field--spaced">
+                            <label class="form-label" for=file>Attachment</label>
+                            <div class="form-item-inline">
+                                <input class="form-file" type="file" name="file">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="l-2up__col">
+                        {% for item in form.textarea %}
+                            {% include 'forms/partials/textarea-type.html' %}
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="form-field form-field--spaced">
+                    <button type="submit" class="button">Submit request</button>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}

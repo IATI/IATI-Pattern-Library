@@ -62,6 +62,62 @@
 
 
 
+.ico-location-ash {
+	background-image: url('png/location-ash.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-location-black {
+	background-image: url('png/location-black.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-location-ocean {
+	background-image: url('png/location-ocean.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-location-white {
+	background-image: url('png/location-white.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-play-ash {
+	background-image: url('png/play-ash.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-play-black {
+	background-image: url('png/play-black.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-play-ocean {
+	background-image: url('png/play-ocean.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-play-white {
+	background-image: url('png/play-white.png');
+	background-repeat: no-repeat;
+}
+
+
+
 .ico-plus-ash {
 	background-image: url('png/plus-ash.png');
 	background-repeat: no-repeat;
@@ -99,6 +155,34 @@
 
 .ico-test {
 	background-image: url('png/test.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-time-ash {
+	background-image: url('png/time-ash.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-time-black {
+	background-image: url('png/time-black.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-time-ocean {
+	background-image: url('png/time-ocean.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-time-white {
+	background-image: url('png/time-white.png');
 	background-repeat: no-repeat;
 }
 

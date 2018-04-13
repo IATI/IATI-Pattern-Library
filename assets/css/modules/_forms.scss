@@ -4,6 +4,10 @@
 
 .form {
 	position: relative;
+	&--support {
+		border-left: 3px solid $default-border-color;
+		padding-left: 2em;
+	}
 }
 
 // ------------------------------------------------------------
@@ -48,7 +52,7 @@
 
 // Space the form field
 .form-field--spaced {
-	padding-top: $internal-spacing;
+	padding-top: $internal-spacing/1.5;
 	.footer & {
 		padding-top: $internal-spacing/3;
 	}
@@ -84,6 +88,10 @@
 			float: left;
 		}
 	}
+}
+
+.form-file {
+	@include font-size($form-label-size);
 }
 
 // Turn off spinners for number input field, as flipping ugly

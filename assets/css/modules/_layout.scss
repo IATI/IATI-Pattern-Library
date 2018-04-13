@@ -190,6 +190,30 @@
 	}
 }
 
+.l-cards-offset {
+	@extend %l;
+	@include respond-to($c-vp) {
+		@supports (display: flex) {
+			display: flex;
+			flex-wrap: wrap;
+		}
+	}
+	.card {
+		margin-bottom: 3em;
+		@include respond-to($c-vp) {
+			float: left;
+			display: block;
+			width: 30%;
+			margin-right: 5%;
+			+.card {
+				width: 65%;
+				float: right;
+				margin-right: 0;
+			}
+		}
+	}
+}
+
 // ------------------------------------------------------------
 // Listings
 // ------------------------------------------------------------

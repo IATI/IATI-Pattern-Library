@@ -58,5 +58,29 @@
 		    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "flag": true
 		}
+    ],
+    "related_guidance": [
+        {
+		    "title": "What data shoud I publish?",
+		    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "flag": false
+		},
+        {
+		    "title": "How to use IATI reference?",
+		    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "flag": false
+		},
+        {
+		    "title": "Activity information",
+		    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "flag": false
+		}
+    ],
+    "guidance_next": [
+        {
+		    "title": "What data shoud I publish?",
+		    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "flag": false
+		}
     ]
 }

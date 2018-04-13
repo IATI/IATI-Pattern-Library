@@ -49,21 +49,10 @@
 {% block body %}
     <div class="l-standard">
         <div class="row">
-            <div class="breadcrumb">
-            	<ul>
-            		<li><a aria-current="false" href="/">Breadcrumb item</a></li>
-            		<li><a aria-current="true" href="/">Breadcrumb item</a></li>
-            	</ul>
-            </div>
+            {% include 'partials/breadcrumb.html' %}
             <div class="l-cards">
                 {% for item in guidance.guidance_list %}
-                    <div class="card {% if item.flag == true %}card--stacked{% endif %}">
-                        {% if item.flag == true %}
-                            <span class="card__flag">5 pages</span>
-                        {% endif %}
-                        <h2 class="card__heading"><a href="#"><span>{{ item.title }}</span></a></h2>
-                        <p class="card__excerpt">{{ item.excerpt }}</p>
-                    </div>
+                    {% include 'partials/card-guidance.html' %}
                 {% endfor %}
             </div>
         </div>

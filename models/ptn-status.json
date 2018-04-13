@@ -48,6 +48,10 @@
 		"stage": "template"
 	},
 	{
+		"name": "02-3-guidance-single",
+		"stage": "template"
+	},
+	{
 		"name": "03-news",
 		"stage": "approved"
 	},
