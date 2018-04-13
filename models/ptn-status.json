@@ -40,7 +40,6 @@
 		"stage": "approved"
 	},
 	{
-<<<<<<< HEAD
 		"name": "02a-guidance-support",
 		"stage": "template"
 	},
@@ -53,8 +52,6 @@
 		"stage": "template"
 	},
 	{
-=======
->>>>>>> 1dc96e790200299f3a3e6f30be04d560bcbedab1
 		"name": "03-news",
 		"stage": "approved"
 	},
