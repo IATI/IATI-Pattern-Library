@@ -9,7 +9,7 @@
 	},
 	{
 		"name": "0-home",
-		"stage": "review"
+		"stage": "approved"
 	},
 	{
 		"name": "01-about",
@@ -38,14 +38,6 @@
 	{
 		"name": "01-5-history",
 		"stage": "approved"
-	},
-	{
-		"name": "02a-guidance-support",
-		"stage": "template"
-	},
-	{
-		"name": "02-2-guidance-section",
-		"stage": "template"
 	},
 	{
 		"name": "03-news",
