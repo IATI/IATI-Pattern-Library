@@ -190,6 +190,14 @@
 	}
 }
 
+.l-cards-block {
+	margin-top: 3em;
+	.card {
+		margin-bottom: 3em;
+		display: block;
+	}
+}
+
 .l-cards-offset {
 	@extend %l;
 	@include respond-to($c-vp) {

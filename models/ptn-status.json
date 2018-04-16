@@ -52,6 +52,10 @@
 		"stage": "template"
 	},
 	{
+		"name": "02-5-knowledgebase",
+		"stage": "template"
+	},
+	{
 		"name": "03-news",
 		"stage": "approved"
 	},
