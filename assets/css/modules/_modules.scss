@@ -109,6 +109,31 @@
 }
 
 // ------------------------------------------------------------
+// Search
+// ------------------------------------------------------------
+
+.m-search {
+    background-color: $iati-ash;
+    padding: $internal-spacing 0;
+    margin-top: -5em;
+    margin-bottom: 5em;
+    //box-shadow: 0 0 50px 0 rgba(#000, 0.15);
+    .form-field {
+        width: 75%;
+        display: inline-block;
+        float: left;
+        input {
+            border: none;
+        }
+        +.form-field {
+            width: 24%;
+            float: right;
+            margin-top: 29px;
+        }
+    }
+}
+
+// ------------------------------------------------------------
 // Styled block list
 // ------------------------------------------------------------
 

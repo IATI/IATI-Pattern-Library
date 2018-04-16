@@ -56,6 +56,14 @@
 		"stage": "template"
 	},
 	{
+		"name": "02-6-knowledgebase-search-results",
+		"stage": "template"
+	},
+	{
+		"name": "02-7-knowledgebase-single",
+		"stage": "template"
+	},
+	{
 		"name": "03-news",
 		"stage": "approved"
 	},

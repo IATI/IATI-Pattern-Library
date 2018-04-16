@@ -21,6 +21,9 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
         }
     }
+    &--block {
+        border-left: 3px solid $iati-air;
+    }
     &--link {
         background-color: $iati-ocean;
         &:hover {

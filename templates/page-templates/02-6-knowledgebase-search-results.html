@@ -61,12 +61,13 @@
 {% endblock %}
 
 {% block main %}
-    <h2 class="type-l type-l--trailer heading">Most frequently viewed articles</h2>
+    <h2 class="type-l type-l--trailer heading">Showing 10 of 56 results</h2>
     <div class="l-cards-block">
         {% for item in guidance.knowledgebase_list %}
             {% include 'partials/card-knowledgebase.html' %}
         {% endfor %}
     </div>
+    {% include 'partials/pagination.html' %}
 {% endblock %}
 
 {% block after %}

@@ -10,8 +10,8 @@
 
 {% set id = "support" %}
 {% set section = "support" %}
-{% set title = "Knowledgebase" %}
-{% set hero_copy = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. " %}
+{% set title = "What data should I publish?" %}
+{% set hero_copy = "" %}
 {% set hero_image = "" %}
 
 
@@ -45,7 +45,6 @@
             <div class="hero__emblem"></div>
         </div>
     </div>
-    {% include 'partials/search.html' %}
 {% endblock %}
 
 {% block aside %}
@@ -61,15 +60,21 @@
 {% endblock %}
 
 {% block main %}
-    <h2 class="type-l type-l--trailer heading">Most frequently viewed articles</h2>
-    <div class="l-cards-block">
-        {% for item in guidance.knowledgebase_list %}
-            {% include 'partials/card-knowledgebase.html' %}
-        {% endfor %}
+    <div class="is-typeset is-typeset--article">
+        {% include 'content/longform.html' %}
     </div>
 {% endblock %}
 
 {% block after %}
+    <div class="row">
+        <h2 class="section__heading">Related guidance</h2>
+        <div class="l-cards">
+            {% for item in guidance.related_guidance %}
+                {% include 'partials/card-guidance.html' %}
+            {% endfor %}
+        </div>
+    </div>
+
     <div class="section" id="supprt">
         <div class="row">
             <h2 class="section__heading">Contact support</h2>
