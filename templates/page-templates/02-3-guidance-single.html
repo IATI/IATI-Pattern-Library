@@ -65,12 +65,12 @@
         {% include 'content/longform.html' %}
     </div>
     <div class="l-cards-offset space-section-top">
-        <a class="card card--link" href="#">
+        <div class="card card--step">
             <div class="card__step">
                 <span class="card__step__text">Next Step</span>
                 {{ icons.icon('ico-play-white', '32') }}
             </div>
-        </a>
+        </div>
         {% for item in guidance.guidance_next %}
             {% include 'partials/card-guidance.html' %}
         {% endfor %}
@@ -87,7 +87,8 @@
         </div>
     </div>
 
-    <div class="section" id="supprt">
+    <a id="support"></a>
+    <div class="section">
         <div class="row">
             <h2 class="section__heading">Contact support</h2>
             <p class="para para--typeset">Please complete the form below and our team will be able to help you</p>

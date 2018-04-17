@@ -24,13 +24,8 @@
     &--block {
         border-left: 3px solid $iati-air;
     }
-    &--link {
+    &--step{
         background-color: $iati-ocean;
-        &:hover {
-            .card__step {
-                padding-left: 1em;
-            }
-        }
     }
 }
 
@@ -55,7 +50,7 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 0.5em;
-    display: block;
+    display: inline-block;
 }
 
 .card__step {

@@ -41,27 +41,31 @@
 	},
 	{
 		"name": "02a-guidance-support",
-		"stage": "template"
+		"stage": "review"
 	},
 	{
 		"name": "02-2-guidance-section",
-		"stage": "template"
+		"stage": "review"
 	},
 	{
 		"name": "02-3-guidance-single",
-		"stage": "template"
+		"stage": "review"
+	},
+	{
+		"name": "02-4-guidance-group",
+		"stage": "review"
 	},
 	{
 		"name": "02-5-knowledgebase",
-		"stage": "template"
+		"stage": "review"
 	},
 	{
 		"name": "02-6-knowledgebase-search-results",
-		"stage": "template"
+		"stage": "review"
 	},
 	{
 		"name": "02-7-knowledgebase-single",
-		"stage": "template"
+		"stage": "review"
 	},
 	{
 		"name": "03-news",
@@ -73,7 +77,7 @@
 	},
 	{
 		"name": "04-events",
-		"stage": "approved"
+		"stage": "review"
 	},
 	{
 		"name": "04a-past-events",
