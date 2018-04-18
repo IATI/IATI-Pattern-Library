@@ -182,14 +182,14 @@
 	img {
 		@extend %max-width;
 		margin: ($para/$rembase) + em 0;
-		&.alignleft {
+		&.alignleft, &.left {
 			@include respond-to($c-vp) {
 				float: left;
 				max-width: 50%;
 				margin-right: 4em;
 			}
 		}
-		&.alignright {
+		&.alignright, &.right {
 			@include respond-to($c-vp) {
 				float: right;
 				max-width: 50%;
