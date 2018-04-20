@@ -11,7 +11,7 @@
 		&:first-child {
 			margin-top: 1em;
 		}
-		&--featured {
+		&--featured, &--guidance {
 			border-bottom: 0;
 			padding-bottom: 2em;
 		}
@@ -29,7 +29,7 @@
 		@supports (display: flex) {
 			display: flex;
 		}
-		&--featured {
+		&--featured, &--guidance {
 			padding-bottom: 4em;
 		}
 	}
@@ -44,7 +44,7 @@
 			top: -2px;
 			margin-right: 2px;
 		}
-		.listing--featured & {
+		.listing--featured &, .listing--guidance & {
 			margin-bottom: 0;
 		}
 		@include respond-to($menu-respond) {
@@ -53,7 +53,7 @@
 			float: left;
 			width: 35%;
 			margin-right: 5%;
-			.listing--featured & {
+			.listing--featured &, .listing--guidance & {
 				position: relative;
 				z-index: 1;
 				margin-right: 0;
@@ -67,7 +67,7 @@
 	&__body {
 		display: block;
 		width: 100%;
-		.listing--featured & {
+		.listing--featured &, .listing--guidance & {
 			background-color: #fff;
 			padding: 2.5em;
 			box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1);
@@ -88,6 +88,12 @@
 				transform: translateY(var(--translateY));
 				transition: transform, linear, 0.3s;
    				will-change: transform;
+			}
+			.listing--guidance & {
+				width: 75%;
+				margin-left: -5%;
+				z-index: 2;
+				transform: translateY(10px);
 			}
 			.listing--people & {
 				width: 80%;
