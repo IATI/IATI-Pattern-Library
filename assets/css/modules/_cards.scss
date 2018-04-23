@@ -26,13 +26,13 @@
     }
     &--guidance {
         //background-color: $iati-land;
-        background: linear-gradient(30deg, $iati-land, darken($iati-air, 7%));
+        background: linear-gradient(30deg, $iati-air, #fff);
         &:after {
-            background-color: darken($iati-land, 5%);
+            background-color: darken($iati-air, 5%);
         }
     }
     &--knowledge {
-        background: linear-gradient(30deg, darken($iati-sunset, 7%), $iati-sunrise);
+        background: linear-gradient(30deg, $iati-ocean, $iati-sunset);
     }
 }
 
@@ -47,7 +47,7 @@
     }
     .card--guidance & {
         a {
-            color: #fff;
+            color: $action;
             span {
                 border-color: $action;
                 transition: all, ease-in-out, 0.3s;
@@ -92,8 +92,8 @@
     border: 1px solid $default-border-color;
     padding: 0.5em 0.75em 0.25em 0.75em;
     .card--guidance & {
-        color: #fff;
-        border-color: #fff;
+        color: $heading-color;
+        border-color: $heading-color;
     }
 }
 
