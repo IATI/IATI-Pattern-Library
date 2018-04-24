@@ -25,14 +25,13 @@
         background-color: $iati-ocean;
     }
     &--guidance {
-        //background-color: $iati-land;
-        background: linear-gradient(30deg, $iati-air, #fff);
+        background-color: $iati-air;
         &:after {
-            background-color: darken($iati-air, 5%);
+            background-color: $iati-ocean;
         }
     }
     &--knowledge {
-        background: linear-gradient(30deg, $iati-ocean, $iati-sunset);
+        background-color: $iati-ocean;
     }
 }
 
@@ -98,21 +97,31 @@
 }
 
 .card__step {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
     text-align: center;
     width: 100%;
-    transition: all, ease-in-out, 0.3s;
+    .ico {
+        display: inline-block;
+        top: -5px;
+    }
+    @include respond-to($c-vp) {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        .ico {
+            display: block;
+            margin-top: 2em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
 }
 
 .card__step__text {
     @include font-size($gamma);
     color: #fff;
-    display: block;
-    .ico {
+    display: inline-block;
+    @include respond-to($c-vp) {
         display: block;
-        margin-top: 2em;
     }
 }
