@@ -68,6 +68,10 @@
 		"stage": "review"
 	},
 	{
+		"name": "02-6a-knowledgebase-search-zero-results",
+		"stage": "review"
+	},
+	{
 		"name": "02-7-knowledgebase-single",
 		"stage": "review"
 	},
@@ -76,12 +80,20 @@
 		"stage": "approved"
 	},
 	{
+		"name": "03a-news-filtered",
+		"stage": "review"
+	},
+	{
 		"name": "03-1-news-single",
 		"stage": "approved"
 	},
 	{
 		"name": "04-events",
 		"stage": "approved"
+	},
+	{
+		"name": "04a-events-filtered",
+		"stage": "review"
 	},
 	{
 		"name": "04a-past-events",
@@ -102,5 +114,9 @@
 	{
 		"name": "05-contact",
 		"stage": "approved"
+	},
+	{
+		"name": "06-standard-page",
+		"stage": "review"
 	}
 ]

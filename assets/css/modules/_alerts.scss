@@ -9,6 +9,7 @@
 	display: block;
 	position: relative;
 	@include font-size($para);
+	box-shadow: 0 0 50px 0 rgba(#000, 0.15);
 	.form & {
 		margin-top: $internal-spacing;
 	}
@@ -26,7 +27,7 @@
 }
 
 .alert--notice {
-	color: $warning;
+	color: darken($warning, 15%);
 	background-color: lighten($warning, 55%);
 }
 
