@@ -49,7 +49,7 @@
 	},
 	{
 		"name": "02-2-guidance-section",
-		"stage": "review"
+		"stage": "approved"
 	},
 	{
 		"name": "02-3-guidance-single",
@@ -57,15 +57,15 @@
 	},
 	{
 		"name": "02-4-guidance-group",
-		"stage": "review"
+		"stage": "approved"
 	},
 	{
 		"name": "02-5-knowledgebase",
-		"stage": "review"
+		"stage": "approved"
 	},
 	{
 		"name": "02-6-knowledgebase-search-results",
-		"stage": "review"
+		"stage": "approved"
 	},
 	{
 		"name": "02-6a-knowledgebase-search-zero-results",
@@ -73,7 +73,7 @@
 	},
 	{
 		"name": "02-7-knowledgebase-single",
-		"stage": "review"
+		"stage": "approved"
 	},
 	{
 		"name": "03-news",
@@ -81,7 +81,7 @@
 	},
 	{
 		"name": "03a-news-filtered",
-		"stage": "review"
+		"stage": "approved"
 	},
 	{
 		"name": "03-1-news-single",
@@ -93,7 +93,7 @@
 	},
 	{
 		"name": "04a-events-filtered",
-		"stage": "review"
+		"stage": "approved"
 	},
 	{
 		"name": "04a-past-events",
@@ -117,6 +117,6 @@
 	},
 	{
 		"name": "06-standard-page",
-		"stage": "review"
+		"stage": "approved"
 	}
 ]
