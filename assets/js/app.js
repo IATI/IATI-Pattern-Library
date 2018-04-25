@@ -61,9 +61,23 @@ function globals () {
             }, 300);
         }
     });
+
+    $('.js-move').click(function(event) {
+        event.preventDefault();
+        var target = $(this).attr('data-target');
+        $('#' + target).scrollView();
+    });
 }
 
 $(function run () {
     console.log('ᕕ( ᐛ )ᕗ Running...');
     globals();
 });
+
+$.fn.scrollView = function () {
+  return this.each(function () {
+    $('html, body').animate({
+      scrollTop: $(this).offset().top
+    }, 600);
+  });
+}
