@@ -1,5 +1,51 @@
 // ---------------------------------------
-// Table styles
+// Table standard
+// ---------------------------------------
+
+table {
+	border-collapse: collapse;
+	overflow-x: auto;
+	display: block;
+	width: fit-content;
+	max-width: 100%;
+	border: 1px solid $default-border-color;
+	.is-typeset & {
+		margin-top: 4em;
+	}
+}
+
+thead, tbody {
+	background-color: lighten($default-border-color, 7%);
+	th {
+		@include font-size($epsilon);
+		font-weight: 700;
+		padding: $internal-spacing/4;
+	}
+}
+
+tbody {
+	tr {
+		background-color: $body-color;
+		&:first-of-type {
+			background-color: $default-border-color;
+		}
+		border-bottom: $default-border-width solid $default-border-color;
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+}
+
+td {
+	padding: $internal-spacing/4;
+	vertical-align: top;
+	@include font-size($epsilon);
+	border-right: 1px solid $default-border-color;
+}
+
+
+// ---------------------------------------
+// Table styled
 // ---------------------------------------
 
 .table-styled {
@@ -44,7 +90,7 @@
 			&:before {
 				position: relative;
 				display: inline-block;
-				width: 45%; 
+				width: 45%;
 				word-break: break-word;
 				content: attr(title);
 				padding: $internal-spacing/4 $internal-spacing/2;
@@ -56,18 +102,18 @@
 				left: 0;
 			}
 		}
-	}	
+	}
 	@include respond-to($table-respond) {
 		border: none;
 		th, td {
-			border-right: $default-border-width solid $default-border-color;
+			//border-right: $default-border-width solid $default-border-color;
 			&:last-child {
 				border-right: none;
 			}
 		}
 		thead {
 			th {
-				padding: $internal-spacing/3 $internal-spacing/2;
+				padding: $internal-spacing/4;
 			}
 		}
 		tbody {
@@ -75,11 +121,11 @@
 				background: #fff;
 				border-bottom: $default-border-width solid $default-border-color;
 				&:nth-child(even) {
-					
+					background-color: lighten($default-border-color, 12%);
 				}
 			}
 			td {
-				padding: $internal-spacing/4 $internal-spacing/2;
+				padding: $internal-spacing/4;
 			}
 		}
 	}
