@@ -1,4 +1,5 @@
 .case-study {
+    position: relative;
     margin-bottom: 4em;
     @include respond-to($menu-respond) {
         @supports (display: flex) {
@@ -13,6 +14,7 @@
     @include respond-to($menu-respond) {
         margin-left: auto;
         width: 90%;
+        background-color: $iati-ocean;
     }
 }
 
@@ -23,10 +25,10 @@
     position: relative;
     z-index: 100;
     @include respond-to($menu-respond) {
-        align-self: center;
         padding: 2.5em;
         position: absolute;
         left: 0;
+        top: 2em;
         // margin-right: -2em;
         width: 50%;
     }
