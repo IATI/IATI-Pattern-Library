@@ -40,6 +40,24 @@
 			border-bottom: 2px solid #06dbe4;
 		}
 	}
+	&--alignleft {
+		width: 50%;
+		float: left;
+		padding-right: 5%;
+		padding-bottom: 2%;
+		.is-typeset & {
+			margin: 0;
+		}
+	}
+	&--alignright {
+		width: 50%;
+		float: right;
+		padding-left: 5%;
+		padding-bottom: 2%;
+		.is-typeset & {
+			margin: 0;
+		}
+	}
 }
 
 // Bad
