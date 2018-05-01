@@ -1,12 +1,6 @@
 .case-study {
     position: relative;
     margin-bottom: 4em;
-    @include respond-to($menu-respond) {
-        @supports (display: flex) {
-            justify-content: center;
-            display: flex;
-        }
-    }
 }
 
 .case-study__media {

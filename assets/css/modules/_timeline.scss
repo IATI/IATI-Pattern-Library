@@ -1,11 +1,12 @@
 .timeline {
     margin-top: 3em;
+    margin-bottom: 5em;
     position: relative;
     &:after {
         background-color: $iati-air;
         content: '';
         display: block;
-        height: 70%;
+        height: 90%;
         margin-left: -1px;
         position: absolute;
         top: 15%;

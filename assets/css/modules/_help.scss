@@ -1,11 +1,19 @@
-.help__header {
-    @include maintain-ratio(16 9);
-    .help--standout & {
-        @include maintain-ratio(4 3);
-    }
+.help {
+    position: relative;
+    margin-bottom: 3em;
+}
 
-    @include respond-to($menu-respond) {
-        // height: 300px;
+.help__header {
+    height: 200px;
+    .help--standout & {
+        height: auto;
+        padding-top: 5em;
+        @include respond-to($c-vp) {
+            padding-top: 8em;
+        }
+        @include respond-to($d-vp) {
+            padding-top: 10em;
+        }
     }
 }
 

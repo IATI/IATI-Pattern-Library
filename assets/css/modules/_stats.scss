@@ -69,10 +69,13 @@
 }
 
 .stat__heading--large {
-    @include font-size($alpha);
+    @include font-size($beta + 2);
     line-height: 1.2;
     margin-bottom: 0.15em;
     word-wrap: break-word;
+    @include respond-to($menu-respond) {
+        @include font-size($alpha);
+    }
 }
 
 .stat__copy {
