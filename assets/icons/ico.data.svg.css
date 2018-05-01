@@ -139,6 +139,13 @@
 
 
 
+.ico-plus-sunrise {
+	background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Cpath%20d%3D%22M16%204c1.105%200%202%20.895%202%202v8h8c1.105%200%202%20.895%202%202s-.895%202-2%202h-8v8c0%201.105-.895%202-2%202s-2-.895-2-2v-8h-8c-1.105%200-2-.895-2-2s.895-2%202-2h8v-8c0-1.105.895-2%202-2%22%20fill%3D%22%23ff7264%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
+	background-repeat: no-repeat;
+}
+
+
+
 .ico-plus-white {
 	background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Cpath%20d%3D%22M16%204c1.105%200%202%20.895%202%202v8h8c1.105%200%202%20.895%202%202s-.895%202-2%202h-8v8c0%201.105-.895%202-2%202s-2-.895-2-2v-8h-8c-1.105%200-2-.895-2-2s.895-2%202-2h8v-8c0-1.105.895-2%202-2%22%20fill%3D%22%23ffffff%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
 	background-repeat: no-repeat;

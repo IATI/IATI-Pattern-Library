@@ -139,6 +139,13 @@
 
 
 
+.ico-plus-sunrise {
+	background-image: url('png/plus-sunrise.png');
+	background-repeat: no-repeat;
+}
+
+
+
 .ico-plus-white {
 	background-image: url('png/plus-white.png');
 	background-repeat: no-repeat;
