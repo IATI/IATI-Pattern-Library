@@ -177,10 +177,10 @@
 	position: relative;
 	padding: 1em;
 	@include font-size($epsilon);
-	background-color: lighten($iati-sunset, 15%);
+	background-color: #fff;
 	display: block;
 	width: 100%;
-	color: #fff;
+	color: $iati-sunrise;
 	outline: none;
 	&:before {
 		content: "Show";
@@ -200,12 +200,12 @@
 			transform: rotate(45deg);
 		}
 	}
-	@include respond-to-max($menu-respond) {
+	@include respond-to-max($c-vp) {
 		html.js & {
 			display: block;
 		}
 	}
-	@include respond-to($menu-respond) {
+	@include respond-to($c-vp) {
 		display: none;
 		html.js & {
 			display: none;
@@ -215,7 +215,8 @@
 
 .navigation-secondary {
 	display: block;
-	@include respond-to-max($menu-respond) {
+	border-top: 1px solid $iati-sunrise;
+	@include respond-to-max($c-vp) {
 		html.js & {
 			display: none;
 		}

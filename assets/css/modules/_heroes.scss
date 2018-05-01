@@ -10,6 +10,16 @@
     padding-bottom: 5em;
     margin-top: -15.5em;
     position: relative;
+    @include respond-to-max($menu-respond) {
+        &:before {
+            content: "";
+            position: absolute;
+            background-color: $iati-ocean;
+            width: 100%;
+            height: 100%;
+            top: -100%;
+        }
+    }
     &--image {
         border-bottom: 0;
         padding-bottom: 5em;
@@ -31,16 +41,6 @@
         border-bottom: 0;
         background-color: $iati-ocean;
         padding-bottom: 5em;
-        @include respond-to-max($menu-respond) {
-            &:before {
-                content: "";
-                position: absolute;
-                background-color: $iati-ocean;
-                width: 100%;
-                height: 100%;
-                top: -100%;
-            }
-        }
     }
     @include respond-to($c-vp) {
         padding-top: 20em;

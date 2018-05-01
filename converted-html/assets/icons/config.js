@@ -43,6 +43,7 @@ module.exports = {
 	ash: "#E3E3E3",
 	black: "#121212",
 	white: "#ffffff",
+    sunrise: "#ff7264",
   },
 
   dynamicColorOnly: true,
