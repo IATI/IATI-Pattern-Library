@@ -47,6 +47,15 @@
 		.listing--featured &, .listing--guidance & {
 			margin-bottom: 0;
 		}
+		@include respond-to($b-vp) {
+			.listing--people & {
+				margin-bottom: 0;
+				display: block;
+				float: left;
+				width: 25%;
+				margin-right: 5%;
+			}
+		}
 		@include respond-to($menu-respond) {
 			margin-bottom: 0;
 			display: block;
@@ -75,6 +84,14 @@
 		.ico {
 			top: -2px;
 			margin-right: 2px;
+		}
+		@include respond-to($b-vp) {
+			.listing--people & {
+				margin-bottom: 0;
+				display: block;
+				float: right;
+				width: 70%;
+			}
 		}
 		@include respond-to($menu-respond) {
 			display: block;
@@ -229,6 +246,7 @@
 			left: 0;
 			width: 100%;
 			height: 100%;
+			min-height: 300px;
 			img {
 				position: absolute;
 				top: 0;
