@@ -100,8 +100,11 @@
 }
 
 .hero__heading {
-    @extend .type-xl;
+    @include font-size($beta + 3);
     @extend .heading;
+    @include respond-to($menu-respond) {
+        @include font-size($alpha);
+    }
     color: #fff;
     // color: $iati-ocean;
     line-height: 1;
@@ -160,7 +163,7 @@
         }
     }
     @include respond-to($menu-respond) {
-        top: -28em;
+        top: -23em;
     }
     @include respond-to($d-vp) {
         top: -35em;
