@@ -195,6 +195,9 @@
 	@include font-size($epsilon);
 	margin-bottom: 1em;
 	padding-bottom: 0.5em;
+	.listing--people & {
+		max-width: 80%;
+	}
 	&:after {
 		content: "";
 		position: absolute;

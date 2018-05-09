@@ -5,6 +5,7 @@
 .button {
 	background: transparent; // // Reset button and reset elements
 	border: none; // Reset button and reset elements
+	-webkit-appearance: none;
 	// ------- //
 	display: inline-block;
 	text-align: left;

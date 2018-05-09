@@ -28,7 +28,7 @@
     width: 171px * 1.25;
     height: 40px * 1.25;
     display: block;
-    @include respond-to($menu-respond) {
+    @include respond-to($menu-respond + 50px) {
         width: 171px * 1.75;
         height: 40px * 1.75;
     }

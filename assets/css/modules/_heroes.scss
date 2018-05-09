@@ -3,6 +3,7 @@
 // ------------------------------------------------------------
 
 .hero {
+    overflow: hidden;
     // background: linear-gradient(180deg, $iati-ocean, $iati-ocean, #F6F6F6);
     background: linear-gradient(0deg, darken($iati-ocean, 4%) 4%, $iati-ocean 20%);
     margin-bottom: 5em;

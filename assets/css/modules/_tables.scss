@@ -3,11 +3,13 @@
 // ---------------------------------------
 
 table {
-	border-collapse: collapse;
-	overflow-x: auto;
-	display: block;
-	width: fit-content;
-	max-width: 100%;
+	@include respond-to-max($c-vp) {
+		border-collapse: collapse;
+		overflow-x: auto;
+		display: block;
+		width: fit-content;
+		max-width: 100%;
+	}
 	border: 1px solid $default-border-color;
 	.is-typeset & {
 		margin-top: 4em;
