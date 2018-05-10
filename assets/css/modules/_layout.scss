@@ -86,6 +86,9 @@
 			grid-template-columns: repeat(auto-fill, 30%);
 			grid-gap: 5%;
 		}
+		@supports (display: -ms-grid) {
+			display: block;
+		}
 	}
 	&__col {
 		margin-bottom: 3em;
@@ -109,6 +112,16 @@
 				margin-left: 0;
 				width: auto;
 			}
+			@supports (display: -ms-grid) {
+				float: left;
+				display: block;
+				width: 30%;
+				margin-left: 5%;
+				&:nth-child(3n+1) {
+					margin-left: 0;
+					clear: left;
+				}
+			}
 		}
 	}
 }
@@ -124,6 +137,9 @@
 			display: grid;
 			grid-template-columns: repeat(auto-fill, 47.5%);
 			grid-gap: 5%;
+		}
+		@supports (display: -ms-grid) {
+			display: block;
 		}
 	}
 	&__col {
@@ -151,6 +167,16 @@
 				margin-left: 0;
 				width: auto;
 			}
+			@supports (display: -ms-grid) {
+				float: left;
+				display: block;
+				width: 47.5%;
+				margin-left: 5%;
+				&:nth-child(2n+1) {
+					margin-left: 0;
+					clear: left;
+				}
+			}
 		}
 	}
 }
@@ -166,6 +192,10 @@
 			display: grid;
 			grid-template-columns: repeat(auto-fill, 30%);
 			grid-gap: 5%;
+			-ms-grid-columns: 30% 5% 30% 5% 30%;
+		}
+		@supports (display: -ms-grid) {
+			display: block;
 		}
 	}
 	.card {
@@ -185,6 +215,16 @@
 			@supports (display: grid) {
 				margin-left: 0;
 				width: auto;
+			}
+			@supports (display: -ms-grid) {
+				float: left;
+				display: block;
+				width: 30%;
+				margin-left: 5%;
+				&:nth-child(3n+1) {
+					margin-left: 0;
+					clear: left;
+				}
 			}
 		}
 	}

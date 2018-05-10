@@ -23,6 +23,12 @@
     }
     &--step{
         background-color: $iati-ocean;
+        min-height: 150px;
+        height: 100%;
+        @supports (display: grid) {
+            min-height: auto;
+            height: auto;
+        }
     }
     &--guidance {
         background-color: $iati-air;

@@ -62,11 +62,17 @@
 			float: left;
 			width: 35%;
 			margin-right: 5%;
-			.listing--featured &, .listing--guidance & {
+			.listing--featured & {
 				position: relative;
 				z-index: 1;
 				margin-right: 0;
 				width: 50%;
+			}
+			.listing--guidance & {
+				position: relative;
+				z-index: 1;
+				margin-right: 0;
+				width: 40%;
 			}
 			.listing--people & {
 				width: 25%;
@@ -107,7 +113,7 @@
    				will-change: transform;
 			}
 			.listing--guidance & {
-				width: 75%;
+				width: 60%;
 				margin-left: -5%;
 				z-index: 2;
 				transform: translateY(10px);
