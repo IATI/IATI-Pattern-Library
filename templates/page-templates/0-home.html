@@ -32,18 +32,7 @@
 {# --------------------------------------- #}
 
 {% block hero %}
-    <div class="hero">
-        <div class="row">
-            <div class="hero__caption">
-                <h1 class="hero__heading">{{ title }}</h1>
-
-                <p class="hero__subheading">IATI is a common format to share data on aid and development for better decision making and outcomes</p>
-            </div>
-            <div class="hero__emblem">
-                <img class="hero__emblem__mask" src="{{ global.assets_root }}/img/{{ hero_image }}" alt="alt tag">
-            </div>
-        </div>
-    </div>
+    {% include 'heroes/hero.html' %}
 {% endblock %}
 
 {% block body %}
