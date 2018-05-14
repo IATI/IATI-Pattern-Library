@@ -54,10 +54,10 @@
 			<main id="pagecontent" class="pagecontent -nofocus" role="main" tabindex="-1">
 				<div class="ui-hero">
 					<div class="ui-row">
-						<h2 class="ui-hero__heading">Imagery</h2>
+						<h2 class="ui-hero__heading">Heroes</h2>
 						<div class="ui-hero__caption">
 							
-	<p>Quick guide to image selection types, sizing and general rule sets. 
+	<p>This contains the different hero elements</p>
 
 						</div>
 					</div>
@@ -67,66 +67,199 @@
 				</div>
 
 				
-
-
 <div class="ui-row">
+
+	<!-- Duplicate this as a loop for each module within a section -->
 	<div class="ui-section">
 		<div class="ui-section__header">
+			<!-- Module name. Can be generated from file name perhaps? -->
+			<h2>Hero</h2>
+		</div>
+		<div class="ui-section__component">
+			
+			<div class="hero">
+    <div class="row">
+        <div class="hero__caption">
+            <h1 class="hero__heading">About IATI</h1>
+            <p class="hero__subheading">IATI is a common format to share data on aid and development for better decision making and outcomes</p>
+        </div>
+        <div class="hero__emblem">
+            <img class="hero__emblem__mask" src="/assets/img/hero3.jpg" alt="alt tag">
+        </div>
+    </div>
+</div>
+
+			
+		</div>
+		<div class="ui-section__body">
+			<div class="ui-section__main">
+				<div class="ui-section__code">
+					<pre><code>&lt;div class=&quot;hero&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;hero__caption&quot;&gt;
+            &lt;h1 class=&quot;hero__heading&quot;&gt;About IATI&lt;/h1&gt;
+            &lt;p class=&quot;hero__subheading&quot;&gt;IATI is a common format to share data on aid and development for better decision making and outcomes&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;hero__emblem&quot;&gt;
+            &lt;img class=&quot;hero__emblem__mask&quot; src=&quot;/assets/img/hero3.jpg&quot; alt=&quot;alt tag&quot;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+				</div>
+			</div>
+			<div class="ui-section__aside">
+				<div class="ui-section__notes">
+					<h4>Notes</h4>
+					<p>This hero should be used for top level section pages such as about, home, new etc. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end Duplicate -->
+
+	<!-- Duplicate this as a loop for each module within a section -->
+	<div class="ui-section">
+		<div class="ui-section__header">
+			<!-- Module name. Can be generated from file name perhaps? -->
+			<h2>Hero minor</h2>
+		</div>
+		<div class="ui-section__component" style="margin-top: 19em;">
+			
+			<div class="hero hero--minor">
+    <div class="row">
+        <div class="hero__caption">
+            <h1 class="hero__heading">About IATI</h1>
+            
+                <p class="hero__excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            
+        </div>
+    </div>
+</div>
+
+			
+		</div>
+		<div class="ui-section__body">
+			<div class="ui-section__main">
+				<div class="ui-section__code">
+					<pre><code>&lt;div class=&quot;hero hero--minor&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;hero__caption&quot;&gt;
+            &lt;h1 class=&quot;hero__heading&quot;&gt;About IATI&lt;/h1&gt;
+            
+                &lt;p class=&quot;hero__excerpt&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. &lt;/p&gt;
+            
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+				</div>
+			</div>
+			<div class="ui-section__aside">
+				<div class="ui-section__notes">
+					<h4>Notes</h4>
+					<p>This hero should be used for child pages within a section.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end Duplicate -->
+
+	<!-- Duplicate this as a loop for each module within a section -->
+	<div class="ui-section">
+		<div class="ui-section__header">
+			<!-- Module name. Can be generated from file name perhaps? -->
 			<h2>Hero image</h2>
 		</div>
+		<div class="ui-section__component" style="margin-top: 19em;">
+			
+			<div class="hero hero--image" style="background-image: url(/assets/img/hero3.jpg)">
+    <div class="row">
+        <div class="max-meter">
+            <div class="hero__caption">
+                <h1 class="hero__heading">About IATI</h1>
+
+                <p class="hero__subheading">Some large introductory text that can provide an overview of what this page is about</p>
+
+                <span class="hero__type">Event type</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+			
+		</div>
 		<div class="ui-section__body">
 			<div class="ui-section__main">
-				<img class="max-width" src="/assets/img/hero1.jpg"/>
+				<div class="ui-section__code">
+					<pre><code>&lt;div class=&quot;hero hero--image&quot; style=&quot;background-image: url(/assets/img/hero3.jpg)&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;max-meter&quot;&gt;
+            &lt;div class=&quot;hero__caption&quot;&gt;
+                &lt;h1 class=&quot;hero__heading&quot;&gt;About IATI&lt;/h1&gt;
+
+                &lt;p class=&quot;hero__subheading&quot;&gt;Some large introductory text that can provide an overview of what this page is about&lt;/p&gt;
+
+                &lt;span class=&quot;hero__type&quot;&gt;Event type&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+				</div>
 			</div>
 			<div class="ui-section__aside">
 				<div class="ui-section__notes">
 					<h4>Notes</h4>
-					<p>Size: 600x670</p><p>Target file size: <150kb</p><p>Format: .jpg</p>
+					<p>This is an example of a hero with a background image, this can be used for event single templates.</p>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
+	<!-- end Duplicate -->
 
-<div class="ui-row">
+	<!-- Duplicate this as a loop for each module within a section -->
 	<div class="ui-section">
 		<div class="ui-section__header">
-			<h2>Content image</h2>
+			<!-- Module name. Can be generated from file name perhaps? -->
+			<h2>Hero news</h2>
+		</div>
+		<div class="ui-section__component" style="margin-top: 19em;">
+			
+			<div class="hero hero--minor">
+    <div class="row">
+        <div class="max-meter max-meter--center">
+            <div class="hero__caption">
+                <h1 class="hero__heading">About IATI</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+			
 		</div>
 		<div class="ui-section__body">
 			<div class="ui-section__main">
-				<img class="max-width" src="/assets/img/content-image.jpg"/>
+				<div class="ui-section__code">
+					<pre><code>&lt;div class=&quot;hero hero--minor&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;max-meter max-meter--center&quot;&gt;
+            &lt;div class=&quot;hero__caption&quot;&gt;
+                &lt;h1 class=&quot;hero__heading&quot;&gt;About IATI&lt;/h1&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+				</div>
 			</div>
 			<div class="ui-section__aside">
 				<div class="ui-section__notes">
 					<h4>Notes</h4>
-					<p>Size: 700x500</p><p>Target file size: <150kb</p><p>Format: .jpg</p>
+					<p>This is an example of hero for a news post.</p>
 				</div>
 			</div>
 		</div>
 	</div>
+	<!-- end Duplicate -->
+
 </div>
-
-<div class="ui-row">
-	<div class="ui-section">
-		<div class="ui-section__header">
-			<h2>Profile</h2>
-		</div>
-		<div class="ui-section__body">
-			<div class="ui-section__main">
-				<img class="max-width" src="/assets/img/portrait.png"/>
-			</div>
-			<div class="ui-section__aside">
-				<div class="ui-section__notes">
-					<h4>Notes</h4>
-					<p>Size: 600x600</p><p>Target file size: <150kb</p><p>Format: .jpg</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-
 
 			</main>
 			
