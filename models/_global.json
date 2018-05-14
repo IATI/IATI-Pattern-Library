@@ -18,11 +18,14 @@
 		{ "name": "Alerts", "url": "alerts" },
 		{ "name": "Buttons", "url": "buttons" },
 		{ "name": "Colour", "url": "colour" },
+        { "name": "Images", "url": "images" },
 		{ "name": "Typography", "url": "typography" }
 	],
 
 	"pages_modules": [
-        { "name": "Global", "url": "global" }
+        { "name": "Asides", "url": "asides" },
+        { "name": "Global", "url": "global" },
+        { "name": "Heroes", "url": "heroes" }
 	],
 
 	"pages_developer_guide": [

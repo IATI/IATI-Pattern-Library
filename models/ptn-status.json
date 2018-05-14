@@ -21,7 +21,7 @@
 	},
 	{
 		"name": "01-1b-about-subpage-3-levels",
-		"stage": "review"
+		"stage": "approved"
 	},
 	{
 		"name": "01-2-case-studies",
@@ -53,7 +53,7 @@
 	},
 	{
 		"name": "02-3-guidance-single",
-		"stage": "review"
+		"stage": "approved"
 	},
 	{
 		"name": "02-4-guidance-group",
@@ -69,7 +69,7 @@
 	},
 	{
 		"name": "02-6a-knowledgebase-search-zero-results",
-		"stage": "review"
+		"stage": "approved"
 	},
 	{
 		"name": "02-7-knowledgebase-single",
