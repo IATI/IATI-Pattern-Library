@@ -21,17 +21,17 @@
 		p, li {
 			 @include font-size($para*1.22);
 		}
-		h1, h2 {
+		h1 {
 			@include font-size($beta*1.22);
 		}
-		h3, h4 {
+		h2 {
 			@include font-size($gamma*1.22);
 		}
-		h5 {
-			@include font-size($epsilon*1.22);
-		}
-		h6 {
+		h3 {
 			@include font-size($delta*1.22);
+		}
+		h4, h5, h6 {
+			@include font-size($epsilon*1.22);
 		}
 		blockquote {
 			margin-right: -8em;
