@@ -15,5 +15,12 @@
             "image_name": "content-image3.jpg",
 		    "excerpt": "Nullam magna ligula, sagittis vitae faucibus ut, sollicitudin et mauris. Donec et varius lacus."
 		}
+    ],
+    "studies_pl": [
+        {
+            "title": "São Tomé and Príncipe is IATI’s first Portuguese-speaking Member",
+            "image_name": "content-image3.jpg",
+            "excerpt": "Nullam magna ligula, sagittis vitae faucibus ut, sollicitudin et mauris. Donec et varius lacus."
+        }
     ]
 }

@@ -102,5 +102,33 @@
         {
 		    "title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor."
 		}
+    ],
+    "knowledgebase_pl": [
+        {
+		     "title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor."
+		}
+    ],
+    "guidance_pl": [
+        {
+		    "title": "What data shoud I publish?",
+		    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "flag": false
+		}
+    ],
+    "guidance_stacked_pl": [
+        {
+		    "title": "What data shoud I publish?",
+		    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "flag": true
+		}
+    ],
+    "guidance_parent_pl": [
+        {
+            "title": "Publish your data to the IATI Standard",
+            "image_name": "content-image2.jpg",
+            "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "excerpt_list": true,
+            "button_text": "Publishing your data to the IATI Standard"
+        }
     ]
 }
