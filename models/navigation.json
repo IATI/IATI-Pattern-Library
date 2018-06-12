@@ -11,7 +11,12 @@
 		    "hidden": false
 		},
 		{
-		    "label": "Data",
+		    "label": "Iati Registry",
+		    "in_section": "registry",
+		    "hidden": false
+		},
+        {
+		    "label": "Using Data",
 		    "in_section": "data",
 		    "hidden": false
 		},
