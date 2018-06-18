@@ -44,7 +44,7 @@
 		"stage": "approved"
 	},
 	{
-		"name": "02a-guidance-support",
+		"name": "02-1-guidance-support",
 		"stage": "approved"
 	},
 	{
@@ -118,5 +118,9 @@
 	{
 		"name": "06-standard-page",
 		"stage": "approved"
+	},
+	{
+		"name": "07-website-link",
+		"stage": "template"
 	}
 ]

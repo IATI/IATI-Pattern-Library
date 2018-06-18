@@ -83,8 +83,8 @@
 	@include respond-to($c-vp) {
 		@supports (display: grid) {
 			display: grid;
-			grid-template-columns: repeat(auto-fill, 30%);
-			grid-gap: 5%;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-gap: 50px;
 		}
 		@supports (display: -ms-grid) {
 			display: block;
@@ -135,8 +135,8 @@
 	@include respond-to($c-vp) {
 		@supports (display: grid) {
 			display: grid;
-			grid-template-columns: repeat(auto-fill, 47.5%);
-			grid-gap: 5%;
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 50px;
 		}
 		@supports (display: -ms-grid) {
 			display: block;
@@ -190,8 +190,8 @@
 	@include respond-to($c-vp) {
 		@supports (display: grid) {
 			display: grid;
-			grid-template-columns: repeat(auto-fill, 30%);
-			grid-gap: 5%;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-gap: 50px;
 			-ms-grid-columns: 30% 5% 30% 5% 30%;
 		}
 		@supports (display: -ms-grid) {
