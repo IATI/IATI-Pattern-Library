@@ -15,12 +15,13 @@ upload_files() {
   git subtree push --prefix converted-html origin-pages gh-pages
 }
 
-if [[ $TRAVIS_BRANCH == 'master' ]]
-then
-  echo Deploying master branch converted-html to gh-pages branch.
+echo On branch ${TRAVIS_BRANCH}.
+
+if [ $TRAVIS_BRANCH == 'master' ]; then
+  echo Deploying converted-html to gh-pages branch.
   setup_git
   commit_website_files
   upload_files
 else
-  echo Not master branch. Skipping deployment.
+  echo Skipping gh-pages deployment.
 fi
