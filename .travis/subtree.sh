@@ -17,9 +17,10 @@ upload_files() {
   git branch -D gh-pages
 }
 
-echo On branch ${TRAVIS_BRANCH}.
+export BRANCH=$(if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo $TRAVIS_BRANCH; else echo $TRAVIS_PULL_REQUEST_BRANCH; fi)
+echo On branch ${BRANCH}.
 
-if [ $TRAVIS_BRANCH == 'master' ]; then
+if [ $BRANCH == 'master' ]; then
   echo Deploying converted-html to gh-pages branch.
   setup_git
   commit_website_files
