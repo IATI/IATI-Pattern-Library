@@ -6,13 +6,13 @@ setup_git() {
 }
 
 commit_website_files() {
+  echo styles.iatistandard.org > converted-html/CNAME
   git add .
   git commit --message "Travis build $TRAVIS_BUILD_NUMBER"
 }
 
 upload_files() {
   git remote add origin-pages https://${GH_TOKEN}@github.com/IATI/IATI-Pattern-Library.git > /dev/null 2>&1
-  echo styles.iatistandard.org > converted-html/CNAME
   git subtree split --prefix converted-html -b gh-pages
   git push -f origin-pages gh-pages:gh-pages
   git branch -D gh-pages
