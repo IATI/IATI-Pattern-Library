@@ -39,6 +39,9 @@
 		a {
 			border-bottom: 2px solid #06dbe4;
 		}
+		p {
+			margin-bottom: 0px;
+		}
 	}
 	&--alignleft {
 		width: 50%;
@@ -61,8 +64,8 @@
 	&--center {
 		@include respond-to($c-vp) {
 			width: 60%;
-			margin-left: auto;
-			margin-right: auto;
+			margin-left: auto !important;
+			margin-right: auto !important;
 		}
 	}
 }

@@ -97,3 +97,17 @@ We also have some additional JS near the closing `</body>` tag… This will be m
 </script>
 ```
 
+## Developer setup and usage
+
+The pattern library requires nodejs, npm and [skelly](https://www.npmjs.com/package/skelly) to run.
+
+```
+# Install Skelly using the node package manager globally
+$ npm install -g skelly
+
+# Run a live server
+$ skelly serve
+```
+
+This will run a process to watch for changes to application files and will compile new versions on save.
+Additional commands can be found using `skelly —-help`.
