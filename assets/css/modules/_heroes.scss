@@ -3,11 +3,26 @@
 // ------------------------------------------------------------
 
 .hero {
+    // background: linear-gradient(180deg, $iati-ocean, $iati-ocean, #F6F6F6);
+    background: linear-gradient(0deg, darken($iati-ocean, 4%) 4%, $iati-ocean 20%);
     margin-bottom: 5em;
     padding-top: 15em;
+    padding-bottom: 5em;
     margin-top: -15.5em;
     position: relative;
+    @include respond-to-max($menu-respond) {
+        &:before {
+            content: "";
+            position: absolute;
+            background-color: $iati-ocean;
+            width: 100%;
+            height: 100%;
+            top: -100%;
+            z-index: 1;
+        }
+    }
     &--image {
+        border-bottom: 0;
         padding-bottom: 5em;
         background-size: cover;
         background-position: center center;
@@ -24,22 +39,14 @@
         }
     }
     &--minor {
+        border-bottom: 0;
         background-color: $iati-ocean;
         padding-bottom: 5em;
-        @include respond-to-max($menu-respond) {
-            &:before {
-                content: "";
-                position: absolute;
-                background-color: $iati-ocean;
-                width: 100%;
-                height: 100%;
-                top: -100%;
-            }
-        }
     }
     @include respond-to($c-vp) {
+        overflow: hidden;
         padding-top: 20em;
-        margin-bottom: 8em;
+        // margin-bottom: 8em;
         &--image {
             padding-top: 25em;
             margin-bottom: 5em;
@@ -48,7 +55,7 @@
             position: relative;
             &:after {
                 content: "";
-                background-image: url(../svg/source/marque-white.svg);
+                background-image: url(../img/marque-white.png);
                 background-size: 70%;
                 background-repeat: no-repeat;
                 background-position: top right;
@@ -60,6 +67,7 @@
                 width: 100%;
                 height: 100%;
             }
+
         }
     }
     @include respond-to($menu-respond) {
@@ -86,28 +94,52 @@
     padding-left: 1.5em;
     @include respond-to($c-vp) {
         max-width: 50%;
-        .hero--image & {
+        .hero--image &,
+        .max-meter & {
             max-width: 100%;
         }
     }
 }
 
 .hero__heading {
-    @extend .type-xl;
+    @include font-size($beta + 3);
     @extend .heading;
-    color: $iati-ocean;
+    @include respond-to($menu-respond) {
+        @include font-size($alpha);
+    }
+    color: #fff;
+    // color: $iati-ocean;
     line-height: 1;
+    word-wrap: break-word;
+    word-break: keep-all;
+    hyphens: auto;
     .hero--image &, .hero--minor & {
         color: #fff;
     }
 }
 
+.hero__subheading {
+    @include font-size($delta);
+    color: #fff;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
 .hero__excerpt {
     @include font-size($para);
+    color: #fff;
     margin-top: 1em;
     .hero--minor & {
         color: #fff;
     }
+}
+
+.hero__type {
+    @extend .heading;
+    @include font-size($para);
+    color: #fff;
+    display: block;
+    text-transform: uppercase;
 }
 
 .hero__emblem {
@@ -121,9 +153,19 @@
         img {
             max-width: 100%;
         }
+        html.no-cssmask & {
+            background-image: url(../img/marque-white.png);
+            background-size: 43%;
+            background-repeat: no-repeat;
+            background-position: top right;
+            display: block;
+            width: 100%;
+            height: 1000%;
+            opacity: 0.5;
+        }
     }
     @include respond-to($menu-respond) {
-        top: -28em;
+        top: -23em;
     }
     @include respond-to($d-vp) {
         top: -35em;
@@ -145,5 +187,8 @@
     }
     @include respond-to($d-vp) {
         height: 550px;
+    }
+    html.no-cssmask & {
+        display: none;
     }
 }

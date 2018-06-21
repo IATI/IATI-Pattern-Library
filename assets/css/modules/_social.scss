@@ -5,13 +5,20 @@
 .social-list {
     @extend %clearfix;
     .footer & {
-        margin-top: 2em;
+        display: block;
+        margin-top: 1em;
+        @include respond-to($b-vp) {
+            float: right;
+            margin-top: 0;
+        }
     }
 }
 
 .social-list__item {
     display: inline-block;
-    margin-right: 1em;
+    &:not(:last-child) {
+        margin-right: 1em;
+    }
     a {
         display: block;
         width: 35px;

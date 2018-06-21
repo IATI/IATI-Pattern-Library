@@ -23,7 +23,7 @@
 
 .l-standard {
 	@extend %l;
-	padding: 6em 0;
+	padding-bottom: 6em;
 }
 
 .l-error {
@@ -37,9 +37,13 @@
 
 .l-sidebar {
 	@extend %l;
-	margin-bottom: 5em;
+	@include respond-to($sidebar-respond) {
+		margin-bottom: 5em;
+	}
 	&__aside {
-		.l-sidebar--reverse & {
+		margin-bottom: 5em;
+		.l-sidebar--reverse &,
+		.l-sidebar--mobile & {
 			margin-bottom: 3em;
 		}
 		@include respond-to($sidebar-respond) {
@@ -64,6 +68,7 @@
 				float: right;
 				padding-right: 0;
 				padding-left: 5em;
+				order: 1;
 			}
 		}
 	}
@@ -78,12 +83,18 @@
 	@include respond-to($c-vp) {
 		@supports (display: grid) {
 			display: grid;
-			grid-template-columns: repeat(auto-fill, 30%);
-			grid-gap: 5%;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-gap: 50px;
+		}
+		@supports (display: -ms-grid) {
+			display: block;
 		}
 	}
 	&__col {
 		margin-bottom: 3em;
+		&--small {
+			margin-bottom: 1.5em;
+		}
 		@include respond-to($c-vp) {
 			float: left;
 			display: block;
@@ -101,6 +112,16 @@
 				margin-left: 0;
 				width: auto;
 			}
+			@supports (display: -ms-grid) {
+				float: left;
+				display: block;
+				width: 30%;
+				margin-left: 5%;
+				&:nth-child(3n+1) {
+					margin-left: 0;
+					clear: left;
+				}
+			}
 		}
 	}
 }
@@ -114,12 +135,18 @@
 	@include respond-to($c-vp) {
 		@supports (display: grid) {
 			display: grid;
-			grid-template-columns: repeat(auto-fill, 47.5%);
-			grid-gap: 5%;
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 50px;
+		}
+		@supports (display: -ms-grid) {
+			display: block;
 		}
 	}
 	&__col {
 		margin-bottom: 3em;
+		&--small {
+			margin-bottom: 1.5em;
+		}
 		@include respond-to($c-vp) {
 			float: left;
 			display: block;
@@ -133,9 +160,101 @@
 					margin-left: 0;
 				}
 			}
+			&--small {
+				margin-bottom: 1.5em;
+			}
 			@supports (display: grid) {
 				margin-left: 0;
 				width: auto;
+			}
+			@supports (display: -ms-grid) {
+				float: left;
+				display: block;
+				width: 47.5%;
+				margin-left: 5%;
+				&:nth-child(2n+1) {
+					margin-left: 0;
+					clear: left;
+				}
+			}
+		}
+	}
+}
+
+// ------------------------------------------------------------
+// Cards
+// ------------------------------------------------------------
+
+.l-cards {
+	@extend %l;
+	@include respond-to($c-vp) {
+		@supports (display: grid) {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-gap: 50px;
+			-ms-grid-columns: 30% 5% 30% 5% 30%;
+		}
+		@supports (display: -ms-grid) {
+			display: block;
+		}
+	}
+	.card {
+		margin-bottom: 3em;
+		@include respond-to($c-vp) {
+			float: left;
+			display: block;
+			width: 30%;
+			margin-left: 5%;
+			&:nth-child(3n+1) {
+				margin-left: 0;
+				clear: left;
+				@supports (display: grid) {
+					margin-left: 0;
+				}
+			}
+			@supports (display: grid) {
+				margin-left: 0;
+				width: auto;
+			}
+			@supports (display: -ms-grid) {
+				float: left;
+				display: block;
+				width: 30%;
+				margin-left: 5%;
+				&:nth-child(3n+1) {
+					margin-left: 0;
+					clear: left;
+				}
+			}
+		}
+	}
+}
+
+.l-cards-block {
+	margin-top: 3em;
+	.card {
+		margin-bottom: 3em;
+		display: block;
+	}
+}
+
+.l-cards-offset {
+	@extend %l;
+	@include respond-to($c-vp) {
+		@supports (display: flex) {
+			display: flex;
+			flex-wrap: wrap;
+		}
+	}
+	.card {
+		@include respond-to($c-vp) {
+			float: left;
+			display: block;
+			width: 35%;
+			+.card {
+				width: 65%;
+				float: right;
+				margin-right: 0;
 			}
 		}
 	}

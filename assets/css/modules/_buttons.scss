@@ -5,6 +5,7 @@
 .button {
 	background: transparent; // // Reset button and reset elements
 	border: none; // Reset button and reset elements
+	-webkit-appearance: none;
 	// ------- //
 	display: inline-block;
 	text-align: left;
@@ -14,8 +15,8 @@
 	letter-spacing: 1px;
 	line-height: 1;
 	color: $heading-color;
-	background-color: darken($action-respond, 15%);
-	background: linear-gradient(30deg, darken($action-respond, 15%), $action-respond);
+	background-color: $action-respond;
+	//background: linear-gradient(30deg, darken($action-respond, 15%), $action-respond);
 	border-bottom: 2px solid rgba(0,0,0,0.25);
 	text-decoration: none;
 	position: relative;
@@ -24,17 +25,24 @@
 	transition: all, ease-in-out, 0.3s;
 	@include link-active-styles {
 		color: #fff;
-		background-color: $action-respond;
-		background: linear-gradient(30deg, $action-respond, $action-respond);
-		color: $heading-color;
+		background-color: $action;
+		//background: linear-gradient(30deg, $action-respond, $action-respond);
+		color: #fff;
 	}
 }
 
 // Give actual buttons some love
-button.button {
-	width: 100%;
+button.button, input.button {
+	//width: 100%;
+	height: $form-item-height;
 	.footer & {
+		display: inline-block;
 		width: auto;
+		margin-top: 0.5em;
+		@include respond-to($d-vp) {
+			height: $form-item-height;
+			margin-top: 0;
+		}
 	}
 }
 
@@ -69,17 +77,23 @@ button.button {
 .button--block {
 	display: block;
 	width: 100%;
+	text-align: center;
 }
 
 .button--secondary {
 	color: #fff;
 	background-color: $action;
-	background: linear-gradient(30deg, $action, $iati-sunset);
+	//background: linear-gradient(30deg, $action, $iati-sunset);
 	@include link-active-styles {
-		color: #fff;
-		background-color: $iati-sunset;
-		background: linear-gradient(30deg, $iati-sunset, $iati-sunset);
+		color: $heading-color;
+		background-color: $action-respond;
+		//background: linear-gradient(30deg, $iati-sunset, $iati-sunset);
 	}
+}
+
+.button--large {
+	@include font-size($epsilon);
+	text-align: center;
 }
 
 .button--disabled {

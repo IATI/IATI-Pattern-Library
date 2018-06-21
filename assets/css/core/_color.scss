@@ -15,6 +15,8 @@ $iati-wind                          :#a66ee9;
 $iati-ash                           :#E3E3E3;
 
 $iati-land-light                    :#91E0CE;
+$iati-air-light                     :#b6e4e5;
+$iati-sunrise-light                 :#faecea;
 
 // Social shit
 // ------------------------------------------------------------
@@ -45,7 +47,7 @@ $action								: $iati-ocean;
 $action-respond						: $iati-air;
 
 // Borders
-$default-border-color 				: #E3E3E3;
+$default-border-color 				: #ddd;
 
 // Forms
 $form-label-color					: $heading-color;
@@ -63,4 +65,4 @@ $nav-toggle-color-active			: $action;
 // Often good to keep these 'off–brand' for UX clairty
 $warning 							: #b2a216;					// Careful now
 $error 								: #f25111;					// Down with that sort of thing
-$success 							: #41b38e;					// Good bunch of lads
+$success 							: #40962b;					// Good bunch of lads

@@ -35,7 +35,7 @@ $max-vp								: $e-vp + $internal-spacing-pixel*2;	// Max viewport
 // Set assignments
 // --------------------------
 $table-respond						: $c-vp;								// Responsive tables
-$menu-respond						: 920px;								// If using ss/non ss navigation
+$menu-respond						: 1150px;								// If using ss/non ss navigation
 $sidebar-respond					: $c-vp;								// Sidebar switch point
 $sidebar-aside-width				: 25%;								    // Sidebar column default
 $sidebar-body-width					: 70%;								// Sidebar body default
@@ -83,4 +83,4 @@ $form-legend-size	: $delta;		// Form legend size
 // Calc units
 // --------------------------------
 $rembase 			: 10;			// What do we want our units to calculate from. 10 is nice and easy
-$base-rhythm		: 24;			// Vertical rhythm
+$base-rhythm		: 25;			// Vertical rhythm

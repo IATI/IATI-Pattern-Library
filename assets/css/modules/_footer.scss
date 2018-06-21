@@ -22,7 +22,6 @@
     padding: 2em 0;
 }
 
-
 .footer__heading {
     @extend .heading;
     @include font-size($epsilon);
@@ -55,11 +54,18 @@
     }
 }
 
+.footer__meta-flex {
+    @extend %l-flexbox;
+    align-items: center;
+}
 
 .footer__legal {
     @include font-size($zeta);
     color: #fff;
-    float: left;
-    width: 50%;
-    margin-top: 0.8em;
+    display: block;
+    @include respond-to($b-vp) {
+        display: inline-block;
+        float: left;
+        margin-top: 0.5em;
+    }
 }

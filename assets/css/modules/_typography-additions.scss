@@ -3,6 +3,7 @@
 // ------------------------------------------------------------
 
 .max-meter 				{ max-width: 700px; }
+.max-meter--wide 		{ max-width: 800px; }
 .max-meter--center 		{ margin-left: auto; margin-right: auto; }
 
 .align-center 			{ text-align: center; }
@@ -18,32 +19,32 @@
 .is-typeset.is-typeset--article {
 	@include respond-to($menu-respond) {
 		p, li {
-			 @include font-size($para*1.25);
+			 @include font-size($para*1.22);
 		}
-		h1, h2 {
-			@include font-size($beta*1.25);
+		h1 {
+			@include font-size($beta*1.22);
 		}
-		h3, h4 {
-			@include font-size($gamma*1.25);
+		h2 {
+			@include font-size($gamma*1.22);
 		}
-		h5 {
-			@include font-size($epsilon*1.25);
+		h3 {
+			@include font-size($delta*1.22);
 		}
-		h6 {
-			@include font-size($delta*1.25);
+		h4, h5, h6 {
+			@include font-size($epsilon*1.22);
 		}
 		blockquote {
-			margin-right: -8em;
+			margin-right: -2em;
 			p {
 				@include font-size($quote);
 			}
 		}
 		img {
 			&.alignleft {
-				margin-left: -8em;
+				margin-left: -2em;
 			}
 			&.alignright {
-				margin-right: -8em;
+				margin-right: -2em;
 			}
 		}
 	}
@@ -72,6 +73,7 @@
 		color: $heading-color;
 	}
 	cite {
+		@include font-size($zeta);
 		display: block;
 	}
 }

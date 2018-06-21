@@ -4,6 +4,10 @@
 
 .form {
 	position: relative;
+	&--support {
+		border-left: 3px solid $default-border-color;
+		padding-left: 2em;
+	}
 }
 
 // ------------------------------------------------------------
@@ -48,17 +52,21 @@
 
 // Space the form field
 .form-field--spaced {
-	padding-top: $internal-spacing;
+	padding-top: $internal-spacing/1.5;
 	.footer & {
 		padding-top: $internal-spacing/3;
 	}
+}
+
+.form-flex {
+	@extend %l-flexbox;
 }
 
 // Standard form elements
 .form-item {
 	padding: 0 $form-padding/2;
 	display: block;
-	border: $default-border-width solid $default-border-color;
+	border: $default-border-width solid #909095;
 	appearance: none;
 	background-color: #fff;
 	min-height: $form-item-height;
@@ -73,7 +81,17 @@
 	}
 	.footer & {
 		border: none;
+		display: inline-block;
+		width: 100%;
+		@include respond-to($d-vp) {
+			width: 70%;
+			float: left;
+		}
 	}
+}
+
+.form-file {
+	@include font-size($form-label-size);
 }
 
 // Turn off spinners for number input field, as flipping ugly

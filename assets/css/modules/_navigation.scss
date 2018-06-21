@@ -177,10 +177,10 @@
 	position: relative;
 	padding: 1em;
 	@include font-size($epsilon);
-	background-color: lighten($iati-sunset, 15%);
+	background-color: #fff;
 	display: block;
 	width: 100%;
-	color: #fff;
+	color: $iati-sunrise;
 	outline: none;
 	&:before {
 		content: "Show";
@@ -200,12 +200,12 @@
 			transform: rotate(45deg);
 		}
 	}
-	@include respond-to-max($menu-respond) {
+	@include respond-to-max($c-vp) {
 		html.js & {
 			display: block;
 		}
 	}
-	@include respond-to($menu-respond) {
+	@include respond-to($c-vp) {
 		display: none;
 		html.js & {
 			display: none;
@@ -215,7 +215,8 @@
 
 .navigation-secondary {
 	display: block;
-	@include respond-to-max($menu-respond) {
+	border-top: 1px solid $iati-sunrise;
+	@include respond-to-max($c-vp) {
 		html.js & {
 			display: none;
 		}
@@ -229,7 +230,7 @@
 		margin-top: 1px;
 		@include font-size($epsilon);
 		a {
-			border-left: 2px solid $iati-sunset;
+			border-left: 2px solid $iati-sunrise;
 			padding: 0.75em 1em;
 			margin-top: 1px;
 			color: $heading-color;
@@ -241,22 +242,45 @@
 			}
 		}
 		&--active a {
+			background-color: $iati-sunrise;
 			border-left-width: 4px;
-			text-decoration: underline;
+			color: #fff;
 		}
 	}
 }
 
 .navigation-secondary__child {
-	margin-left: 1.2em;
 	&__item {
 		a {
-			border-left-width: 2px;
-			text-decoration: none;
+			background-color: lighten($iati-sunrise, 24%);
+			border-left-width: 4px;
+			color: $heading-color;
+			padding-left: 1.5em;
+			&:hover {
+				border-left-width: 6px;
+			}
 		}
 		&--active a {
-			border-left-width: 4px;
-			text-decoration: underline;
+			background-color: lighten($iati-sunrise, 6%);
+			border-left-color: lighten($iati-sunrise, 6%);
+			color: #fff;
+		}
+	}
+}
+
+.navigation-secondary__third-child {
+	&__item {
+		a {
+			background-color: lighten($iati-sunrise, 20%);
+			border-left-width: 6px;
+			color: $heading-color;
+			padding-left: 2em;
+			&:hover {
+				border-left-width: 8px;
+			}
+		}
+		&--active a {
+			border-left-width: 8px;
 		}
 	}
 }

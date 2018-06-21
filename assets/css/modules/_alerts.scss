@@ -9,6 +9,7 @@
 	display: block;
 	position: relative;
 	@include font-size($para);
+	//box-shadow: 0 0 50px 0 rgba(#000, 0.15);
 	.form & {
 		margin-top: $internal-spacing;
 	}
@@ -26,18 +27,18 @@
 }
 
 .alert--notice {
-	color: $warning;
-	background-color: lighten($warning, 55%);
+	color: darken($warning, 15%);
+	border-left: 3px solid $warning;
 }
 
 .alert--error {
 	@extend .alert--notice;
-	background-color: lighten($error, 40%);
+	border-left: 3px solid $error;
 	color: $error;
 }
 
 .alert--success {
 	@extend .alert--notice;
-	background-color: lighten($success, 45%);
+	border-left: 3px solid $success;
 	color: $success;
 }

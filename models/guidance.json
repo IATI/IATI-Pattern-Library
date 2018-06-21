@@ -1,0 +1,134 @@
+{
+    "guidance_parent": [
+        {
+		    "title": "Preparing your organisation",
+            "image_name": "content-image3.jpg",
+		    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "excerpt_list": true,
+            "button_text": "Find out how to prepare your organisation"
+		},
+        {
+		    "title": "Preparing your data",
+            "image_name": "content-image.jpg",
+		    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "excerpt_list": true,
+            "button_text": "Collating and preparing your data"
+		},
+        {
+		    "title": "Publish your data to the IATI Standard",
+            "image_name": "content-image2.jpg",
+		    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "excerpt_list": true,
+            "button_text": "Publishing your data to the IATI Standard"
+		}
+    ],
+    "guidance_list": [
+        {
+		    "title": "What data shoud I publish?",
+		    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "flag": false
+		},
+        {
+		    "title": "How to use IATI reference?",
+		    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "flag": false
+		},
+        {
+		    "title": "Activity information",
+		    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "flag": true
+		},
+        {
+		    "title": "Guidance on specefic thematic areas",
+		    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "flag": false
+		},
+        {
+		    "title": "Creating files",
+		    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "flag": false
+		},
+        {
+		    "title": "Data Quality",
+		    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "flag": true
+		},
+        {
+		    "title": "Organisation information",
+		    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "flag": true
+		}
+    ],
+    "related_guidance": [
+        {
+		    "title": "What data shoud I publish?",
+		    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "flag": false
+		},
+        {
+		    "title": "How to use IATI reference?",
+		    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "flag": false
+		},
+        {
+		    "title": "Activity information",
+		    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "flag": false
+		}
+    ],
+    "guidance_next": [
+        {
+		    "title": "What data shoud I publish?",
+		    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "flag": false
+		}
+    ],
+    "knowledgebase_list": [
+        {
+		    "title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor."
+		},
+        {
+		    "title": "Lorem ipsum dolor sit amet, consectetur adipisicing."
+		},
+        {
+		    "title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et."
+		},
+        {
+		    "title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor."
+		},
+        {
+		    "title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor."
+		},
+        {
+		    "title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor."
+		}
+    ],
+    "knowledgebase_pl": [
+        {
+		     "title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor."
+		}
+    ],
+    "guidance_pl": [
+        {
+		    "title": "What data shoud I publish?",
+		    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "flag": false
+		}
+    ],
+    "guidance_stacked_pl": [
+        {
+		    "title": "What data shoud I publish?",
+		    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "flag": true
+		}
+    ],
+    "guidance_parent_pl": [
+        {
+            "title": "Publish your data to the IATI Standard",
+            "image_name": "content-image2.jpg",
+            "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "excerpt_list": true,
+            "button_text": "Publishing your data to the IATI Standard"
+        }
+    ]
+}

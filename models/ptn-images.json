@@ -1,7 +1,17 @@
 [
-	{ 
-		"name": "Example image",
-		"image_name": "ptn-example.jpg",
-		"direction": "<p>Add art direction using simple html tags</p>" 
+	{
+		"name": "Hero image",
+		"image_name": "hero1.jpg",
+		"direction": "<p>Size: 600x670</p><p>Target file size: <150kb</p><p>Format: .jpg</p>"
+	},
+	{
+		"name": "Content image",
+		"image_name": "content-image.jpg",
+		"direction": "<p>Size: 700x500</p><p>Target file size: <150kb</p><p>Format: .jpg</p>"
+	},
+	{
+		"name": "Profile",
+		"image_name": "portrait.png",
+		"direction": "<p>Size: 600x600</p><p>Target file size: <150kb</p><p>Format: .jpg</p>"
 	}
 ]

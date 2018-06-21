@@ -30,26 +30,18 @@
 {# --------------------------------------- #}
 
 {% block hero %}
-    <div class="hero hero--minor">
-        <div class="row">
-            <div class="hero__caption">
-                <h1 class="hero__heading">{{ title }}</h1>
-                {% if hero_copy %}
-                    <p class="hero__excerpt">{{ hero_copy }}</p>
-                {% endif %}
-            </div>
-            <div class="hero__emblem"></div>
-        </div>
-    </div>
+    {% include 'heroes/hero-minor.html' %}
 {% endblock %}
 
 {% block aside %}
 	<div class="aside-m">
-        <div class="aside-m__header fill-sunset">
+        <div class="aside-m__header fill-sunrise">
             <h3 class="aside-m__heading">In this section</h3>
         </div>
         {% include 'navigation/secondary-child.html' %}
     </div>
+
+    {% include 'asides/cta-members.html' %}
 {% endblock %}
 
 {% block main %}
