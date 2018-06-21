@@ -34,17 +34,17 @@
 			@include font-size($epsilon*1.22);
 		}
 		blockquote {
-			margin-right: -8em;
+			margin-right: -2em;
 			p {
 				@include font-size($quote);
 			}
 		}
 		img {
 			&.alignleft {
-				margin-left: -8em;
+				margin-left: -2em;
 			}
 			&.alignright {
-				margin-right: -8em;
+				margin-right: -2em;
 			}
 		}
 	}
