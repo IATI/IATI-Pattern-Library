@@ -2,12 +2,11 @@ language: node_js
 node_js:
 - iojs
 - '7'
-before_install: dpkg --compare-versions `npm -v` ge 5.8 || npm i -g npm@^5.8
 before_script:
 - npm install -g skelly
 script: skelly build
 after_success:
-- .travis/subtree.sh
+- ".travis/subtree.sh"
 env:
   global:
     secure: UJIJv6H3ZAWWvYwwLILSonHZTsdK/eoRwQSKqTUfxlMHTBK2jLnNk4jqau31CuinhGAFEurOSFFe012vNDNcVeEIKkOy2EsuwGn69Z7OAp0UrKNZxIFo+3xEluNs1gvCWBNjTahLTDkamteZfk7+ybC4qTnKi8Irn/h5uM7DXoC0GYaXA1lUhpLnauSkTgJeDcyxbdLmm6rXPbTRMwqH/x68FKqcLawQ0FzYdfgjwzL6Fi1icgrKF0Wi3OrOQs+SOF9JMCWA8oQPxynphMjQePYUYhY8RMUQgFcwjRPlRoFn3bBHaUamEP4f0p1bIgTJeZPhBSRkIKY/5fnBFpTunKZBdtwms4IGvfpqKNqlMKBW1Sdm9SQkx67k+xmcv7sKTpWY62fVNUqsCNv2L3hF6vPa5XJR5eBTqmMjQ4te29WTGjI6/XgvpzRI/SEwL8k4ku88sQm+xOIzIbb9bjwybFfqPgLQRydS6FaARkNWlfzbcx3u6L12VgMUVfJovk9VpX2NiliYnz4BjrCKNRwEp87FI0BcVH+1cSrarY87BLd6sHFlZexT8PNysa44bRJFc9IuAsWkEW1u70M44vvSGqsDDIgaTZWFz5aGV03tKSI5LAErnil9cQUpCMNY+bLdHhIK5nZ4zOwtM3wgeeB/YhWUO4yItGfMq4XpuJek1fU=
