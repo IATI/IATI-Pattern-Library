@@ -16,7 +16,11 @@ upload_files() {
 }
 
 if [[ $TRAVIS_BRANCH == 'master' ]]
+then
+  echo Deploying master branch converted-html to gh-pages branch.
   setup_git
   commit_website_files
   upload_files
+else
+  echo Not master branch. Skipping deployment.
 fi
