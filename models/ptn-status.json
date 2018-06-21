@@ -121,6 +121,10 @@
 	},
 	{
 		"name": "07-website-link",
-		"stage": "template"
+		"stage": "approved"
+	},
+	{
+		"name": "08-using-data",
+		"stage": "Template"
 	}
 ]
