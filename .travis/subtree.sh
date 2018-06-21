@@ -15,6 +15,8 @@ upload_files() {
   git subtree push --prefix converted-html origin-pages gh-pages
 }
 
-setup_git
-commit_website_files
-upload_files
+if [[ $TRAVIS_BRANCH == 'master' ]]
+  setup_git
+  commit_website_files
+  upload_files
+fi
