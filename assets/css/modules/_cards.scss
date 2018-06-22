@@ -41,6 +41,9 @@
     }
     &--alt {
         border-top: 5px solid $iati-land;
+        .button {
+            margin-top: 1em;
+        }
     }
 }
 
@@ -109,6 +112,13 @@
             &:hover {
                 padding-left: 0.5em;
             }
+        }
+    }
+    &--alt {
+        li:first-child {
+            border-bottom: none;
+            font-weight: 600;
+            padding-bottom: 0;
         }
     }
     .card__list-child {
