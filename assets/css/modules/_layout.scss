@@ -84,7 +84,7 @@
 		@supports (display: grid) {
 			display: grid;
 			grid-template-columns: 1fr 1fr 1fr;
-			column-gap: 50px;
+			grid-column-gap: 50px;
 		}
 		@supports (display: -ms-grid) {
 			display: block;
@@ -136,10 +136,17 @@
 		@supports (display: grid) {
 			display: grid;
 			grid-template-columns: 1fr 1fr;
-			column-gap: 50px;
+			grid-column-gap: 50px;
 		}
 		@supports (display: -ms-grid) {
 			display: block;
+		}
+		&--offset {
+			@supports (display: grid) {
+				display: grid;
+				grid-template-columns: 2fr 1fr;
+				grid-column-gap: 50px;
+			}
 		}
 	}
 	&__col {
@@ -195,7 +202,7 @@
 		@supports (display: grid) {
 			display: grid;
 			grid-template-columns: 1fr 1fr 1fr;
-			column-gap: 50px;
+			grid-column-gap: 50px;
 			-ms-grid-columns: 30% 5% 30% 5% 30%;
 		}
 		@supports (display: -ms-grid) {
@@ -205,7 +212,7 @@
 			@supports (display: grid) {
 				display: grid;
 				grid-template-columns: 1fr 1fr;
-				column-gap: 50px;
+				grid-column-gap: 50px;
 			}
 		}
 	}

@@ -40,9 +40,12 @@
         background-color: $iati-ocean;
     }
     &--alt {
+        position: relative;
         border-top: 5px solid $iati-land;
+        min-height: 300px;
         .button {
-            margin-top: 1em;
+            position: absolute;
+            bottom: 2em;
         }
     }
 }
@@ -116,9 +119,16 @@
     }
     &--alt {
         li:first-child {
-            border-bottom: none;
+            border-bottom: 1px solid $default-border-color;
             font-weight: 600;
             padding-bottom: 0;
+        }
+        li {
+            border-bottom: 0;
+            padding-bottom: 0em;
+            a {
+                text-decoration: underline;
+            }
         }
     }
     .card__list-child {

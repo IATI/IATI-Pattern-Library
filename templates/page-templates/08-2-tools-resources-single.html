@@ -1,7 +1,7 @@
 {# 1. Extend the relevant layout #}
 {# --------------------------------------- #}
 
-{% extends 'sidebar-after.html' %}
+{% extends 'default.html' %}
 
 
 {# --------------------------------------- #}
@@ -31,18 +31,16 @@
 {# --------------------------------------- #}
 
 {% block hero %}
-    {% include 'heroes/hero-minor.html' %}
+    {% include 'heroes/hero-news.html' %}
 {% endblock %}
 
-{% block aside %}
-{% endblock %}
-
-{% block main %}
-    {% include 'partials/breadcrumb.html' %}
-    <div class="is-typeset is-typeset--article">
-        {% include 'content/longform.html' %}
+{% block body %}
+    <div class="row space-section-bottom">
+        <div class="max-meter max-meter--center">
+            {% include 'partials/breadcrumb.html' %}
+            <div class="is-typeset is-typeset--article">
+                {% include 'content/longform.html' %}
+            </div>
+        </div>
     </div>
-{% endblock %}
-
-{% block after %}
 {% endblock %}
