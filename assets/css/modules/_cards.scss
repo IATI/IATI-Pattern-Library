@@ -118,16 +118,24 @@
         }
     }
     &--alt {
+        margin-top: 2em;
         li:first-child {
-            border-bottom: 1px solid $default-border-color;
-            font-weight: 600;
             padding-bottom: 0;
+            border: 0;
+            padding-left: 0;
+            margin-bottom: 0.5em;
         }
         li {
+            border-left: 2px solid $default-border-color;
+            padding-left: 1em;
             border-bottom: 0;
-            padding-bottom: 0em;
+            padding-bottom: 0.25em;
+            padding-top: 0;
             a {
                 text-decoration: underline;
+            }
+            &:last-child {
+                padding-bottom: 0;
             }
         }
     }
