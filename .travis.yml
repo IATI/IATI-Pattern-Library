@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+- '7'
+before_script:
+- npm install -g skelly
+script: skelly build
+after_success:
+- echo styles.iatistandard.org > converted-html/CNAME
+deploy:
+  provider: pages
+  local-dir: converted-html
+  skip-cleanup: true
+  github-token: "$GH_TOKEN"
+  keep-history: true
+  on:
+    branch: master
+env:
+  global:
+    secure: K5UiNJP85t3lsNUNM/4qY3c7zi5zUVIF0WXsVkc3LHFGRLmMwm/696PGFK1jKeNc6QhVn7sZZdKzMU0cD2B3WNBTtJj0VbVnapkuKfN1t6jwxLiwbFATbZ+SaRyD8KabYAmmhb+5/x/ICjorxqlAUXkpHn3ptcyCXsiFFCBOrDoO1iIBDOljYDoCe9dlXR9cHtBrT9/hvPiwTJ8YuVb8U6RJ32erIrlw6EVpiH416iGiY+yvQ4BB+p2G4RhW0V77QKrFuQ9XSsIi/EEl6IA8UULFL6See0xdgbB0FiVG8EbbetmXJiz4MS/PnCsc5Ah9OWCzZ3kcK40H2oHZA1oNbu5X6y/rAefgFqx4XNFkvLPUL/W/o3x3xcoKUozCCDyQU5eFlOvfAV6+iQrEtcPR1PGZxW8BHS23QeZWnaz89ZTzKaROBsHfqUYzst3F+jTF9SI/ssdQRtk6lx1BqOK3NihoQFa7wYmPf0ATs0FotZWf8uTkKLQWQswHgmnYUrFRVGAAxIm6fjxiGe4lJivId4gCAwH2uu10SuOZyn2no23JwS0Oc/L+Fp/GL4hzMrSD7ewrsKfnJRQcNN0RW8G5du9AriFGtsLQajb8LXXkCHvPBAsh7xgwPBKjMylSpMt3+1XmiB5cqvgyPZqgmv2xvpYGGnIUt/1GMLM4C8P9cBU=
