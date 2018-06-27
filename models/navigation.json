@@ -11,12 +11,12 @@
 		    "hidden": false
 		},
 		{
-		    "label": "Iati Data",
+		    "label": "IATI Data",
 		    "in_section": "registry",
 		    "hidden": false
 		},
         {
-		    "label": "Using Data",
+		    "label": "Using IATI Data",
 		    "in_section": "data",
 		    "hidden": false
 		},
