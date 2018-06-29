@@ -121,6 +121,18 @@
 	},
 	{
 		"name": "07-website-link",
-		"stage": "template"
+		"stage": "approved"
+	},
+	{
+		"name": "08-using-iati-data",
+		"stage": "approved"
+	},
+	{
+		"name": "08-1-tools-resources",
+		"stage": "approved"
+	},
+	{
+		"name": "08-2-tools-resources-single",
+		"stage": "approved"
 	}
 ]

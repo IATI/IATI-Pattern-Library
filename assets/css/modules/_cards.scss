@@ -40,7 +40,13 @@
         background-color: $iati-ocean;
     }
     &--alt {
+        position: relative;
         border-top: 5px solid $iati-land;
+        min-height: 300px;
+        .button {
+            position: absolute;
+            bottom: 2em;
+        }
     }
 }
 
@@ -108,6 +114,28 @@
             transition: all, ease-in-out, 0.3s;
             &:hover {
                 padding-left: 0.5em;
+            }
+        }
+    }
+    &--alt {
+        margin-top: 2em;
+        li:first-child {
+            padding-bottom: 0;
+            border: 0;
+            padding-left: 0;
+            margin-bottom: 0.5em;
+        }
+        li {
+            border-left: 2px solid $default-border-color;
+            padding-left: 1em;
+            border-bottom: 0;
+            padding-bottom: 0.25em;
+            padding-top: 0;
+            a {
+                text-decoration: underline;
+            }
+            &:last-child {
+                padding-bottom: 0;
             }
         }
     }
