@@ -168,6 +168,9 @@
 	ul {
 		@extend .unordered-list;
 		margin-bottom: 2em;
+		li ul {
+			list-style-type: disc;
+		}
 	}
 
 	p {
