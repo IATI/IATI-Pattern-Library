@@ -61,7 +61,7 @@
             clear: left;
         }
         @supports (display: grid) {
-			width: auto;
+			width: 100%;
             margin-left: auto;
             clear: none;
             float: none;
