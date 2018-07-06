@@ -27,6 +27,7 @@
         { "name": "Cards", "url": "cards" },
         { "name": "Global", "url": "global" },
         { "name": "Heroes", "url": "heroes" },
+        { "name": "Logos", "url": "logos" },
         { "name": "Listings", "url": "listings" }
 	],
 
