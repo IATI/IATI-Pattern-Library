@@ -9,13 +9,14 @@ The toolkit is based around the following elements, in order of granularity:
 
 ## Folder structure
 Within the repo we have the following folder structure:
-- **converted-html:** holds the processed code for the public pattern library which can be viewed at https://iati.surge.sh/
 - **assets:** contains all the SCSS files for the website design
 - **includes:** holds the individual modules than can be view on the modules page of this pattern library
 - **layouts:** contains the layout structure for the pattern library and the base layout for templates
 - **models:** contains the content used in the pattern library
 - **node_modules:** holds node files used to work the toolkit when editing it.
 - **templates:** contains the individual page templates of pattern library and website design
+
+An additional folder (`converted-html`) contains compiled output files (HTML/CSS/JS/Images) produced by [Skelly](https://www.npmjs.com/package/skelly) (see `Developer setup and usage` below) that form the demo site, visible at http://styles.iatistandard.org
 
 ### Detailed look at folder structure
 - **assets**
