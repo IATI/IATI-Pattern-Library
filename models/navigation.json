@@ -3,31 +3,31 @@
 	    {
 		    "label": "About",
 		    "in_section": "about",
+        "url": "http://iatistandard.org/about/",
 		    "hidden": false
 		},
 		{
 		    "label": "IATI Standard",
 		    "in_section": "standard",
+        "url": "http://iatistandard.org/iati-standard/",
 		    "hidden": false
 		},
-		{
-		    "label": "IATI Data",
-		    "in_section": "registry",
-		    "hidden": false
-		},
-        {
-		    "label": "Using IATI Data",
+    {
+		    "label": "Using Data",
 		    "in_section": "data",
+        "url": "http://iatistandard.org/using-data/",
 		    "hidden": false
 		},
 		{
 		    "label": "Guidance & Support",
 		    "in_section": "support",
+        "url": "http://iatistandard.org/guidance/",
 		    "hidden": false
 		},
 		{
 		    "label": "Community",
 		    "in_section": "community",
+        "url": "https://discuss.iatistandard.org/",
 		    "hidden": false
 		}
     ],
@@ -35,16 +35,19 @@
 	    {
 		    "label": "News",
 		    "in_section": "news",
+        "url": "http://iatistandard.org/news/",
 		    "hidden": false
 		},
 		{
 		    "label": "Events",
 		    "in_section": "events",
+        "url": "http://iatistandard.org/events/",
 		    "hidden": false
 		},
 		{
 		    "label": "Contact",
 		    "in_section": "contact",
+        "url": "http://iatistandard.org/contact/",
 		    "hidden": false
 		}
     ]
