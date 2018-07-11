@@ -6,7 +6,7 @@ before_script:
 - npm install -g skelly
 script: skelly build
 after_success:
-- echo styles.iatistandard.org > converted-html/CNAME
+- mv CNAME converted-html/CNAME  # Moves the definition of the custom domain name to the folder containing static output files (ahead of deployment to Github Pages).
 deploy:
   provider: pages
   local-dir: converted-html
