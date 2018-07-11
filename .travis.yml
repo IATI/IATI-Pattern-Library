@@ -4,7 +4,7 @@ node_js:
 sudo: required
 before_script:
 - npm install -g skelly
-script: skelly build
+script: skelly build  # This will create a new folder `converted-html` containing demo site static files that have been compiled by Skelly.
 after_success:
 - echo styles.iatistandard.org > converted-html/CNAME
 deploy:
