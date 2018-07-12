@@ -55,11 +55,11 @@ You need to include two files for CSS and JavaScript in your projects to start w
 
 **CSS**
 
-`<link href="http://iati.surge.sh/assets/css/screen.css" rel="stylesheet">` goes in the `<head>`
+`<link href="https://styles.iatistandard.org/assets/css/screen.css" rel="stylesheet">` goes in the `<head>`
 
 **JavaScript**
 
-`<script src="[/assets/js/app.bundle.js](http://iati.surge.sh/assets/js/app.bundle.js)"></script>` just before `</body>`
+`<script src="https://styles.iatistandard.org/assets/js/app.bundle.js"></script>` just before `</body>`
 
 This will give you the basic style and JS functionality from the pattern library.
 
