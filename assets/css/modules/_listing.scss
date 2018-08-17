@@ -272,4 +272,21 @@
 	top: 0;
 	right: 0;
 	width: 13%;
+	img {
+		max-width: 100%;
+	}
+	span {
+		display: none;
+	}
+	&--text {
+		img {
+			display: none;
+		}
+		span {
+			display: block;
+			@include font-size($eta);
+			border-left: 1px solid $default-border-color;
+			padding-left: 3px;
+		}
+	}
 }
