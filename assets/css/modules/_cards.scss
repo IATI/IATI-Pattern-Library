@@ -103,6 +103,12 @@
 
 .card__list {
     margin-top: 1.5em;
+    h2 {
+      @extend .heading;
+      @include font-size($gamma);
+      line-height: 1.3;
+      display: block;
+    }
     li {
         @include font-size($para);
         border-bottom: 1px solid $default-border-color;
