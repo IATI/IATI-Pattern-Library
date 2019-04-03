@@ -164,10 +164,10 @@
         }
     }
     @include respond-to($menu-respond) {
-        top: -13em;
+        top: -23em;
     }
     @include respond-to($d-vp) {
-        top: -20em;
+        top: -35em;
     }
 }
 
@@ -182,10 +182,10 @@
     mask-position: top right;
     width: auto;
     @include respond-to($c-vp) {
-        height: 360px;
+        height: 450px;
     }
     @include respond-to($d-vp) {
-        height: 440px;
+        height: 550px;
     }
     html.no-cssmask & {
         display: none;
