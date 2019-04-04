@@ -1,7 +1,7 @@
 {
-  "name": "Skelly",
+  "name": "IATI Pattern Library",
   "version": "1.0.0",
-  "description": "The skeleton app",
+  "description": "IATI Standard Website Pattern Library",
   "repository": {
     "type": "git",
     "url": "https://bitbucket.org/fffunction/skelly.git"
@@ -15,6 +15,7 @@
   "dependencies": {
     "basicscroll": "^2.1.0",
     "fastclick": "^1.0.6",
-    "jquery": "^2.1.4"
+    "jquery": "^2.1.4",
+    "skelly": "2.0.0-rc.8"
   }
 }
