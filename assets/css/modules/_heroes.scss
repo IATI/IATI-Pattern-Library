@@ -71,18 +71,18 @@
         }
     }
     @include respond-to($menu-respond) {
-        padding-top: 30em;
+        padding-top: 24em;
         margin-top: -19em;
         &--image {
-            padding-top: 35em;
+            padding-top: 28em;
             padding-bottom: 6em;
             background-attachment: fixed;
         }
     }
     @include respond-to($d-vp) {
-        padding-top: 35em;
+        padding-top: 28em;
         &--minor {
-            padding-top: 30em;
+            padding-top: 24em;
         }
     }
 }
@@ -164,10 +164,10 @@
         }
     }
     @include respond-to($menu-respond) {
-        top: -13em;
+        top: -15em;
     }
     @include respond-to($d-vp) {
-        top: -20em;
+        top: -24em;
     }
 }
 
