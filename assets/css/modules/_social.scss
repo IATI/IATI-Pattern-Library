@@ -16,6 +16,7 @@
 
 .social-list__item {
     display: inline-block;
+    vertical-align: top;
     &:not(:last-child) {
         margin-right: 1em;
     }
