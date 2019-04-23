@@ -4,6 +4,22 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Twitter https://dev.twitter.com/cards/types/summary -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@IATI_aid" />
+    <meta name="twitter:title" content="{{ title }}" />
+    <meta name="twitter:description" content="Example description of the text that will come up when this page is shared on Twitter, or displayed in search listings internally">
+    <meta name="twitter:image" content="http://styles.iatistandard.org/assets/img/hero-news-article.jpg">
+
+    <!--Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://iatistandard.org/{{ section }}" />
+    <meta property="og:title" content="{{ title }}" />
+    <meta property="og:description" content="Example description of the text that will come up when this page is shared on Facebook, or displayed in search listings internally" />
+    <meta property="og:site_name" content="IATI Standard" />
+    <meta property="og:image" content="http://styles.iatistandard.org/assets/img/hero-news-article.jpg" />
+    <meta property="og:image:width" content=1080>
+
 	<title>{% block title %}{{ global.site_name }}{% endblock %}</title>
     {% block html_header %}
     	{% include 'scaffold/header-assets.html' %}
