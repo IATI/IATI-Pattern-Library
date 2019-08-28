@@ -134,5 +134,13 @@
 	{
 		"name": "08-2-tools-resources-single",
 		"stage": "approved"
+	},
+	{
+		"name": "09-the-standard",
+		"stage": "Template"
+	},
+	{
+		"name": "09-1-reference",
+		"stage": "Template"
 	}
 ]

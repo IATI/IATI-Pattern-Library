@@ -54,6 +54,9 @@
 				float: left;
 				margin-bottom: 0;
 			}
+			.l-sidebar--wide & {
+				width: 30%;
+			}
 		}
 	}
 	&__body {
@@ -69,6 +72,9 @@
 				padding-right: 0;
 				padding-left: 5em;
 				order: 1;
+			}
+			.l-sidebar--wide & {
+				width: 65%;
 			}
 		}
 	}

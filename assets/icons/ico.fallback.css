@@ -1,4 +1,39 @@
 
+.ico-arrow-ash {
+	background-image: url('png/arrow-ash.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-arrow-black {
+	background-image: url('png/arrow-black.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-arrow-ocean {
+	background-image: url('png/arrow-ocean.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-arrow-sunrise {
+	background-image: url('png/arrow-sunrise.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-arrow-white {
+	background-image: url('png/arrow-white.png');
+	background-repeat: no-repeat;
+}
+
+
+
 .ico-bookmark-ash {
 	background-image: url('png/bookmark-ash.png');
 	background-repeat: no-repeat;

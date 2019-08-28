@@ -6,10 +6,15 @@
 	padding: 15px;
 	padding-left: 40px;
 	overflow: hidden;
-	display: block;
+	display: inline-block;
 	position: relative;
+	z-index: 2;
 	@include font-size($para);
+	background-color: #fff;
 	//box-shadow: 0 0 50px 0 rgba(#000, 0.15);
+	a {
+		text-decoration: underline;
+	}
 	.form & {
 		margin-top: $internal-spacing;
 	}
@@ -29,16 +34,19 @@
 .alert--notice {
 	color: darken($warning, 15%);
 	border-left: 3px solid $warning;
+	background-color: lighten($warning, 50%);
 }
 
 .alert--error {
 	@extend .alert--notice;
 	border-left: 3px solid $error;
 	color: $error;
+	background-color: lighten($error, 50%);
 }
 
 .alert--success {
 	@extend .alert--notice;
 	border-left: 3px solid $success;
 	color: $success;
+	background-color: lighten($success, 50%);
 }

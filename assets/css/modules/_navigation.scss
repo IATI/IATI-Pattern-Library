@@ -246,6 +246,36 @@
 			border-left-width: 4px;
 			color: #fff;
 		}
+		.navigation-secondary--reference & {
+			position: relative;
+			@include font-size($epsilon - 1);
+			button {
+				width: 46px;
+				height: 45.5px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				text-align: center;
+				background-color: $iati-sunrise;
+				.ico {
+					transition: transform, ease-in-out, 0.3s;
+				}
+			}
+			a {
+				padding-left: 60px;
+				border-left: 0;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+			&.navigation-secondary__item--active {
+				button {
+					.ico {
+						transform: rotate(180deg);
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -264,6 +294,17 @@
 			background-color: lighten($iati-sunrise, 6%);
 			border-left-color: lighten($iati-sunrise, 6%);
 			color: #fff;
+		}
+		.navigation-secondary--reference & {
+			position: relative;
+			a {
+				margin-left: 45px;
+				width: calc(100% - 45px);
+			}
+			button {
+				background-color: lighten($iati-sunrise, 6%);
+				left: 45px;
+			}
 		}
 	}
 }

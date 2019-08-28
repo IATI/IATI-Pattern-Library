@@ -85,6 +85,9 @@
             padding-top: 24em;
         }
     }
+    .alert {
+        margin-top: 1em;
+    }
 }
 
 .hero__caption {
@@ -92,8 +95,15 @@
     z-index: 3;
     border-left: 5px solid $iati-air;
     padding-left: 1.5em;
+    a {
+        color: #fff;
+        text-decoration: underline;
+    }
+    strong {
+        font-weight: 700;
+    }
     @include respond-to($c-vp) {
-        max-width: 50%;
+        max-width: 60%;
         .hero--image &,
         .max-meter & {
             max-width: 100%;
