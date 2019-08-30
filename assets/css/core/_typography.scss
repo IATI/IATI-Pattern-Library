@@ -203,11 +203,10 @@
 
 	code {
 		background-color: #fff;
-		padding: 0.15em 0.25em;
+		padding: 0.1em 0.25em;
 		border: 1px solid darken(#fff, 10%);
 		font-family: 'Courier', sans-serif;
 		@include font-size($para);
-		margin-bottom: 1em;
 		display: inline-block;
 		border-radius: 3px;
 		color: $iati-sunset;

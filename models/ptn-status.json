@@ -142,5 +142,17 @@
 	{
 		"name": "09-1-reference",
 		"stage": "Template"
+	},
+	{
+		"name": "09-1a-codelist",
+		"stage": "Template"
+	},
+	{
+		"name": "09-1b-schema",
+		"stage": "Template"
+	},
+	{
+		"name": "09-1c-organisation-identifiers",
+		"stage": "Template"
 	}
 ]
