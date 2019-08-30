@@ -18,7 +18,7 @@
 // Make articles text more legible
 .is-typeset.is-typeset--article {
 	@include respond-to($menu-respond) {
-		p, li {
+		p, li , code {
 			 @include font-size($para*1.22);
 		}
 		h1 {

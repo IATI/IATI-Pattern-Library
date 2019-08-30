@@ -297,6 +297,7 @@
 		}
 		.navigation-secondary--reference & {
 			position: relative;
+			background-color: lighten($iati-sunrise, 24%);
 			a {
 				margin-left: 45px;
 				width: calc(100% - 45px);
@@ -304,6 +305,16 @@
 			button {
 				background-color: lighten($iati-sunrise, 6%);
 				left: 45px;
+				.ico {
+					transform: rotate(0deg) !important;
+				}
+			}
+		}
+		&.navigation-secondary__child__item--active {
+			button {
+				.ico {
+					transform: rotate(180deg) !important;
+				}
 			}
 		}
 	}
@@ -322,6 +333,9 @@
 		}
 		&--active a {
 			border-left-width: 8px;
+		}
+		.navigation-secondary--reference & {
+			//background-color: lighten($iati-sunrise, 20%);
 		}
 	}
 }

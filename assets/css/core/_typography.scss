@@ -201,6 +201,33 @@
 		}
 	}
 
+	code {
+		background-color: #fff;
+		padding: 0.15em 0.25em;
+		border: 1px solid darken(#fff, 10%);
+		font-family: 'Courier', sans-serif;
+		@include font-size($para);
+		margin-bottom: 1em;
+		display: inline-block;
+		border-radius: 3px;
+		color: $iati-sunset;
+	}
+
+	pre code {
+		display: block;
+	}
+
+	dl {
+		dt {
+			@include font-size($para);
+			margin-bottom: 0.5em;
+			font-weight: 700;
+		}
+		dd {
+			margin-left: 3em;
+		}
+	}
+
 	// Tear out the initial top margin to allow things to flush together
 	> h1:first-child,
 	> h2:first-child,
