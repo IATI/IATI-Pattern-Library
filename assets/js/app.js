@@ -5,7 +5,6 @@ import skipLinks from './utils/skipLinks';
 import iframer from './utils/iframer';
 import mNav from './utils/mNav';
 import sNav from './utils/mNav';
-// import instance from './utils/basicScroll';
 
 function globals () {
 
