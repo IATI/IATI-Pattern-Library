@@ -138,6 +138,9 @@
 		@extend .type-l--leader;
 		@extend .type-l--trailer;
 		@extend .heading;
+		&:hover > a.m-header-link {
+			visibility: visible;
+		}
 	}
 
 	h2 {
@@ -145,6 +148,9 @@
 		@extend .type-m--leader;
 		@extend .type-m--trailer;
 		@extend .heading;
+		&:hover > a.m-header-link {
+			visibility: visible;
+		}
 	}
 
 	h3 {
@@ -152,6 +158,9 @@
 		@extend .type-s--leader;
 		@extend .type-s--trailer;
 		@extend .heading;
+		&:hover > a.m-header-link {
+			visibility: visible;
+		}
 	}
 
 	h4, h5, h6 {
@@ -159,6 +168,9 @@
 		@extend .type-xs--leader;
 		@extend .type-xs--trailer;
 		@extend .heading;
+		&:hover > a.m-header-link {
+			visibility: visible;
+		}
 	}
 
 	ol {
@@ -218,9 +230,9 @@
 
 	dl {
 		dt {
-			@include font-size($para);
+			@extend %font-heading;
+			@include font-size($para + 1);
 			margin-bottom: 0.5em;
-			font-weight: 700;
 		}
 		dd {
 			margin-left: 3em;

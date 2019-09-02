@@ -12,8 +12,13 @@ table {
 	}
 	border: 1px solid $default-border-color;
 	.is-typeset & {
-		margin-top: 4em;
+		width: 100%;
+		margin-bottom: 2em;
 	}
+}
+
+thead {
+	border-bottom: $default-border-width solid $default-border-color;
 }
 
 thead, tbody {
@@ -22,15 +27,16 @@ thead, tbody {
 		@include font-size($epsilon);
 		font-weight: 700;
 		padding: $internal-spacing/4;
+		border-right: 1px solid $default-border-color;
 	}
 }
 
 tbody {
 	tr {
 		background-color: $body-color;
-		&:first-of-type {
-			background-color: $default-border-color;
-		}
+		// &:first-of-type {
+		// 	background-color: $default-border-color;
+		// }
 		border-bottom: $default-border-width solid $default-border-color;
 		&:last-child {
 			border-bottom: none;

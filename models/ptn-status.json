@@ -154,5 +154,9 @@
 	{
 		"name": "09-1c-organisation-identifiers",
 		"stage": "Template"
+	},
+	{
+		"name": "10-search",
+		"stage": "Template"
 	}
 ]

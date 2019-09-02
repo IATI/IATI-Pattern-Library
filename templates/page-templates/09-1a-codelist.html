@@ -46,57 +46,74 @@
 {% block main %}
     <section>
         <div class="is-typeset">
-            <h1>Aid Type</h1>
-            <p>Aid Type External URL: <a href="#">http://www.oecd.org/dac/stats/dacandcrscodelists.htm</a></p>
-            <p>This is the reference page for the XML element iati-activities.</p>
-            <h2>Definition</h2>
-            <p>Top-level list of one or more IATI activity records.</p>
-            <h2>Rules</h2>
-            <p>This element must occur once and only once (within each parent element)</p>
-            <h2>Attributes</h2>
+            <h1>Aid Type<a class="m-header-link" href="#header-id" title="Permalink to this headline">¶</a></h1>
+            <p>External URL: <a href="#">http://www.oecd.org/dac/stats/dacandcrscodelists.htm</a></p>
+            <p>This is a <a href="#">Replicated codelist</a>.</p>
+            <h2>Use this codelist for<a class="m-header-link" href="#header-id" title="Permalink to this headline">¶</a></h2>
+            <ul>
+                <li><a href="#">iati-activities/iati-activity/default-aid-type/@code</a></li>
+                <li><a href="#">iati-activities/iati-activity/transaction/aid-type/@code</a></li>
+            </ul>
+            <h2>Download this codelist<a class="m-header-link" href="#header-id" title="Permalink to this headline">¶</a></h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>CLv1:</th>
+                        <th>CLv2:</th>
+                        <th>CLv3:</th>
+                        <th>CLv3 (French):</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="#">CSV</a></td>
+                        <td><a href="#">CSV</a></td>
+                        <td><a href="#">CSV</a></td>
+                        <td><a href="#">CSV</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">JSON</a></td>
+                        <td><a href="#">JSON</a></td>
+                        <td><a href="#">JSON</a></td>
+                        <td><a href="#">JSON</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">XML</a></td>
+                        <td><a href="#">XML</a></td>
+                        <td><a href="#">XML</a></td>
+                        <td><a href="#">XML</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><a href="#">GitHub source</a></p>
+            <p>The codelists were translated in French in April 2018 with the support of the Government of Canada. Please note that if any codelists have been added since then, they may not be available in French.</p>
+            <h2>Codes<a class="m-header-link" href="#header-id" title="Permalink to this headline">¶</a></h2>
             <dl>
-                <dt>@version</dt>
+                <dt>Code - A01</dt>
                 <dd>
-                    <p>A number indicating the IATI specification version in use. This is mandatory and must be a valid version.</p>
-                    <p>This attribute is required.</p>
-                    <p>This value must be of type xsd:string.</p>
-                    <p>This value must be on the <a href="#">Version codelist</a>.</p>
+                    <h4>General budget support</h4>
+                    <p>Unearmarked contributions to the government budget including funding to support the implementation of macroeconomic reforms (structural adjustment programmes, poverty reduction strategies). Budget support is a method of financing a recipient country’s budget through a transfer of resources from an external financing agency to the recipient government’s national treasury. The funds thus transferred are managed in accordance with the recipient’s budgetary procedures. Funds transferred to the national treasury for financing programmes or projects managed according to different budgetary procedures from those of the recipient country, with the intention of earmarking the resources for specific uses, are therefore excluded.</p>
+                    <p>Category - <a href="#">A</a></p>
                 </dd>
-                <dt>@generated-datetime</dt>
+                <dt>Code - A02</dt>
                 <dd>
-                    <p>A date/time stamp for when this file was generated. This is not necessarily the last-updated date for the individual activity records in it. Use of this attribute is highly recommended, to allow recipients to know when a file has been updated.</p>
-                    <p>This value must be of type xsd:dateTime.</p>
+                    <h4>Sector budget support</h4>
+                    <p>Sector budget support, like general budget support, is a financial contribution to a recipient government’s budget. However, in sector budget support, the dialogue between donors and partner governments focuses on sector-specific concerns, rather than on overall policy and budget priorities.</p>
+                    <p>Category - <a href="#">A</a></p>
                 </dd>
-                <dt>@linked-data-default</dt>
+                <dt>Code - B01</dt>
                 <dd>
-                    <p>If a publisher chooses to publish linked data about their IATI activities then allowing them to declare where this data is published would support discovery of it, and any additional information they may choose to publish as Linked Data alongside it.</p>
-                    <p>This attribute is a URI path upon which an activity identifier can be appended to get a differentiable URI for any activity contained within a file.</p>
-                    <p>Where a publisher declares using one of these properties that authoritative linked data is accessible for an activity then consuming applications that are generating Linked Data from an IATI XML file should assert an owl:sameAs relationship to the relevant URI.</p>
-                    <p>This value must be of type xsd:anyURI.</p>
+                    <h4>Core support to NGOs, other private bodies, PPPs and research institutes</h4>
+                    <p>Funds are paid over to NGOs (local, national and international) for use at the latter’s discretion, and contribute to programmes and activities which NGOs have developed themselves, and which they implement on their own authority and responsibility. Core contributions to PPPs, funds paid over to foundations (e.g. philanthropic foundations), and contributions to research institutes (public and private) are also recorded here. Annex 2 of the DAC Directives provides a list of INGOs, PPPs and networks core contributions to which may be reported under B01. This list is not exclusive.</p>
+                    <p>Category - <a href="#">B</a></p>
+                </dd>
+                <dt>Code - B02</dt>
+                <dd>
+                    <h4>Core contributions to multilateral institutions</h4>
+                    <p>These funds are classified as multilateral ODA (all other categories fall under bilateral ODA). The recipient multilateral institution pools contributions so that they lose their identity and become an integral part of its financial assets. See Annex 2 of the DAC Directives for a comprehensive list of agencies core contributions to which may be reported under B02 (Section I. Multilateral institutions).</p>
+                    <p>Category - <a href="#">B</a></p>
                 </dd>
             </dl>
-            <h2>Example Usage</h2>
-            <p>Example usage of <code>iati-activities</code></p>
-            <p>This element is a parent for other all other elements of the IATI Activity Standard. This example provides a dateTime of 2014-09-10T07:15:37Z for the @generated-datetime attribute. A dateTime in UTC time is indicated by adding a Z behind the time This example date time format conforms to the xsd:dateTime standard. The @version attribute declares a valid code (2.x) from the Version codelist. The optional @linked-data-default attribute is also included.</p>
-            <pre><code>
-                <iati-activities generated-datetime="2014-09-10T07:15:37Z" version="2.03" linked-data-default="http://data.example.org/">
-            </code></pre>
-            <p>The iati-activities element acts as a container for other sub-elements. It is closed as follows:</p>
-            <pre><code>
-                </iati-activities>
-            </code></pre>
-            <h2>Changelog</h2>
-            <p>Introduced the @linked-data-default attribute on iati-activities element</p>
-            <h2>Developer tools</h2>
-            <p>Find the source of this documentation on github:</p>
-            <ul>
-                <li><a href="#">Schema</a></li>
-                <li><a href="#">Extra Documentation</a></li>
-            </ul>
-            <h2>Subelements</h2>
-            <ul>
-                <li><a href="#">iati-activity</a></li>
-            </ul>
         </div>
     </section>
 {% endblock %}

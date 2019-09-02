@@ -47,6 +47,13 @@
 
 .aside-m__list {
     margin-bottom: 1em;
+    @include font-size($para);
+    li {
+        margin-bottom: 0.5em;
+        a {
+            text-decoration: underline;
+        }
+    }
 }
 
 .aside-m__list-item {
