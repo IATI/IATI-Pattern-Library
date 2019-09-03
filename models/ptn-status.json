@@ -76,6 +76,10 @@
 		"stage": "approved"
 	},
 	{
+		"name": "02-8-support",
+		"stage": "Template"
+	},
+	{
 		"name": "03-news",
 		"stage": "approved"
 	},
@@ -134,6 +138,10 @@
 	{
 		"name": "08-2-tools-resources-single",
 		"stage": "approved"
+	},
+	{
+		"name": "08-4-tool",
+		"stage": "Template"
 	},
 	{
 		"name": "09-the-standard",
