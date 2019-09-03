@@ -48,11 +48,21 @@
             bottom: 2em;
         }
     }
+    &--tool {
+        margin-bottom: 4em;
+        .button {
+            margin-top: 1em;
+        }
+    }
 }
 
 
 .card__header {
     padding: 2em;
+    .card--tool & {
+        @extend %pie-clearfix;
+        padding: 0;
+    }
 }
 
 .card__body {
@@ -98,6 +108,19 @@
                 }
             }
         }
+    }
+    .card--tool .card__header & {
+        width: 70%;
+        float: left;
+    }
+}
+
+.card__logo {
+    float: left;
+    width: 25%;
+    margin-right: 5%;
+    img {
+        width: 100%;
     }
 }
 
@@ -162,7 +185,7 @@
     @include respond-to-max (500px) {
         /* firefox */
         display: none;
-        
+
         &--truncated {
             display: block;
         }
@@ -172,11 +195,14 @@
         @include respond-to-max (1050px) {
             /* chrome + safari */
             display: none;
-            
+
             &--truncated {
                 display: block;
             }
         }
+    }
+    .card--tool & {
+        display: block;
     }
 }
 

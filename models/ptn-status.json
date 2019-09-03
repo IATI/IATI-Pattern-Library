@@ -140,6 +140,10 @@
 		"stage": "approved"
 	},
 	{
+		"name": "08-3-tools-resources",
+		"stage": "Template"
+	},
+	{
 		"name": "08-4-tool",
 		"stage": "Template"
 	},

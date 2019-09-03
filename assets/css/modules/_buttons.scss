@@ -28,6 +28,9 @@
 		background-color: $action;
 		//background: linear-gradient(30deg, $action-respond, $action-respond);
 		color: #fff;
+		.hero & {
+			background-color: darken($action-respond, 10%);
+		}
 	}
 }
 
