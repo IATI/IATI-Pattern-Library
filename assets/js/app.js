@@ -5,6 +5,7 @@ import skipLinks from './utils/skipLinks';
 import iframer from './utils/iframer';
 import mNav from './utils/mNav';
 import sNav from './utils/mNav';
+import searchTrigger from './utils/searchTrigger';
 
 function globals () {
 
@@ -31,6 +32,14 @@ function globals () {
         'navigation-secondary-toggle--active',
         '#navigation-secondary',
         'navigation-secondary--active'
+    );
+
+    // Search trigger
+    searchTrigger(
+        '.header-search__trigger',
+        '.header-search',
+        'header-search--active',
+        '.header-search__close'
     );
 
     // Load EventBrite if the window is larger than 500px, which is our $b-vp breakpoint

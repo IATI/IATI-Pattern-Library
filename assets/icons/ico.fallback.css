@@ -90,6 +90,34 @@
 
 
 
+.ico-cross-ash {
+	background-image: url('png/cross-ash.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-cross-black {
+	background-image: url('png/cross-black.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-cross-ocean {
+	background-image: url('png/cross-ocean.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-cross-white {
+	background-image: url('png/cross-white.png');
+	background-repeat: no-repeat;
+}
+
+
+
 .ico-error-error {
 	background-image: url('png/error-error.png');
 	background-repeat: no-repeat;
@@ -183,6 +211,34 @@
 
 .ico-plus-white {
 	background-image: url('png/plus-white.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-search-ash {
+	background-image: url('png/search-ash.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-search-black {
+	background-image: url('png/search-black.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-search-ocean {
+	background-image: url('png/search-ocean.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.ico-search-white {
+	background-image: url('png/search-white.png');
 	background-repeat: no-repeat;
 }
 

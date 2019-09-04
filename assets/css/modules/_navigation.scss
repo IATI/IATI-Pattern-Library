@@ -350,7 +350,7 @@
 		overflow: hidden;
 		display: block;
 		position: absolute;
-		right: 0;
+		right: 11.5em;
 		top: 0;
 		background-color: $iati-ash;
 		padding: 1em 3em 1em 2em;
@@ -372,5 +372,39 @@
 	}
 	&--active a {
 		border-bottom: 1px solid $action-respond;
+	}
+}
+
+
+// ------------------------------------------------------------
+// Language navigation
+// ------------------------------------------------------------
+
+.navigation-language {
+	display: none;
+	@include respond-to($menu-respond) {
+		display: block;
+		position: absolute;
+		top: 11px;
+		right: 25em;
+		@include font-size($zeta);
+	}
+	&__item {
+		display: inline-block;
+		a {
+			//background-color: $iati-ash;
+			border: 1px solid $iati-ash;
+			padding: 0.5em;
+			color: $heading-color;
+			transition: all, ease-in-out, 0.3s;
+			@include link-active-styles {
+				background-color: $iati-air;
+				border-color: $iati-air;
+			}
+		}
+		&--active a {
+			background-color: $iati-air;
+			border-color: $iati-air;
+		}
 	}
 }

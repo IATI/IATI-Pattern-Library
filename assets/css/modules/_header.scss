@@ -25,3 +25,50 @@
 		margin-right: auto;
 	}
 }
+
+.header-search {
+	overflow: hidden;
+    position: absolute;
+	top: -100%;
+	transition: all, ease-in-out, 0.3s;
+	z-index: 10;
+	width: 100%;
+    display: block;
+    background-color: darken($iati-ocean, 5%);
+    padding: 3.5em 0;
+	&--active {
+		top: 0;
+	}
+	form {
+		position: relative;
+		button {
+			position: absolute;
+			top: 29px;
+			right: 0;
+		}
+	}
+}
+
+.header-search__close {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.header-search__trigger {
+    display: none;
+    @include respond-to($menu-respond) {
+        @include font-size($zeta);
+        position: absolute;
+        display: block;
+        top: 11px;
+        right: 20px;
+        .ico {
+            top: -1px;
+            margin-right: 2px;
+        }
+        @include link-active-styles {
+            color: $action;
+        }
+    }
+}
