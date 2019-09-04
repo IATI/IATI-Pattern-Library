@@ -97,7 +97,6 @@
 	}
 	&__item {
 		@extend %pie-clearfix;
-		position: relative;
 		text-transform: uppercase;
 		letter-spacing: 1px;
 		@include font-size($zeta);
@@ -132,13 +131,14 @@
 				border-bottom: $default-border-width solid $heading-color;
 			}
 			@include respond-to($menu-respond) {
+				min-height: 40px;
 				&:after {
 					content: '';
 					position: absolute;
 					width: 100%;
 					transform: scaleX(0);
 					height: 3px;
-					bottom: -20px;
+					bottom: 0;
 					left: 0;
 					background-color: $action-respond;
 					transform-origin: bottom right;
@@ -163,6 +163,16 @@
 		&--ss-only {
 			@include respond-to($menu-respond) {
 				display: none;
+			}
+		}
+	}
+}
+
+.navigation-primary__item--has-children {
+	@include respond-to($menu-respond) {
+		@include link-active-styles {
+			> .navigation-megamenu {
+				display: block;
 			}
 		}
 	}
@@ -405,6 +415,80 @@
 		&--active a {
 			background-color: $iati-air;
 			border-color: $iati-air;
+		}
+	}
+}
+
+// ------------------------------------------------------------
+// Mega menu
+// ------------------------------------------------------------
+
+.navigation-megamenu {
+	@extend %pie-clearfix;
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	top: 99px;
+	display: none;
+	width: 100%;
+	background-color: $iati-ash;
+	padding: 2em;
+	z-index: 100;
+	text-transform: none;
+	letter-spacing: 0;
+	box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+	@include respond-to-max($menu-respond) {
+		display: none;
+	}
+	&--active {
+		display: block;
+	}
+	.button {
+		@extend %font-sans;
+		@include font-size($zeta);
+		letter-spacing: 0;
+		text-transform: none;
+		margin-top: 1em;
+	}
+}
+
+.navigation-megamenu__col {
+	position: relative;
+	z-index: 2;
+	display: block;
+	width: 35%;
+	float: left;
+	margin-right: 3%;
+	&:last-child {
+		margin-right: 0;
+	}
+	+ .navigation-megamenu__col {
+		width: 62%;
+	}
+}
+
+.navigation-megamenu__list {
+	@include font-size($para);
+
+	text-transform: none;
+	letter-spacing: 0;
+	@extend %font-sans;
+	li {
+		margin-bottom: 0.75em;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		a {
+			border-bottom: 2px solid $iati-air;
+			display: inline-block;
+			min-height: auto;
+			font-size: inherit;
+			&:after {
+				content: none;
+			}
+			&:hover {
+				border-color: $heading-color;
+			}
 		}
 	}
 }

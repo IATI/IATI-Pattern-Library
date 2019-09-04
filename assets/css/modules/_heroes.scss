@@ -3,6 +3,7 @@
 // ------------------------------------------------------------
 
 .hero {
+    @extend %pie-clearfix;
     // background: linear-gradient(180deg, $iati-ocean, $iati-ocean, #F6F6F6);
     background: linear-gradient(0deg, darken($iati-ocean, 4%) 4%, $iati-ocean 20%);
     margin-bottom: 5em;
@@ -44,10 +45,10 @@
         padding-bottom: 5em;
     }
     &--tool {
-        @extend %pie-clearfix;
+
     }
     @include respond-to($c-vp) {
-        overflow: hidden;
+        //overflow: hidden;
         padding-top: 20em;
         // margin-bottom: 8em;
         &--image {

@@ -3,7 +3,8 @@
 // ------------------------------------------------------------
 
 .header {
-	overflow: hidden;
+	//overflow: hidden;
+	@extend %pie-clearfix;
 	position: relative;
 	z-index: 5;
 	max-width: $max-grid;
@@ -17,7 +18,7 @@
 	box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.15);
 	@include respond-to($menu-respond) {
 		margin-top: 4em;
-		padding: 2em 3em;
+		padding: 2em 3em 0;
 		margin-bottom: 0;
 	}
 	@include respond-to($max-vp) {

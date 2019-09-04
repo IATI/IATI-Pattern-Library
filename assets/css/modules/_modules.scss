@@ -3,6 +3,7 @@
 // prefix with m-
 // ------------------------------------------------------------
 
+
 .m-additional {
     background-color: #fff;
     box-shadow: 0 0 50px 0 rgba(#000, 0.15);
@@ -176,4 +177,22 @@
             }
         }
     }
+}
+
+// ------------------------------------------------------------
+// Highlight
+// ------------------------------------------------------------
+
+.m-highlight {
+    background-color: #fff;
+    padding: 1.5em;
+}
+
+.m-highlight__heading {
+    @extend .type-m;
+    @extend .heading;
+}
+
+.m-highlight__copy {
+    @include font-size($zeta);
 }
