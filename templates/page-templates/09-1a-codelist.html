@@ -22,6 +22,8 @@
 {% import 'macros/icon.html' as icons %}
 {% import 'macros/alert.html' as alerts %}
 
+{% model 'codelists', as="codelists" %}
+
 
 {# --------------------------------------- #}
 {#
@@ -89,30 +91,13 @@
             <p>The codelists were translated in French in April 2018 with the support of the Government of Canada. Please note that if any codelists have been added since then, they may not be available in French.</p>
             <h2>Codes<a class="m-header-link" href="#header-id" title="Permalink to this headline">¶</a></h2>
             <dl>
-                <dt>Code - A01</dt>
-                <dd>
-                    <h4>General budget support</h4>
-                    <p>Unearmarked contributions to the government budget including funding to support the implementation of macroeconomic reforms (structural adjustment programmes, poverty reduction strategies). Budget support is a method of financing a recipient country’s budget through a transfer of resources from an external financing agency to the recipient government’s national treasury. The funds thus transferred are managed in accordance with the recipient’s budgetary procedures. Funds transferred to the national treasury for financing programmes or projects managed according to different budgetary procedures from those of the recipient country, with the intention of earmarking the resources for specific uses, are therefore excluded.</p>
-                    <p>Category - <a href="#">A</a></p>
-                </dd>
-                <dt>Code - A02</dt>
-                <dd>
-                    <h4>Sector budget support</h4>
-                    <p>Sector budget support, like general budget support, is a financial contribution to a recipient government’s budget. However, in sector budget support, the dialogue between donors and partner governments focuses on sector-specific concerns, rather than on overall policy and budget priorities.</p>
-                    <p>Category - <a href="#">A</a></p>
-                </dd>
-                <dt>Code - B01</dt>
-                <dd>
-                    <h4>Core support to NGOs, other private bodies, PPPs and research institutes</h4>
-                    <p>Funds are paid over to NGOs (local, national and international) for use at the latter’s discretion, and contribute to programmes and activities which NGOs have developed themselves, and which they implement on their own authority and responsibility. Core contributions to PPPs, funds paid over to foundations (e.g. philanthropic foundations), and contributions to research institutes (public and private) are also recorded here. Annex 2 of the DAC Directives provides a list of INGOs, PPPs and networks core contributions to which may be reported under B01. This list is not exclusive.</p>
-                    <p>Category - <a href="#">B</a></p>
-                </dd>
-                <dt>Code - B02</dt>
-                <dd>
-                    <h4>Core contributions to multilateral institutions</h4>
-                    <p>These funds are classified as multilateral ODA (all other categories fall under bilateral ODA). The recipient multilateral institution pools contributions so that they lose their identity and become an integral part of its financial assets. See Annex 2 of the DAC Directives for a comprehensive list of agencies core contributions to which may be reported under B02 (Section I. Multilateral institutions).</p>
-                    <p>Category - <a href="#">B</a></p>
-                </dd>
+                {% for item in codelists.codelists %}
+                    <dt>Code: {{ item.code }} - {{ item.title }}</dt>
+                    <dd>
+                        <p>{{ item.content}}</p>
+                        <p>Category: <a href="#">{{ item.category }}</a></p>
+                    </dd>
+                {% endfor %}
             </dl>
         </div>
     </section>
