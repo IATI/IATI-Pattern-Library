@@ -99,7 +99,7 @@
 		@extend %pie-clearfix;
 		text-transform: uppercase;
 		letter-spacing: 1px;
-		@include font-size($zeta);
+		@include font-size($eta + 1);
 		&:last-child a {
 			border-bottom: none;
 		}
@@ -117,7 +117,7 @@
 				margin-left: 0;
 			}
 		}
-		a {
+		a:not(.button) {
 			display: block;
 			position: relative;
 			color: $heading-color;
@@ -431,7 +431,7 @@
 	top: 99px;
 	display: none;
 	width: 100%;
-	background-color: $iati-ash;
+	background-color: $body-color;
 	padding: 2em;
 	z-index: 100;
 	text-transform: none;
@@ -468,18 +468,19 @@
 }
 
 .navigation-megamenu__list {
-	@include font-size($para);
-
+	@include font-size($zeta);
 	text-transform: none;
 	letter-spacing: 0;
 	@extend %font-sans;
+	margin-bottom: 0.75em;
 	li {
 		margin-bottom: 0.75em;
 		&:last-child {
 			margin-bottom: 0;
 		}
-		a {
-			border-bottom: 2px solid $iati-air;
+		a:not(.button) {
+			color: $action;
+			text-decoration: underline;
 			display: inline-block;
 			min-height: auto;
 			font-size: inherit;
@@ -487,8 +488,51 @@
 				content: none;
 			}
 			&:hover {
-				border-color: $heading-color;
+				text-decoration: none;
 			}
+		}
+		ul {
+			margin-top: 0.25em;
+			margin-left: 1em;
+		}
+		.m-highlight & {
+			margin-bottom: 0.25em;
+		}
+	}
+}
+
+.navigation-megamenu__block {
+	margin-bottom: 1em;
+	&__heading {
+		@include font-size($zeta + 1);
+		a:not(.button) {
+			color: $action;
+			text-decoration: underline;
+			display: inline-block;
+			min-height: auto;
+			font-size: inherit;
+			&:after {
+				content: none;
+			}
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+	&__copy {
+		@include font-size($zeta);
+		margin-top: 0.5em;
+	}
+	&__link {
+		@include font-size($zeta);
+		color: $action !important;
+		text-decoration: underline;
+		margin-top: 0.5em;
+		&:after {
+			content: none !important;
+		}
+		&:hover {
+			text-decoration: none;
 		}
 	}
 }

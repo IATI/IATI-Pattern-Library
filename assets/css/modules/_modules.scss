@@ -31,9 +31,11 @@
 
 .m-header-link {
     margin-left: 10px;
+    padding: 10px;
     display: inline-block;
     transform: translateY(-3px);
     visibility: hidden;
+    border-bottom: none !important;
 }
 
 .m-blocks {
@@ -184,13 +186,42 @@
 // ------------------------------------------------------------
 
 .m-highlight {
-    background-color: #fff;
+    background-color: $iati-ash;
     padding: 1.5em;
+    .button {
+        width: auto;
+    }
+    &--alt {
+        background-color: #fff;
+        padding: 1em;
+    }
+    a:not(.button) {
+        color: $action !important;
+        text-decoration: underline;
+        &:hover {
+            text-decoration: none;
+            &:after {
+                content: none !important;
+            }
+        }
+    }
 }
 
 .m-highlight__heading {
-    @extend .type-m;
+    @extend .type-xs;
+    @extend .type-xs--trailer;
     @extend .heading;
+    a {
+        color: $action !important;
+        text-decoration: underline;
+        min-height: auto !important;
+        &:hover {
+            text-decoration: none;
+            &:after {
+                content: none !important;
+            }
+        }
+    }
 }
 
 .m-highlight__copy {

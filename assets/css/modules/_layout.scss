@@ -81,6 +81,27 @@
 }
 
 // ------------------------------------------------------------
+// Offset
+// ------------------------------------------------------------
+
+.l-offset {
+	@extend %l;
+	&__col {
+		margin-bottom: 2em;
+		@include respond-to($c-vp) {
+			margin-bottom: 0;
+			width: 30%;
+			margin-right: 5%;
+			float: left;
+			+ .l-offset__col {
+				width: 65%;
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+// ------------------------------------------------------------
 // 3 column grid
 // ------------------------------------------------------------
 
@@ -90,7 +111,7 @@
 		@supports (display: grid) {
 			display: grid;
 			grid-template-columns: 1fr 1fr 1fr;
-			grid-column-gap: 50px;
+			grid-column-gap: 25px;
 		}
 		@supports (display: -ms-grid) {
 			display: block;
@@ -106,7 +127,7 @@
 			display: block;
 			width: 30%;
 			margin-left: 5%;
-			margin-bottom: 0;
+			margin-bottom: 1em;
 			&:nth-child(3n+1) {
 				margin-left: 0;
 				clear: left;
@@ -190,6 +211,55 @@
 				width: 47.5%;
 				margin-left: 5%;
 				&:nth-child(2n+1) {
+					margin-left: 0;
+					clear: left;
+				}
+			}
+		}
+	}
+}
+
+// ------------------------------------------------------------
+// 4 column grid
+// ------------------------------------------------------------
+
+.l-4up {
+	@extend %l;
+	@include respond-to($c-vp) {
+		@supports (display: grid) {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			grid-column-gap: 50px;
+		}
+		@supports (display: -ms-grid) {
+			display: block;
+		}
+	}
+	&__col {
+		margin-bottom: 3em;
+		@include respond-to($c-vp) {
+			float: left;
+			display: block;
+			width: 21.25%;
+			margin-left: 5%;
+			margin-bottom: 0;
+			&:nth-child(3n+1) {
+				margin-left: 0;
+				clear: left;
+				@supports (display: grid) {
+					margin-left: 0;
+				}
+			}
+			@supports (display: grid) {
+				margin-left: 0;
+				width: auto;
+			}
+			@supports (display: -ms-grid) {
+				float: left;
+				display: block;
+				width: 21.25%;
+				margin-left: 5%;
+				&:nth-child(3n+1) {
 					margin-left: 0;
 					clear: left;
 				}

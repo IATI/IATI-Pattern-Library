@@ -222,10 +222,14 @@
 		display: inline-block;
 		border-radius: 3px;
 		color: $iati-sunset;
+		margin-bottom: 1em;
 	}
 
 	pre code {
 		display: block;
+		overflow-x: auto;
+        white-space: pre-wrap;
+        word-wrap: break-word;
 	}
 
 	dl {
