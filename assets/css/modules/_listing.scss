@@ -333,7 +333,8 @@
 	}
 }
 
-.listing-search__meta {
+.listing-search__date,
+.listing-search__tag {
 	@include font-size($eta);
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -342,16 +343,6 @@
 .listing-search__copy {
 	@include font-size($para);
 	margin-top: 1em;
-}
-
-.listing-search__tag {
-	position: absolute;
-	top: 0;
-	right: 0;
-	background-color: $iati-land;
-	color: $heading-color;
-	padding: 0.25em 0.5em;
-	@include font-size($zeta);
 }
 
 .listing-search__highlight {
