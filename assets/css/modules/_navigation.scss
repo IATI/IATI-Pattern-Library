@@ -106,18 +106,18 @@
 		@include respond-to($menu-respond) {
 			display: inline-block;
 			float: left;
-			margin-left: 1em;
-			&:first-child {
-				margin-left: 0;
-			}
+			// margin-left: 1em;
+			// &:first-child {
+			// 	margin-left: 0;
+			// }
 		}
-		@include respond-to($d-vp) {
-			margin-left: 2em;
-			&:first-child {
-				margin-left: 0;
-			}
-		}
-		a:not(.button) {
+		// @include respond-to($d-vp) {
+			// margin-left: 2em;
+			// &:first-child {
+			// 	margin-left: 0;
+			// }
+		// }
+		> a:not(.button) {
 			display: block;
 			position: relative;
 			color: $heading-color;
@@ -132,6 +132,7 @@
 			}
 			@include respond-to($menu-respond) {
 				min-height: 40px;
+				padding: 0 .5em;
 				&:after {
 					content: '';
 					position: absolute;
@@ -144,6 +145,9 @@
 					transform-origin: bottom right;
 					transition: transform 0.25s ease-out;
 				}
+			}
+			@include respond-to($d-vp) {
+				padding: 0 1em;
 			}
 			@include link-active-styles {
 				&:after {
@@ -464,6 +468,12 @@
 	}
 	+ .navigation-megamenu__col {
 		width: 62%;
+	}
+	&--small {
+		width: 25%;
+		+ .navigation-megamenu__col {
+			width: 72%;
+		}
 	}
 }
 

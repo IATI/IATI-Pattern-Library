@@ -230,9 +230,20 @@
 			display: grid;
 			grid-template-columns: 1fr 1fr 1fr 1fr;
 			grid-column-gap: 50px;
+			.navigation-megamenu & {
+				grid-column-gap: 25px;
+				&:first-child {
+					margin-bottom: 20px;
+				}
+			}
 		}
 		@supports (display: -ms-grid) {
 			display: block;
+		}
+		&--double-right {
+			@supports (display: grid) {
+				grid-template-columns: 1fr 1fr 48.5%;
+			}
 		}
 	}
 	&__col {
@@ -262,6 +273,13 @@
 				&:nth-child(3n+1) {
 					margin-left: 0;
 					clear: left;
+				}
+			}
+		}
+		&--double {
+			@include respond-to($c-vp) {
+				@supports (display: -ms-grid) {
+					width: 47.5%;
 				}
 			}
 		}
