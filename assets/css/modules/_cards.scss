@@ -119,8 +119,13 @@
     float: left;
     width: 25%;
     margin-right: 5%;
+    padding: 1em;
     img {
         width: 100%;
+        display: block;
+    }
+    &--background {
+        background-color: $iati-ocean;
     }
 }
 

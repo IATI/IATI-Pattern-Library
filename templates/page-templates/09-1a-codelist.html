@@ -92,9 +92,9 @@
             <h2>Codes<a class="m-header-link" href="#header-id" title="Permalink to this headline">¶</a></h2>
             <dl>
                 {% for item in codelists.codelists %}
-                    <dt>Code: {{ item.code }} - {{ item.title }}</dt>
+                    <dt>{{ item.code }} - {{ item.title }}</dt>
                     <dd>
-                        <p>{{ item.content}}</p>
+                        <p>{{ item.content | truncate(140) }}</p>
                         <p>Category: <a href="#">{{ item.category }}</a></p>
                     </dd>
                 {% endfor %}
