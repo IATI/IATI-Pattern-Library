@@ -115,6 +115,17 @@
     }
 }
 
+.card__sub-heading {
+    @extend .heading;
+    @include font-size($epsilon);
+    line-height: 1.3em;
+    display: block;
+    margin-top: 1.75em;
+    + .card__list {
+        margin-top: .5em;
+    }
+}
+
 .card__logo {
     float: left;
     width: 25%;
