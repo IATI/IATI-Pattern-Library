@@ -223,3 +223,25 @@
         display: none;
     }
 }
+
+.hero-notice {
+    background-color: $iati-sunset;
+    padding: 1.5em 0;
+    margin-top: -5em;
+    margin-bottom: 5em;
+}
+
+.hero-notice__copy {
+    @include font-size($para);
+    color: #fff;
+    font-weight: 700;
+    line-height: 1;
+    a {
+        color: #fff;
+        text-decoration: underline;
+    }
+    .ico {
+        top: -2px;
+        margin-right: 10px;
+    }
+}
