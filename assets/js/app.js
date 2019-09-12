@@ -6,6 +6,7 @@ import iframer from './utils/iframer';
 import mNav from './utils/mNav';
 import sNav from './utils/mNav';
 import searchTrigger from './utils/searchTrigger';
+import counter from './utils/counter';
 
 function globals () {
 
@@ -75,6 +76,10 @@ function globals () {
         var target = $(this).attr('data-target');
         $('#' + target).scrollView();
     });
+
+    // counter for the homepage numbers
+    counter();
+
 }
 
 $(function run () {
