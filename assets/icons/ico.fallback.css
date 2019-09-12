@@ -320,3 +320,10 @@
 }
 
 
+
+.ico-warning-white {
+	background-image: url('png/warning-white.png');
+	background-repeat: no-repeat;
+}
+
+
