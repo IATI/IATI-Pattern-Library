@@ -226,6 +226,9 @@
 			left: -7%;
 			width: 107%;
 		}
+		.listing--member & {
+			content: none;
+		}
 	}
 	&__item {
 		@include font-size($eta);
@@ -277,6 +280,9 @@
 				display: block;
 			}
 		}
+	}
+	.listing--member & {
+		background-color: #fff;
 	}
 }
 
