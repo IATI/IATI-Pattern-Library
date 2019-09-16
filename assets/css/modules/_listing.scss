@@ -48,7 +48,7 @@
 			margin-bottom: 0;
 		}
 		@include respond-to($b-vp) {
-			.listing--people & {
+			.listing--people &, .listing--member & {
 				margin-bottom: 0;
 				display: block;
 				float: left;
@@ -77,6 +77,9 @@
 			.listing--people & {
 				width: 25%;
 			}
+			.listing--member & {
+				width: 15%;
+			}
 		}
 	}
 	&__body {
@@ -92,7 +95,7 @@
 			margin-right: 2px;
 		}
 		@include respond-to($b-vp) {
-			.listing--people & {
+			.listing--people &, .listing--member & {
 				margin-bottom: 0;
 				display: block;
 				float: right;
@@ -120,6 +123,9 @@
 			}
 			.listing--people & {
 				width: 70%;
+			}
+			.listing--member & {
+				width: 80%;
 			}
 		}
 	}
@@ -204,6 +210,9 @@
 	.listing--people & {
 		max-width: 80%;
 	}
+	.listing--member & {
+		margin-top: 0.25em;
+	}
 	&:after {
 		content: "";
 		position: absolute;
@@ -224,6 +233,10 @@
 		letter-spacing: 1px;
 		display: inline-block;
 		margin-right: 1em;
+		.listing--member & {
+			display: block;
+			text-transform: none;
+		}
 	}
 }
 

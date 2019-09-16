@@ -44,6 +44,10 @@
 		"stage": "approved"
 	},
 	{
+		"name": "01-6-members-list",
+		"stage": "Template"
+	},
+	{
 		"name": "02-1-guidance-support",
 		"stage": "approved"
 	},

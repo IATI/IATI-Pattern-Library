@@ -1,0 +1,85 @@
+{# 1. Extend the relevant layout #}
+{# --------------------------------------- #}
+
+{% extends 'sidebar-reverse.html' %}
+
+
+{# --------------------------------------- #}
+{# 2. Assign Settings and variables #}
+{# --------------------------------------- #}
+
+{% set id = "about" %}
+{% set section = "about" %}
+{% set title = "Members assembly" %}
+{% set hero_copy = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." %}
+
+
+{# --------------------------------------- #}
+{# 3. Add models and macros #}
+{# --------------------------------------- #}
+
+{% model 'members', as="member" %}
+
+{% import 'macros/button.html' as buttons %}
+{% import 'macros/icon.html' as icons %}
+
+
+{# --------------------------------------- #}
+{#
+   4. Add page content into relevant areas
+      Add/Delete blocks as necessary
+#}
+{# --------------------------------------- #}
+
+{% block hero %}
+    {% include 'heroes/hero-minor.html' %}
+{% endblock %}
+
+{% block aside %}
+    <div class="aside-m">
+        <div class="aside-m__header fill-sunrise">
+            <h3 class="aside-m__heading">In this section</h3>
+        </div>
+        {% include 'navigation/secondary-child.html' %}
+    </div>
+{% endblock %}
+
+{% block main %}
+    <div class="is-typeset is-typeset--additionals">
+        <p>The members' assembly is formed of all members of IATI, and meets in person once a year. Our members fund the initiative, ensuring IATI can continue implementing its work to improve global transparency.</p>
+        <p>This body has final approval of strategic decisions, including the recommendations on the budget and work plan proposed by IATI's governing board.</p>
+        <h3>Chair and Vice Chairs</h3>
+        <p>The members' assembly is chaired by IATI's Chair and Vice Chairs, who are appointed by the governing board.</p>
+        <ul>
+            <li><strong>Chair:</strong> Theo van de Sande, Ministry of Foreign Affairs, Netherlands</li>
+            <li><strong>Vice Chair:</strong> Kazi Shofiqul Azam, Secretary, Economic Relations Division in the Ministry of Finance, Bangladesh</li>
+            <li><strong>Vice Chair:</strong> Sarah Johns, Transparency Adviser, Bond</li>
+        </ul>
+    </div>
+
+    <div class="l-listing l-listing--people l-listing--no-pagination">
+        <div class="section-border">
+            <h2 class="section__heading">Members</h2>
+            <div class="filter-group">
+                <div class="filter">
+                    <h3 class="filter__heading">Filter by Constituency:</h3>
+                    <ul class="filter__list">
+                        <li><a href="#">Provider of development cooperation</a></li>
+                        <li><a href="#">Partner country</a></li>
+                        <li><a href="#">CSO / other</a></li>
+                    </ul>
+                </div>
+                <div class="filter">
+                    <h3 class="filter__heading">Sort by:</h3>
+                    <ul class="filter__list">
+                        <li><a href="#">Alphabetical</a></li>
+                        <li><a href="#">Year joined</a></li>
+                    </ul>
+                </div>
+            </div>
+            {% for item in member.member_list %}
+                {% include 'listings/members.html' %}
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
