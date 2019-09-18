@@ -64,9 +64,10 @@
                 <div class="filter">
                     <h3 class="filter__heading">Filter by Constituency:</h3>
                     <ul class="filter__list">
-                        <li><a href="#">Provider of development cooperation</a></li>
+                        <li><a href="#">Civil society organisations / other</a></li>
                         <li><a href="#">Partner country</a></li>
-                        <li><a href="#">CSO / other</a></li>
+                        <li><a href="#">Private sector organisations</a></li>
+                        <li><a href="#">Provider of development cooperation</a></li>
                     </ul>
                 </div>
                 <div class="filter">
@@ -77,9 +78,11 @@
                     </ul>
                 </div>
             </div>
-            {% for item in member.member_list %}
-                {% include 'listings/members.html' %}
-            {% endfor %}
+            <div class="listing-box">
+                {% for item in member.member_list %}
+                    {% include 'listings/members.html' %}
+                {% endfor %}
+            </div>
         </div>
     </div>
 {% endblock %}

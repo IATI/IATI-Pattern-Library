@@ -16,6 +16,9 @@
 			padding-bottom: 2em;
 		}
 	}
+	&.listing--member {
+		margin-top: 2em;
+	}
 	.l-listing--people & {
 		border-bottom: 0;
 		padding-bottom: 0;
@@ -46,6 +49,9 @@
 		}
 		.listing--featured &, .listing--guidance & {
 			margin-bottom: 0;
+		}
+		.listing--member & {
+			width: 60%;
 		}
 		@include respond-to($b-vp) {
 			.listing--people &, .listing--member & {
@@ -78,7 +84,7 @@
 				width: 25%;
 			}
 			.listing--member & {
-				width: 15%;
+				width: 25%;
 			}
 		}
 	}
@@ -167,6 +173,10 @@
 .listing__heading {
 	@extend .type-m;
 	@extend .heading;
+	@include respond-to-max($c-vp) {
+		font-size: 1.8rem;
+
+	}
 	line-height: 1.2;
 	margin-bottom: 0.5em;
 	.listing__header & {
@@ -212,6 +222,7 @@
 	}
 	.listing--member & {
 		margin-top: 0.25em;
+		margin-bottom: 0;
 	}
 	&:after {
 		content: "";
@@ -239,6 +250,7 @@
 		.listing--member & {
 			display: block;
 			text-transform: none;
+			@include font-size($epsilon);
 		}
 	}
 }
@@ -367,4 +379,13 @@
 .listing-search__highlight {
 	background-color: lighten($iati-sunset, 35%);
 	display: inline;
+}
+
+
+// Search results
+// ------------------------------------------------------------
+
+.listing-box {
+	background-color: #fff;
+    padding: 2em;
 }
