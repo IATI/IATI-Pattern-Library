@@ -90,15 +90,29 @@
             <p><a href="#">GitHub source</a></p>
             <p>The codelists were translated in French in April 2018 with the support of the Government of Canada. Please note that if any codelists have been added since then, they may not be available in French.</p>
             <h2>Codes<a class="m-header-link" href="#header-id" title="Permalink to this headline">¶</a></h2>
-            <dl>
-                {% for item in codelists.codelists %}
-                    <dt>{{ item.code }} - {{ item.title }}</dt>
-                    <dd>
-                        <p>{{ item.content | truncate(140) }}</p>
-                        <p>Category: <a href="#">{{ item.category }}</a></p>
-                    </dd>
-                {% endfor %}
-            </dl>
         </div>
+        {% for item in codelists.codelists %}
+            <div class="m-codelist">
+                <aside class="m-codelist__aside">
+                    <span class="m-codelist__flag">Code</span>
+                    <h3 class="m-codelist__code">{{ item.code }}</h3>
+                </aside>
+                <div class="m-codelist__main">
+                    <div class="m-codelists__header">
+                        <div class="m-codelist__category">
+                            <span class="m-codelist__flag">Category</span>
+                            <p class="m-codelist__copy"><a href="#">{{ item.category }}</a></p>
+                        </div>
+                        <div class="m-codelist__heading">
+                            <span class="m-codelist__flag">Name</span>
+                            <h2 class="m-codelist__title">{{ item.title }}</h2>
+                        </div>
+                    </div>
+
+                    <span class="m-codelist__flag">Description</span>
+                    <p class="m-codelist__copy">{{ item.content | truncate(140) }}</p>
+                </div>
+            </div>
+        {% endfor %}
     </section>
 {% endblock %}

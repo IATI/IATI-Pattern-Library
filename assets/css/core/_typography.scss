@@ -136,7 +136,7 @@
 	h1 {
 		@extend .type-l;
 		@extend .type-l--leader;
-		@extend .type-l--trailer;
+		//@extend .type-l--trailer;
 		@extend .heading;
 		&:hover > a.m-header-link {
 			visibility: visible;
@@ -146,7 +146,7 @@
 	h2 {
 		@extend .type-m;
 		@extend .type-m--leader;
-		@extend .type-m--trailer;
+		//@extend .type-m--trailer;
 		@extend .heading;
 		&:hover > a.m-header-link {
 			visibility: visible;
@@ -156,7 +156,7 @@
 	h3 {
 		@extend .type-s;
 		@extend .type-s--leader;
-		@extend .type-s--trailer;
+		//@extend .type-s--trailer;
 		@extend .heading;
 		&:hover > a.m-header-link {
 			visibility: visible;
@@ -166,7 +166,7 @@
 	h4, h5, h6 {
 		@extend .type-xs;
 		@extend .type-xs--leader;
-		@extend .type-xs--trailer;
+		//@extend .type-xs--trailer;
 		@extend .heading;
 		&:hover > a.m-header-link {
 			visibility: visible;
@@ -221,7 +221,7 @@
 		@include font-size($para);
 		display: inline-block;
 		border-radius: 3px;
-		color: $iati-sunset;
+		color: $iati-ocean;
 		margin-bottom: 1em;
 	}
 
@@ -239,7 +239,7 @@
 			margin-bottom: 0.5em;
 		}
 		dd {
-			margin-left: 3em;
+			//margin-left: 3em;
 		}
 	}
 

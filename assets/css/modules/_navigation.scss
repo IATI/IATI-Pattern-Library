@@ -264,6 +264,7 @@
 			position: relative;
 			@include font-size($epsilon - 1);
 			button {
+				cursor: pointer;
 				width: 46px;
 				height: 45.5px;
 				position: absolute;
@@ -311,8 +312,9 @@
 		}
 		.navigation-secondary--reference & {
 			position: relative;
-			background-color: lighten($iati-sunrise, 24%);
+			background-color: #fff;
 			a {
+				background-color: #fff;
 				margin-left: 45px;
 				width: calc(100% - 45px);
 			}
@@ -325,6 +327,9 @@
 			}
 		}
 		&.navigation-secondary__child__item--active {
+			a {
+				background-color: lighten($iati-sunrise, 6%);
+			}
 			button {
 				.ico {
 					transform: rotate(180deg) !important;
@@ -337,7 +342,7 @@
 .navigation-secondary__third-child {
 	&__item {
 		a {
-			background-color: lighten($iati-sunrise, 20%);
+			background-color: #fff;
 			border-left-width: 6px;
 			color: $heading-color;
 			padding-left: 2em;
@@ -350,6 +355,9 @@
 		}
 		.navigation-secondary--reference & {
 			//background-color: lighten($iati-sunrise, 20%);
+			a {
+				background-color: #fff;
+			}
 		}
 	}
 }
@@ -396,19 +404,24 @@
 
 .navigation-language {
 	display: none;
+	@extend %pie-clearfix;
 	@include respond-to($menu-respond) {
 		display: block;
 		position: absolute;
-		top: 11px;
+		top: 12px;
 		right: 25em;
 		@include font-size($zeta);
 	}
 	&__item {
+		&:first-child {
+			margin-right: 10px;
+		}
 		display: inline-block;
+		float: left;
 		a {
 			//background-color: $iati-ash;
-			border: 1px solid $iati-ash;
-			padding: 0.5em;
+			//border: 1px solid $iati-ash;
+			padding: 0.9em 0.75em 0.65em 0.75em;
 			color: $heading-color;
 			transition: all, ease-in-out, 0.3s;
 			@include link-active-styles {
@@ -463,6 +476,12 @@
 	width: 35%;
 	float: left;
 	margin-right: 3%;
+	&--border {
+		.l-3up__col, .l-4up__col {
+			border-left: 3px solid $iati-ocean;
+			padding-left: 1em;
+		}
+	}
 	&:last-child {
 		margin-right: 0;
 	}
@@ -485,6 +504,7 @@
 	margin-bottom: 0.75em;
 	li {
 		margin-bottom: 0.75em;
+		line-height: 1.2;
 		&:last-child {
 			margin-bottom: 0;
 		}

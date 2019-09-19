@@ -227,3 +227,78 @@
 .m-highlight__copy {
     @include font-size($zeta);
 }
+
+// ------------------------------------------------------------
+// Codelist
+// ------------------------------------------------------------
+
+.m-codelist {
+    @extend %pie-clearfix;
+    border-bottom: 1px solid $default-border-color;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+    &__aside {
+        float: left;
+        width: 10%;
+    }
+    &__main {
+        float: right;
+        width: 85%;
+
+    }
+}
+
+.m-codelist__flag {
+    color: darken($iati-ash, 25%);
+    @include font-size($eta - 1);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.25em;
+    display: block;
+}
+
+.m-codelist__code {
+    @include font-size($beta);
+}
+
+.m-codelist__header {
+    @extend %pie-clearfix;
+    position: relative;
+}
+
+.m-codelists__heading {
+    @include respond-to($d-vp) {
+        float: left;
+        width: 70%;
+    }
+}
+
+.m-codelist__category {
+    margin-bottom: 2em;
+    @include respond-to($d-vp) {
+        float: right;
+        width: 25%;
+        margin-left: 5%;
+        .m-codelist__copy {
+            @include font-size($para - 2);
+        }
+    }
+}
+
+.m-codelist__title {
+    @include font-size($delta);
+    line-height: 1.3;
+    margin-bottom: 0.75em;
+    max-width: 70%;
+}
+
+.m-codelist__copy {
+    @include font-size($para);
+    a {
+        color: $action;
+        border-bottom: 3px solid $iati-air;
+        &:hover {
+            color: $iati-air;
+        }
+    }
+}
