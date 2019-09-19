@@ -318,6 +318,9 @@
 				margin-left: 15px;
 				width: calc(100% - 15px);
 			}
+			> a {
+				background-color: #efefef;
+			}
 			button {
 				background-color: lighten($iati-sunrise, 6%);
 				left: 15px;
@@ -361,6 +364,9 @@
 				margin-left: 30px;
 				width: calc(100% - 30px);
 				color: $heading-color;
+			}
+			> a {
+				background-color: #efefef;
 			}
 			button {
 				background-color: lighten($iati-sunrise, 6%);
@@ -407,6 +413,9 @@
 				color: $heading-color;
 				width: calc(100% - 45px);
 			}
+			> a {
+				background-color: #efefef;
+			}
 			button {
 				background-color: lighten($iati-sunrise, 6%);
 				left: 45px;
@@ -452,6 +461,9 @@
 				color: $heading-color;
 				width: calc(100% - 60px);
 			}
+			> a {
+				background-color: #efefef;
+			}
 			button {
 				background-color: lighten($iati-sunrise, 6%);
 				left: 60px;
@@ -496,6 +508,9 @@
 				margin-left: 60px;
 				color: $heading-color;
 				width: calc(100% - 60px);
+			}
+			> a {
+				background-color: #efefef;
 			}
 			button {
 				background-color: lighten($iati-sunrise, 6%);
