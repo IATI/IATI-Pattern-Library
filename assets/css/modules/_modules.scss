@@ -292,13 +292,34 @@
     max-width: 70%;
 }
 
+.m-codelist__content {
+    display: none;
+    @include respond-to($c-vp) {
+        display: block;
+    }
+}
+
 .m-codelist__copy {
     @include font-size($para);
+    margin-bottom: 0.5em;
     a {
         color: $action;
-        border-bottom: 3px solid $iati-air;
+        border-bottom: 2px solid $iati-air;
         &:hover {
             color: $iati-air;
         }
+    }
+}
+
+.m-codelist__link {
+    @include font-size($para);
+    color: $action;
+    display: inline-block;
+    border-bottom: 2px solid $iati-air;
+    &:hover {
+        color: $iati-air;
+    }
+    .ico {
+        margin-top: -4px;
     }
 }

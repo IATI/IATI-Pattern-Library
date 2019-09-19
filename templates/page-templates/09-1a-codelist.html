@@ -108,9 +108,11 @@
                             <h2 class="m-codelist__title">{{ item.title }}</h2>
                         </div>
                     </div>
-
-                    <span class="m-codelist__flag">Description</span>
-                    <p class="m-codelist__copy">{{ item.content | truncate(140) }}</p>
+                    <div class="m-codelist__content">
+                        <span class="m-codelist__flag">Description</span>
+                        <p class="m-codelist__copy">{{ item.content | truncate(140) }}</p>
+                    </div>
+                    <p class="m-codelist__link"><a href="#">Expand {{ icons.icon('ico-plus-ocean', '14') }}</a></p>
                 </div>
             </div>
         {% endfor %}
