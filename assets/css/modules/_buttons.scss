@@ -99,6 +99,11 @@ button.button, input.button {
 	text-align: center;
 }
 
+.button--small {
+	@include font-size($zeta);
+	padding: .6em .75em;
+}
+
 .button--disabled {
 	opacity: 0.5;
 	cursor: not-allowed;
