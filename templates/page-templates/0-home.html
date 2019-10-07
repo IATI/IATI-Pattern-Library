@@ -132,27 +132,22 @@
             <div class="max-meter is-typeset is-typeset--article">
                 <p class="section__copy">Duis sit amet aliquam enim. Donec tempus nisi est, vel finibus dolor finibus sit amet. Pellentesque maximus sollicitudin urna.</p>
             </div>
-            <div class="l-2up">
-                <div class="l-2up__col">
-                    <div class="help help--standout">
-                        <div class="help__header help__header--big background-cover" style="background-image: url({{ global.assets_root }}/img/case-study1.png)">
-                            <div class="help__panel fill-sunset">
-                                <h3 class="help__heading">Netherlands Enterprise Agency</h3>
-                                <p>Sharing information on more than 1100 projects, across 125 countries.</p>
-                                <a href="#none">Read more</a>
-                            </div>
-                        </div>
-                    </div>
+            <div class="l-offset l-offset--reverse">
+                <div class="l-offset__col">
+                    <article class="case-study">
+                    	<div class="case-study__media background-cover" style="background-image: url({{ global.assets_root }}/img/content-image3.jpg"></div>
+                    	<div class="case-study__panel">
+                    		<h2 class="case-study__heading"><a href=""><span>São Tomé and Príncipe is IATI’s first Portuguese-speaking Member</span></a></h2>
+                    		<p class="case-study__excerpt">Nullam magna ligula, sagittis vitae faucibus ut, sollicitudin et mauris. Donec et varius lacus.</p>
+                    	</div>
+                    </article>
                 </div>
-                <div class="l-2up__col">
-                    <div class="help help--standout">
-                        <div class="help__header background-cover" style="background-image: url({{ global.assets_root }}/img/case-study2.png)">
-                            <div class="help__panel fill-sunset">
-                                <h3 class="help__heading">Spotlight on IATI data use</h3>
-                                <p> IATI has launched a new series of profiles on data use in partner countries, starting with Bangladesh.</p>
-                                <a href="#none">Read more</a>
-                            </div>
-                        </div>
+                <div class="l-offset__col">
+                    <h3 class="case-study__heading"><a href="#">Netherlands Enterprise Agency</a></h3>
+                    <p class="case-study__excerpt"> IATI has launched a new series of profiles on data use in partner countries, starting with Bangladesh.</p>
+                    <div class="space-module-top">
+                        <h3 class="case-study__heading"><a href="#">Spotlight on IATI data use</a></h3>
+                        <p class="case-study__excerpt"> IATI has launched a new series of profiles on data use in partner countries, starting with Bangladesh.</p>
                     </div>
                 </div>
             </div>
@@ -160,10 +155,40 @@
     </div>
     <div class="row">
         <div class="section-alt">
-            <h2 class="section__heading">Partners</h2>
             <div class="l-2up">
                 <div class="l-2up__col">
-                    <article class="listing listing--article listing--people">
+                    <h2 class="section__heading">What our partners say</h2>
+                    <article class="listing listing--article listing--people listing--people-alt">
+                        <aside class="listing__aside">
+                            <div class="listing__media">
+                                <img src="{{ global.assets_root }}/img/portrait.png" alt="alt tag">
+                            </div>
+                        </aside>
+                        <div class="listing__body">
+                            <blockquote class="as-blockquote listing-quote">
+                                <p>&ldquo;Duis sit amet aliquam enim. Donec tempus nisi est, vel finibus dolor finibus sit amet. Pellentesque maximus sollicitudin urna.&rdquo;</p>
+
+                                <cite class="heading">Person Name</cite>
+                                <cite>Role</cite>
+                            </blockquote>
+                        </div>
+                    </article>
+                    <article class="listing listing--article listing--people listing--people-alt">
+                        <aside class="listing__aside">
+                            <div class="listing__media">
+                                <img src="{{ global.assets_root }}/img/portrait.png" alt="alt tag">
+                            </div>
+                        </aside>
+                        <div class="listing__body">
+                            <blockquote class="as-blockquote listing-quote">
+                                <p>&ldquo;Duis sit amet aliquam enim. Donec tempus nisi est, vel finibus dolor finibus sit amet. Pellentesque maximus sollicitudin urna.&rdquo;</p>
+
+                                <cite class="heading">Person Name</cite>
+                                <cite>Role</cite>
+                            </blockquote>
+                        </div>
+                    </article>
+                    <article class="listing listing--article listing--people listing--people-alt">
                         <aside class="listing__aside">
                             <div class="listing__media">
                                 <img src="{{ global.assets_root }}/img/portrait.png" alt="alt tag">
@@ -180,21 +205,8 @@
                     </article>
                 </div>
                 <div class="l-2up__col">
-                    <article class="listing listing--article listing--people">
-                        <aside class="listing__aside">
-                            <div class="listing__media">
-                                <img src="{{ global.assets_root }}/img/portrait.png" alt="alt tag">
-                            </div>
-                        </aside>
-                        <div class="listing__body">
-                            <blockquote class="as-blockquote listing-quote">
-                                <p>&ldquo;Duis sit amet aliquam enim. Donec tempus nisi est, vel finibus dolor finibus sit amet. Pellentesque maximus sollicitudin urna.&rdquo;</p>
-
-                                <cite class="heading">Person Name</cite>
-                                <cite>Role</cite>
-                            </blockquote>
-                        </div>
-                    </article>
+                    <h2 class="section__heading">Latest news</h2>
+                    <a class="twitter-timeline" data-height="500" href="https://twitter.com/IATI_aid?ref_src=twsrc%5Etfw">Tweets by IATI_aid</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                 </div>
             </div>
         </div>

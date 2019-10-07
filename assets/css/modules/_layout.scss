@@ -99,6 +99,20 @@
 			}
 		}
 	}
+	&--reverse {
+		.l-offset__col {
+			@include respond-to($c-vp) {
+				margin-bottom: 0;
+				width: 65%;
+				margin-right: 5%;
+				float: left;
+				+ .l-offset__col {
+					width: 30%;
+					margin-right: 0;
+				}
+			}
+		}
+	}
 }
 
 // ------------------------------------------------------------

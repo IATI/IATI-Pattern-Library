@@ -137,6 +137,10 @@
 	}
 }
 
+.listing--people-alt {
+	margin-bottom: 2em;
+}
+
 .listing--article-alt {
 	@include respond-to($menu-respond) {
 		border-left: 1px solid $default-border-color;
@@ -151,6 +155,11 @@
 	}
 	.l-listing--people & {
 		margin-top: 2em;
+	}
+	.listing--people-alt & {
+		p {
+			@include font-size($para);
+		}
 	}
 }
 
