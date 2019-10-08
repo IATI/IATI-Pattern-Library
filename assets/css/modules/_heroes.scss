@@ -111,6 +111,7 @@
     }
     @include respond-to($c-vp) {
         max-width: 60%;
+        float: left;
         .hero--image &,
         .max-meter & {
             max-width: 100%;
@@ -118,6 +119,15 @@
         .hero--tool & {
             float: left;
         }
+    }
+}
+
+.hero__media {
+    margin-top: 2em;
+    @include respond-to($c-vp) {
+        margin-top: 0;
+        width: 35%;
+        float: right;
     }
 }
 

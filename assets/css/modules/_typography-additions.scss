@@ -76,6 +76,12 @@
 		@include font-size($zeta);
 		display: block;
 	}
+	.case-study__panel & {
+		padding-top: 0;
+		p {
+			@include font-size($para);
+		}
+	}
 }
 
 .is-typeset {
