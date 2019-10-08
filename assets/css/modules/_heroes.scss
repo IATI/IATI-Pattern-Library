@@ -111,6 +111,7 @@
     }
     @include respond-to($c-vp) {
         max-width: 60%;
+        float: left;
         .hero--image &,
         .max-meter & {
             max-width: 100%;
@@ -118,6 +119,15 @@
         .hero--tool & {
             float: left;
         }
+    }
+}
+
+.hero__media {
+    margin-top: 2em;
+    @include respond-to($c-vp) {
+        margin-top: 0;
+        width: 35%;
+        float: right;
     }
 }
 
@@ -225,7 +235,7 @@
 }
 
 .hero-notice {
-    background-color: $iati-sunset;
+    background-color: lighten($warning, 40%);
     padding: 1.5em 0;
     margin-top: -5em;
     margin-bottom: 5em;
@@ -233,11 +243,11 @@
 
 .hero-notice__copy {
     @include font-size($para);
-    color: #fff;
     font-weight: 700;
     line-height: 1;
+    color: darken($warning, 15%);
     a {
-        color: #fff;
+        color: darken($warning, 15%);
         text-decoration: underline;
     }
     .ico {
