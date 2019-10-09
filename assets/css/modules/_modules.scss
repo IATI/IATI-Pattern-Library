@@ -38,6 +38,11 @@
     border-bottom: none !important;
 }
 
+.m-text-link {
+    @include font-size($para);
+    border-bottom: 2px solid $iati-air;
+}
+
 .m-blocks {
     @include respond-to($menu-respond) {
         @supports (display: grid) {

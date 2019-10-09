@@ -86,6 +86,9 @@
 			.listing--member & {
 				width: 25%;
 			}
+			.listing--article--minor & {
+				width: 30%;
+			}
 		}
 	}
 	&__body {
@@ -133,12 +136,15 @@
 			.listing--member & {
 				width: 80%;
 			}
+			.listing--article--minor & {
+				width: 70%;
+			}
 		}
 	}
 }
 
-.listing--people-alt {
-	margin-bottom: 2em;
+.listing--article--minor {
+	margin-bottom: 3em;
 }
 
 .listing--article-alt {
@@ -147,6 +153,7 @@
 		padding-left: 4em;
 	}
 }
+
 
 .listing-quote {
 	p {
@@ -274,6 +281,9 @@
 .listing__excerpt {
 	@include font-size($epsilon);
 	margin-bottom: 1em;
+	.listing--article--minor & {
+		margin-bottom: 0.5em;
+	}
 }
 
 .listing__media {

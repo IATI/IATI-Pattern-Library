@@ -272,9 +272,9 @@
 				left: 0;
 				text-align: center;
 				background-color: $iati-sunrise;
-				.ico {
-					transition: transform, ease-in-out, 0.3s;
-				}
+				background-image: url(../svg/source/plus.svg);
+				background-position: center;
+				background-repeat: no-repeat;
 			}
 			a {
 				padding-left: 60px;
@@ -285,9 +285,7 @@
 			}
 			&.navigation-secondary__item--active {
 				button {
-					.ico {
-						transform: rotate(180deg);
-					}
+					background-image: url(../svg/source/minus.svg);
 				}
 			}
 		}
@@ -324,9 +322,7 @@
 			button {
 				background-color: lighten($iati-sunrise, 6%);
 				left: 15px;
-				.ico {
-					transform: rotate(0deg) !important;
-				}
+				background-image: url(../svg/source/plus.svg) !important;
 			}
 		}
 		&.navigation-secondary__child__item--active {
@@ -334,9 +330,7 @@
 				background-color: lighten($iati-sunrise, 6%);
 			}
 			button {
-				.ico {
-					transform: rotate(180deg) !important;
-				}
+				background-image: url(../svg/source/minus.svg) !important;
 			}
 		}
 	}
@@ -371,9 +365,7 @@
 			button {
 				background-color: lighten($iati-sunrise, 6%);
 				left: 30px;
-				.ico {
-					transform: rotate(0deg) !important;
-				}
+				background-image: url(../svg/source/plus.svg) !important;
 			}
 		}
 		&.navigation-secondary__child__item--active {
@@ -382,9 +374,7 @@
 				background-color: lighten($iati-sunrise, 6%);
 			}
 			button {
-				.ico {
-					transform: rotate(180deg) !important;
-				}
+				background-image: url(../svg/source/minus.svg) !important;
 			}
 		}
 	}
@@ -419,9 +409,7 @@
 			button {
 				background-color: lighten($iati-sunrise, 6%);
 				left: 45px;
-				.ico {
-					transform: rotate(0deg) !important;
-				}
+				background-image: url(../svg/source/plus.svg) !important;
 			}
 		}
 		&.navigation-secondary__child__item--active {
@@ -430,9 +418,7 @@
 				background-color: lighten($iati-sunrise, 6%);
 			}
 			button {
-				.ico {
-					transform: rotate(180deg) !important;
-				}
+				background-image: url(../svg/source/minus.svg) !important;
 			}
 		}
 	}
@@ -467,9 +453,7 @@
 			button {
 				background-color: lighten($iati-sunrise, 6%);
 				left: 60px;
-				.ico {
-					transform: rotate(0deg) !important;
-				}
+				background-image: url(../svg/source/plus.svg) !important;
 			}
 		}
 		&.navigation-secondary__child__item--active {
@@ -478,9 +462,7 @@
 				background-color: lighten($iati-sunrise, 6%);
 			}
 			button {
-				.ico {
-					transform: rotate(180deg) !important;
-				}
+				background-image: url(../svg/source/minus.svg) !important;
 			}
 		}
 	}
@@ -515,9 +497,7 @@
 			button {
 				background-color: lighten($iati-sunrise, 6%);
 				left: 75px;
-				.ico {
-					transform: rotate(0deg) !important;
-				}
+				background-image: url(../svg/source/plus.svg) !important;
 			}
 		}
 		&.navigation-secondary__child__item--active {
@@ -526,9 +506,7 @@
 				background-color: lighten($iati-sunrise, 6%);
 			}
 			button {
-				.ico {
-					transform: rotate(180deg) !important;
-				}
+				background-image: url(../svg/source/minus.svg) !important;
 			}
 		}
 	}

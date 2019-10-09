@@ -119,6 +119,12 @@
         .hero--tool & {
             float: left;
         }
+        .hero--video & {
+            width: 50%;
+            @include respond-to($d-vp) {
+                transform: translateY(3em);
+            }
+        }
     }
 }
 
@@ -128,6 +134,12 @@
         margin-top: 0;
         width: 35%;
         float: right;
+        .hero--video & {
+            width: 45%;
+            @include respond-to($d-vp) {
+                transform: translateY(-3em);
+            }
+        }
     }
 }
 
