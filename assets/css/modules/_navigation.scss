@@ -97,9 +97,7 @@
 	}
 	&__item {
 		@extend %pie-clearfix;
-		text-transform: uppercase;
-		letter-spacing: 1px;
-		@include font-size($eta + 1);
+		@include font-size($zeta);
 		&:last-child a {
 			border-bottom: none;
 		}
