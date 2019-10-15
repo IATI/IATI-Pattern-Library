@@ -253,7 +253,7 @@
 			left: -7%;
 			width: 107%;
 		}
-		.listing--member & {
+		.listing--member &, .listing--minor & {
 			content: none;
 		}
 	}
