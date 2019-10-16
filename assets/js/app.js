@@ -6,7 +6,7 @@ import iframer from './utils/iframer';
 import mNav from './utils/mNav';
 import sNav from './utils/mNav';
 import searchTrigger from './utils/searchTrigger';
-import counter from './utils/counter';
+// import counter from './utils/counter';
 
 function globals () {
 
@@ -78,8 +78,15 @@ function globals () {
     });
 
     // counter for the homepage numbers
-    counter();
+    // counter();
+    // Moved to the template to stop erroring on anything but the homepage - see 0-home.html
 
+    // Show / Hide {
+    // Used on the codelist template 09-1a-codelist.html
+    $('.show-hide-trigger').on('click', function(event) {
+        event.preventDefault();
+        $(this).prev().toggleClass('show-hide-target--hidden');
+    });
 }
 
 $(function run () {

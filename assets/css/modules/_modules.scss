@@ -271,22 +271,10 @@
     position: relative;
 }
 
-.m-codelists__heading {
+.m-codelist__heading {
     @include respond-to($d-vp) {
         float: left;
         width: 70%;
-    }
-}
-
-.m-codelist__category {
-    margin-bottom: 2em;
-    @include respond-to($d-vp) {
-        float: right;
-        width: 25%;
-        margin-left: 5%;
-        .m-codelist__copy {
-            @include font-size($para - 2);
-        }
     }
 }
 
@@ -294,7 +282,17 @@
     @include font-size($delta);
     line-height: 1.3;
     margin-bottom: 0.75em;
-    max-width: 70%;
+}
+
+.m-codelist__category {
+    margin-bottom: 2em;
+    @include respond-to($d-vp) {
+        float: right;
+        width: 25%;
+        .m-codelist__copy {
+            @include font-size($para - 2);
+        }
+    }
 }
 
 .m-codelist__content {
@@ -323,6 +321,7 @@
     border-bottom: 2px solid $iati-air;
     &:hover {
         color: $iati-air;
+        cursor: pointer;
     }
     .ico {
         margin-top: -4px;

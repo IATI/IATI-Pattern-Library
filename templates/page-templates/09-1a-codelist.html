@@ -98,21 +98,21 @@
                     <h3 class="m-codelist__code">{{ item.code }}</h3>
                 </aside>
                 <div class="m-codelist__main">
-                    <div class="m-codelists__header">
-                        <div class="m-codelist__category">
-                            <span class="m-codelist__flag">Category</span>
-                            <p class="m-codelist__copy"><a href="#">{{ item.category }}</a></p>
-                        </div>
+                    <div class="m-codelist__header">
                         <div class="m-codelist__heading">
                             <span class="m-codelist__flag">Name</span>
                             <h2 class="m-codelist__title">{{ item.title }}</h2>
                         </div>
+                        <div class="m-codelist__category">
+                            <span class="m-codelist__flag">Category</span>
+                            <p class="m-codelist__copy"><a href="#">{{ item.category }}</a></p>
+                        </div>
                     </div>
                     <div class="m-codelist__content">
                         <span class="m-codelist__flag">Description</span>
-                        <p class="m-codelist__copy">{{ item.content | truncate(140) }}</p>
+                        <p class="m-codelist__copy m-codelist__copy show-hide-target show-hide-target--hidden">{{ item.content }}</p>
+                        <a href="#" class="m-codelist__link show-hide-trigger">Expand {{ icons.icon('ico-plus-ocean', '14') }}</a>
                     </div>
-                    <p class="m-codelist__link"><a href="#">Expand {{ icons.icon('ico-plus-ocean', '14') }}</a></p>
                 </div>
             </div>
         {% endfor %}

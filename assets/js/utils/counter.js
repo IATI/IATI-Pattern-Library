@@ -43,7 +43,8 @@ function Inc(obj) {
 	}.bind(this);
 } // Inc
 
-export default function counter (){
+// export default function counter (){
+function counter (){
 	var elems = [
 		document.querySelector('#stat-activities'),
 		document.querySelector('#stat-publishers')
