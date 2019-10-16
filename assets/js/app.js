@@ -85,7 +85,7 @@ function globals () {
     // Used on the codelist template 09-1a-codelist.html
     $('.show-hide-trigger').on('click', function(event) {
         event.preventDefault();
-        $(this).prev().toggleClass('show-hide-target--hidden');
+        $(this).text($(this).text() == 'Hide -' ? 'Expand +' : 'Hide -').prev().toggleClass('show-hide-target--hidden');
     });
 }
 

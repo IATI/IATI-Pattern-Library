@@ -3,11 +3,9 @@
 // Shows / hides a class
 // ------------------------------------------------------------
 
-.show-hide-trigger {
-    // The JS trigger
-}
-
-.show-hide-target--hidden {
+.js .show-hide-target--hidden, // hide the content if there is JS
+.no-js .show-hide-trigger  // hide the trigger if there's no JS
+{
     display: none;
     visibility: hidden;
 }
