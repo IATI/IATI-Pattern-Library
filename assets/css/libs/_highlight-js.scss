@@ -15,6 +15,9 @@
 .hljs-comment {
 	color:#888888
 }
+.hljs-tag{
+	font-weight: bold;
+}
 .hljs-keyword,
 .hljs-attribute,
 .hljs-selector-tag,
@@ -31,7 +34,8 @@
 .hljs-quote,
 .hljs-template-tag,
 .hljs-deletion {
-	color:#ff7264
+	color:$iati-air;
+	font-weight: normal;
 }
 .hljs-title,
 .hljs-section {
@@ -45,22 +49,27 @@
 .hljs-link,
 .hljs-selector-attr,
 .hljs-selector-pseudo {
-	color:#BC6060
+	color:#BC6060;
+	font-weight: normal;
 }
 .hljs-literal {
-	color:#78A960
+	color:#78A960;
+	font-weight: normal;
 }
 .hljs-built_in,
 .hljs-bullet,
 .hljs-code,
 .hljs-addition {
-	color:#397300
+	color:#397300;
+	font-weight: normal;
 }
 .hljs-meta {
-	color:#1f7199
+	color:$iati-ocean;
+	font-weight: normal;
 }
 .hljs-meta-string {
-	color:#4d99bf
+	color:#4d99bf;
+	font-weight: normal;
 }
 .hljs-emphasis {
 	font-style:italic
