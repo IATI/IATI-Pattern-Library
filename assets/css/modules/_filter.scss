@@ -31,19 +31,21 @@
             display: block;
             @include respond-to($b-vp) {
                 width: 100%;
-                float: none;
+                display: block;
                 + .filter {
                     width: 100%;
-                    float: none;
                     margin-left: 0;
                 }
             }
             @include respond-to($c-vp) {
-                width: 40%;
+                width: 30%;
                 float: left;
                 margin-bottom: 0;
+                border-right: 1px solid darken($default-border-color, 5%);
                 + .filter {
-                    width: 60%;
+                    padding-left: 1em;
+                    border-right: none;
+                    width: 70%;
                     float: right;
                     margin-left: 0;
                 }
@@ -54,8 +56,13 @@
 
 .filter {
     @include font-size($para);
-    .form-field__checkboxes {
-        columns: 2;
+    @include respond-to($d-vp) {
+        .form-field__checkboxes {
+            columns: 2;
+        }
+    }
+    input[type="submit"] {
+        line-height: 1;
     }
 }
 
@@ -74,15 +81,4 @@
 
 .filter__list-active a {
     color: $action-respond;
-}
-
-.filter__search {
-    @extend %pie-clearfix;
-    input {
-        float: left;
-        width: 70%;
-        + input {
-            width: 30%;
-        }
-    }
 }
