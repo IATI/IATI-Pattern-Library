@@ -117,6 +117,9 @@
         width: 70%;
         float: left;
     }
+    .card--simple & {
+        max-width: 75%;
+    }
 }
 
 .card__sub-heading {
@@ -221,7 +224,7 @@
             }
         }
     }
-    .card--tool & {
+    .card--tool &, .card--simple & {
         display: block;
     }
 }

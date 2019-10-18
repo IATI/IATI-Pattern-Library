@@ -87,6 +87,10 @@
 		"stage": "approved"
 	},
 	{
+		"name": "02-9-standard-guidance",
+		"stage": "review"
+	},
+	{
 		"name": "03-news",
 		"stage": "approved"
 	},

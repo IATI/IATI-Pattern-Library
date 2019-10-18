@@ -7,8 +7,9 @@
     background-color: #fff;
     padding: 2em;
     border-bottom: 2px solid $body-color;
-    .filter{
+    .filter {
         margin-bottom: 20px;
+        display: block;
         &:last-child {
             margin-bottom: 0;
         }
@@ -23,10 +24,39 @@
             }
         }
     }
+    &--reverse {
+        background-color: $iati-ash;
+        .filter {
+            margin-bottom: 20px;
+            display: block;
+            @include respond-to($b-vp) {
+                width: 100%;
+                float: none;
+                + .filter {
+                    width: 100%;
+                    float: none;
+                    margin-left: 0;
+                }
+            }
+            @include respond-to($c-vp) {
+                width: 40%;
+                float: left;
+                margin-bottom: 0;
+                + .filter {
+                    width: 60%;
+                    float: right;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
 }
 
 .filter {
     @include font-size($para);
+    .form-field__checkboxes {
+        columns: 2;
+    }
 }
 
 .filter__heading {
@@ -44,4 +74,15 @@
 
 .filter__list-active a {
     color: $action-respond;
+}
+
+.filter__search {
+    @extend %pie-clearfix;
+    input {
+        float: left;
+        width: 70%;
+        + input {
+            width: 30%;
+        }
+    }
 }

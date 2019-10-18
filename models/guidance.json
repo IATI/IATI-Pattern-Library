@@ -83,6 +83,56 @@
             "flag": false
 		}
     ],
+    "guidance_standard": [
+        {
+		    "title": "Activity Budgets"
+		},
+        {
+		    "title": "Activity Dates (When?)"
+		},
+        {
+		    "title": "Activity Classifications"
+		},
+        {
+		    "title": "Activity Geography (Where?)"
+		},
+        {
+		    "title": "Activity Participation (Who?)"
+		},
+        {
+		    "title": "Conditions"
+		},
+        {
+		    "title": "Activity Sectors (What?)"
+		},
+        {
+		    "title": "Documents"
+		},
+        {
+		    "title": "Geography - Countries and Regions"
+		},
+        {
+		    "title": "Results"
+		},
+        {
+		    "title": "Locations"
+		},
+        {
+		    "title": "Budgets"
+		},
+        {
+		    "title": "Country budget alignment"
+		},
+        {
+		    "title": "Transactions"
+		},
+        {
+		    "title": "Organisation Budgets"
+		},
+        {
+		    "title": "Converting currencies"
+		}
+    ],
     "knowledgebase_list": [
         {
 		    "title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor."
