@@ -7,6 +7,9 @@
     +.aside-m {
         margin-top: 2em;
     }
+    @include respond-to($d-vp) {
+        max-width: 375px;
+    }
     &--clipping {
         padding: 2em;
         margin-bottom: 2em;
