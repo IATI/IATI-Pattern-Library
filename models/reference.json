@@ -4,6 +4,7 @@
   },
   {
     "name": "Activity Standard",
+    "active": true,
     "children": [
       {
         "name": "Elements",

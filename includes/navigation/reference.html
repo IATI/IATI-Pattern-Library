@@ -2,7 +2,7 @@
 <nav class="navigation-secondary navigation-secondary--reference" id="navigation-secondary" data-nested-list>
     <ul class="navigation-secondary__list">
         {% for l1 in reference %}
-            <li class="navigation-secondary__item" data-nested-nav-item>
+            <li class="navigation-secondary__item {% if l1.active %}active{% endif %}" data-nested-nav-item>
                 {% set item = l1 %}
                 {% include 'navigation/reference-item.html' %}
                 {% if l1.children %}
@@ -26,9 +26,19 @@
                                                                 {% if l4.children %}
                                                                     <ul class="navigation-secondary__fifth-child navigation-secondary__child-list" data-nested-nav-child-list>
                                                                         {% for l5 in l4.children %}
-                                                                            <li class="navigation-secondary__fifth-child__item">
+                                                                            <li class="navigation-secondary__fifth-child__item" data-nested-nav-item>
                                                                                 {% set item = l5 %}
                                                                                 {% include 'navigation/reference-item.html' %}
+                                                                                {% if l5.children %}
+                                                                                    <ul class="navigation-secondary__sixth-child navigation-secondary__child-list" data-nested-nav-child-list>
+                                                                                        {% for l6 in l5.children %}
+                                                                                            <li class="navigation-secondary__sixth-child__item" data-nested-nav-item>
+                                                                                                {% set item = l6 %}
+                                                                                                {% include 'navigation/reference-item.html' %}
+                                                                                            </li>
+                                                                                        {% endfor %}
+                                                                                    </ul>
+                                                                                {% endif %}
                                                                             </li>
                                                                         {% endfor %}
                                                                     </ul>
