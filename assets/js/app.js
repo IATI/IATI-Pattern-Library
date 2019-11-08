@@ -1,4 +1,3 @@
-import fastClick from 'fastclick';
 import $ from 'jquery';
 
 import skipLinks from './utils/skipLinks';
@@ -6,12 +5,10 @@ import iframer from './utils/iframer';
 import mNav from './utils/mNav';
 import sNav from './utils/mNav';
 import searchTrigger from './utils/searchTrigger';
+import nestedNav from './utils/nestedNav';
 // import counter from './utils/counter';
 
 function globals () {
-
-	// FastClick
-    fastClick(document.body);
 
     // iframe video in body content
     iframer();
@@ -42,6 +39,9 @@ function globals () {
         'header-search--active',
         '.header-search__close'
     );
+
+    // nested nav
+    nestedNav();
 
     // Load EventBrite if the window is larger than 500px, which is our $b-vp breakpoint
     if ($(window).width() > 500) {
