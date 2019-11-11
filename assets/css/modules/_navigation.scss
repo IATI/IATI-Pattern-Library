@@ -299,7 +299,7 @@
 
 .navigation-secondary__child {
 	&__item {
-		a {
+		> a {
 			background-color: lighten($iati-sunrise, 24%);
 			border-left-width: 4px;
 			padding-left: 1.5em;
@@ -313,24 +313,33 @@
 			color: #fff;
 		}
 		.navigation-secondary--reference & {
-			a {
+			> a {
 				margin-left: 15px;
 				width: calc(100% - 15px);
 			}
-			button {
+			> button {
 				left: 15px;
 			}
 		}
 	}
 }
 
-.navigation-secondary__child,
-.navigation-secondary__third-child,
-.navigation-secondary__fourth-child,
-.navigation-secondary__fifth-child,
-.navigation-secondary__sixth-child {
-	&__item {
+@mixin nested-item($i) {
+	$indent: (15 * $i);
+	.navigation-secondary__child__item--#{$i} {
 		a {
+			margin-left: #{$indent}px;
+			width: calc(100% - #{$indent}px);
+		}
+		button {
+			left: #{$indent}px;
+		}
+	}
+}
+
+.navigation-secondary__child {
+	&__item {
+		> a {
 			background-color: #fff;
 			border-left-width: 6px;
 			color: $heading-color;
@@ -354,6 +363,11 @@
 			> a {
 				background-color: #efefef;
 			}
+			&.active > a {
+				background-color: lighten($iati-sunrise, 6%);
+				border-left-color: lighten($iati-sunrise, 6%);
+				color: #fff;
+			}
 			button {
 				background-color: lighten($iati-sunrise, 6%);
 				background-image: url(../svg/source/plus.svg);
@@ -364,81 +378,8 @@
 				background-image: url(../svg/source/minus.svg);
 			}
 		}
-		&.open {
-			> button {
-				background-image: url(../svg/source/minus.svg);
-			}
-		}
-	}
-}
-
-.navigation-secondary__third-child {
-	&__item {
-		.navigation-secondary--reference & {
-			a {
-				margin-left: 30px;
-				width: calc(100% - 30px);
-			}
-			button {
-				left: 30px;
-			}
-		}
-	}
-}
-
-.navigation-secondary__fourth-child {
-	&__item {
-		.navigation-secondary--reference & {
-			a {
-				margin-left: 45px;
-				width: calc(100% - 45px);
-			}
-			button {
-				left: 45px;
-			}
-		}
-	}
-}
-
-.navigation-secondary__fourth-child {
-	&__item {
-		.navigation-secondary--reference & {
-			a {
-				margin-left: 45px;
-				width: calc(100% - 45px);
-			}
-			button {
-				left: 45px;
-			}
-		}
-	}
-}
-
-.navigation-secondary__fifth-child,
-.navigation-secondary__sixth-child {
-	&__item {
-		.navigation-secondary--reference & {
-			a {
-				margin-left: 60px;
-				width: calc(100% - 60px);
-			}
-			button {
-				left: 60px;
-			}
-		}
-	}
-}
-
-.navigation-secondary__sixth-child {
-	&__item {
-		.navigation-secondary--reference & {
-			a {
-				margin-left: 75px;
-				width: calc(100% - 75px);
-			}
-			button {
-				left: 75px;
-			}
+		@for $i from 1 through 20 {
+			@include nested-item($i);
 		}
 	}
 }
