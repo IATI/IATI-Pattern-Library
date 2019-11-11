@@ -4,10 +4,12 @@
   },
   {
     "name": "Activity Standard",
-    "active": true,
+    "open_class": "open",
     "children": [
       {
         "name": "Elements",
+        "active_class": "active",
+        "open_class": "open",
         "children": [
           {
             "name": "iati-activities",
