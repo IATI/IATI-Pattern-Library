@@ -345,6 +345,12 @@
 	margin-top: 1em;
 }
 
+.listing-search__url {
+	@include font-size($para - 1);
+	display: block;
+	margin-bottom: 0.75em;
+}
+
 .listing-search__highlight {
 	background-color: lighten($iati-sunset, 35%);
 	display: inline;
