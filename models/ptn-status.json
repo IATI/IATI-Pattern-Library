@@ -134,5 +134,9 @@
 	{
 		"name": "08-2-tools-resources-single",
 		"stage": "approved"
+	},
+	{
+		"name": "11-search",
+		"stage": "approved"
 	}
 ]
