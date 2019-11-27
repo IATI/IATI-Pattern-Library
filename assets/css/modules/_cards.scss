@@ -58,6 +58,9 @@
             box-shadow: none;
         }
     }
+    &--tool-feature {
+            @extend %pie-clearfix;
+    }
 }
 
 
@@ -145,6 +148,17 @@
     &--background {
         background-color: $iati-ocean;
     }
+    .card--tool-feature & {
+        float: right;
+        margin-right: 0;
+    }
+}
+
+.card__content {
+    .card--tool-feature & {
+        float: left;
+        width: 70%;
+    }
 }
 
 .card__list {
@@ -224,7 +238,7 @@
             }
         }
     }
-    .card--tool &, .card--simple & {
+    .card--tool &, .card--simple &, .card--tool-feature & {
         display: block;
     }
 }

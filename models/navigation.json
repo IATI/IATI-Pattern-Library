@@ -24,9 +24,15 @@
         "url": "http://iatistandard.org/guidance/",
 		    "hidden": false
 		},
-		{
-		    "label": "Community & Membership",
+        {
+		    "label": "Get involved",
 		    "in_section": "community",
+        "url": "https://discuss.iatistandard.org/",
+		    "hidden": false
+		},
+		{
+		    "label": "Governance",
+		    "in_section": "governance",
         "url": "https://discuss.iatistandard.org/",
 		    "hidden": false
 		}

@@ -133,6 +133,20 @@
 		    "title": "Converting currencies"
 		}
     ],
+    "guidance_standard_reduced": [
+        {
+		    "title": "Activity Budgets"
+		},
+        {
+		    "title": "Activity Dates (When?)"
+		},
+        {
+		    "title": "Activity Classifications"
+		},
+        {
+		    "title": "Activity Geography (Where?)"
+		}
+    ],
     "knowledgebase_list": [
         {
 		    "title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor."

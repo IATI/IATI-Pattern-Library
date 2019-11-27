@@ -135,6 +135,10 @@
 		"stage": "approved"
 	},
 	{
+		"name": "06-1-guidance-page",
+		"stage": "review"
+	},
+	{
 		"name": "07-website-link",
 		"stage": "approved"
 	},
@@ -179,7 +183,7 @@
 		"stage": "approved"
 	},
 	{
-		"name": "10-community",
+		"name": "10-get-involved",
 		"stage": "review"
 	},
 	{
