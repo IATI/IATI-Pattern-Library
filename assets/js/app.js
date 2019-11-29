@@ -4,6 +4,7 @@ import skipLinks from './utils/skipLinks';
 import iframer from './utils/iframer';
 import mNav from './utils/mNav';
 import sNav from './utils/mNav';
+import gaExtras from './utils/gaExtras';
 // import instance from './utils/basicScroll';
 
 function globals () {
@@ -63,6 +64,9 @@ function globals () {
         var target = $(this).attr('data-target');
         $('#' + target).scrollView();
     });
+
+    // TODO: check configuration of analytics, and uncomment line below to start tracking downloads 
+    // gaExtras();
 }
 
 $(function run () {
