@@ -110,6 +110,9 @@
 			// 	margin-left: 0;
 			// }
 		}
+		@include respond-to($e-vp) {
+			@include font-size($zeta);
+		}
 		// @include respond-to($d-vp) {
 			// margin-left: 2em;
 			// &:first-child {
@@ -146,7 +149,7 @@
 				}
 			}
 			@include respond-to($e-vp) {
-				padding: 0 0.75em;
+				padding: 0 1em;
 			}
 			@include link-active-styles {
 				&:after {

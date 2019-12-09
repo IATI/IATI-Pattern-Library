@@ -89,7 +89,8 @@
         border-bottom: 2px solid $action-respond;
     }
     &--minor {
-        @include font-size($delta);
+        @include font-size($epsilon + 1);
+        line-height: 1.5;
     }
     .card--guidance & {
         a {
@@ -259,6 +260,15 @@
     .card--guidance & {
         color: $heading-color;
         border-color: $heading-color;
+    }
+    .aside-m & {
+        @include font-size($eta - 1);
+        @include respond-to-max($d-vp + 100px) {
+            float: none;
+            margin-left: 0;
+            display: inline-block;
+            margin-bottom: 0.75em;
+        }
     }
 }
 

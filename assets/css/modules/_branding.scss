@@ -18,6 +18,10 @@
         width: 220px;
         float: left;
     }
+    @include respond-to($e-vp) {
+        height: 60px;
+        width: 260px;
+    }
 }
 
 .branding-footer {
