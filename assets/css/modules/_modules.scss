@@ -216,6 +216,7 @@
     @extend .type-xs;
     @extend .type-xs--trailer;
     @extend .heading;
+    line-height: 1.3;
     a {
         color: $action !important;
         text-decoration: underline;
