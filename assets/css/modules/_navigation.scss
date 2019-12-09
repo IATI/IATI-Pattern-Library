@@ -176,9 +176,11 @@
 
 .navigation-primary__item--has-children {
 	@include respond-to($menu-respond) {
-		@include link-active-styles {
-			> .navigation-megamenu {
-				display: block;
+		.navigation-primary__item--link {
+			@include link-active-styles {
+				+ .navigation-megamenu {
+					display: block;
+				}
 			}
 		}
 	}
