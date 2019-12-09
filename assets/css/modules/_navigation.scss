@@ -91,13 +91,14 @@
 		display: block;
 		float: right;
 		margin-top: 3.9em;
+		margin-right: 1em;
 		html.js & {
 			display: block;
 		}
 	}
 	&__item {
 		@extend %pie-clearfix;
-		@include font-size($zeta);
+		@include font-size($zeta - 1);
 		&:last-child a {
 			border-bottom: none;
 		}
@@ -144,8 +145,8 @@
 					transition: transform 0.25s ease-out;
 				}
 			}
-			@include respond-to($d-vp) {
-				padding: 0 1em;
+			@include respond-to($e-vp) {
+				padding: 0 0.75em;
 			}
 			@include link-active-styles {
 				&:after {
@@ -524,7 +525,7 @@
 	letter-spacing: 0;
 	@extend %font-sans;
 	margin-bottom: 0.75em;
-	padding-top: 1.4em;
+	padding-top: 0.75em;
 	li {
 		margin-bottom: 0.75em;
 		line-height: 1.2;
@@ -549,7 +550,7 @@
 			margin-left: 1em;
 		}
 		.m-highlight & {
-			margin-bottom: 0.25em;
+			margin-bottom: 0.5em;
 		}
 	}
 }

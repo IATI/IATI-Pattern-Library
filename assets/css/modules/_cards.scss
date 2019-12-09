@@ -88,6 +88,9 @@
         display: inline;
         border-bottom: 2px solid $action-respond;
     }
+    &--minor {
+        @include font-size($delta);
+    }
     .card--guidance & {
         a {
             color: $action;
