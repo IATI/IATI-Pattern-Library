@@ -201,7 +201,7 @@
             "hidden": false,
             "highlight": {
                 "class": "navigation-megamenu__col--small",
-                "heading": "Using IATI Data",
+                "heading": "Tools &amp; Resources",
                 "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
             },
             "columns": {
@@ -211,30 +211,24 @@
                         "class": "l-4up",
                         "column_class": "l-4up__col",
                         "columns": [
-                            [
-                                {
-                                    "highlight": true,
-                                    "heading": "IATI Registry",
-                                    "content": "Bullet points about the tool and what it enables you to do",
-                                    "label": "Link to the tool website"
-                                }
-                            ],
-                            [
-                                {
-                                    "highlight": true,
-                                    "heading": "Data Validator",
-                                    "content": "Bullet points about the tool and what it enables you to do",
-                                    "label": "Link to the tool website"
-                                }
-                            ],
-                            [
-                                {
-                                    "highlight": true,
-                                    "heading": "IATI Datastore",
-                                    "content": "Bullet points about the tool and what it enables you to do",
-                                    "label": "Link to the tool website"
-                                }
-                            ],
+                            {
+                                "highlight": true,
+                                "heading": "IATI Registry",
+                                "content": "Bullet points about the tool and what it enables you to do",
+                                "label": "Link to the tool website"
+                            },
+                            {
+                                "highlight": true,
+                                "heading": "Data Validator",
+                                "content": "Bullet points about the tool and what it enables you to do",
+                                "label": "Link to the tool website"
+                            },
+                            {
+                                "highlight": true,
+                                "heading": "IATI Datastore",
+                                "content": "Bullet points about the tool and what it enables you to do",
+                                "label": "Link to the tool website"
+                            },
                             [
                                 "Promote IATI",
                                 "Publishing statistics",
@@ -247,31 +241,27 @@
                         "class": "l-4up l-4up--double-right",
                         "column_class": "l-4up__col",
                         "columns": [
-                            [
-                                {
-                                    "highlight": true,
-                                    "heading": "IATI Dashboard",
-                                    "content": "Bullet points about the tool and what it enables you to do",
-                                    "label": "Link to the tool website"
-                                }
-                            ],
-                            [
-                                {
-                                    "highlight": true,
-                                    "heading": "d-portal",
-                                    "content": "Bullet points about the tool and what it enables you to do",
-                                    "label": "Link to the tool website"
-                                }
-                            ],
-                            [
-                                {
-                                    "class": "l-4up__col--double",
-                                    "highlight": true,
-                                    "heading": "Integrating IATI data into your AIMS",
-                                    "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.",
-                                    "label": "Find out more about integrating IATI"
-                                }
-                            ]
+                            {
+                                "highlight": true,
+                                "heading": "IATI Dashboard",
+                                "content": "Bullet points about the tool and what it enables you to do",
+                                "label": "Link to the tool website"
+                            },
+                            {
+                                "highlight": true,
+                                "heading": "d-portal",
+                                "content": "Bullet points about the tool and what it enables you to do",
+                                "label": "Link to the tool website"
+                            },
+                            {
+                                "class": "l-4up__col--double",
+                                "not_alt": true,
+                                "highlight": true,
+                                "heading": "Integrating IATI data into your AIMS",
+                                "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.",
+                                "label": "Find out more about integrating IATI",
+                                "label_class": "button button--small"
+                            }
                         ]
                     }
                 ]
@@ -294,57 +284,47 @@
                         "class": "l-3up",
                         "column_class": "l-3up__col",
                         "columns": [
-                            [
-                                {
-                                    "highlight": true,
-                                    "heading": "Standard Overview",
-                                    "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
-                                    "label": "View standard overview",
-                                    "label_class": "navigation-megamenu__block__link"
-                                }
-                            ],
-                            [
-                                {
-                                    "highlight": true,
-                                    "heading": "Standard Guidance v2.0",
-                                    "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
-                                    "label": "View standard guidance",
-                                    "label_class": "navigation-megamenu__block__link"
-                                }
-                            ],
-                            [
-                                {
-                                    "highlight": true,
-                                    "heading": "Help &amp; Support",
-                                    "content": "Submit a support request to our team and we'll do our best to help you",
-                                    "label": "Submit a query",
-                                    "label_class": "button button--small"
-                                }
-                            ]
+                            {
+                                "highlight": true,
+                                "heading": "Standard Overview",
+                                "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+                                "label": "View standard overview",
+                                "label_class": "navigation-megamenu__block__link"
+                            },
+                            {
+                                "highlight": true,
+                                "heading": "Standard Guidance v2.0",
+                                "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+                                "label": "View standard guidance",
+                                "label_class": "navigation-megamenu__block__link"
+                            },
+                            {
+                                "highlight": true,
+                                "heading": "Help &amp; Support",
+                                "content": "Submit a support request to our team and we'll do our best to help you",
+                                "label": "Submit a query",
+                                "label_class": "button button--small"
+                            }
                         ]
                     },
                     {
                         "class": "l-3up",
                         "column_class": "l-3up__col",
                         "columns": [
-                            [
-                                {
-                                    "highlight": true,
-                                    "heading": "Developer Guidance",
-                                    "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
-                                    "label": "View developer guidance",
-                                    "label_class": "navigation-megamenu__block__link"
-                                }
-                            ],
-                            [
-                                {
-                                    "highlight": true,
-                                    "heading": "Publishing Guidance",
-                                    "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
-                                    "label": "View publishing guidance",
-                                    "label_class": "navigation-megamenu__block__link"
-                                }
-                            ]
+                            {
+                                "highlight": true,
+                                "heading": "Developer Guidance",
+                                "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+                                "label": "View developer guidance",
+                                "label_class": "navigation-megamenu__block__link"
+                            },
+                            {
+                                "highlight": true,
+                                "heading": "Publishing Guidance",
+                                "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+                                "label": "View publishing guidance",
+                                "label_class": "navigation-megamenu__block__link"
+                            }
                         ]
                     }
                 ]
@@ -367,30 +347,24 @@
                         "class": "l-3up",
                         "column_class": "l-3up__col",
                         "columns": [
-                            [
-                                {
-                                    "highlight": true,
-                                    "heading": "Membership",
-                                    "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                                }
-                            ],
-                            [
-                                {
-                                    "highlight": true,
-                                    "heading": "The IATI Community (TIC)",
-                                    "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                                    "label": "Code of conduct",
-                                    "label_class": "navigation-megamenu__block__link"
-                                }
-                            ],
-                            [
-                                {
-                                    "highlight": true,
-                                    "heading": "Discuss",
-                                    "content": "Bullet points about the tool and what it enables you to do",
-                                    "label": "Link to discuss"
-                                }
-                            ]
+                            {
+                                "highlight": true,
+                                "heading": "Membership",
+                                "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                            },
+                            {
+                                "highlight": true,
+                                "heading": "The IATI Community (TIC)",
+                                "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                                "label": "Code of conduct",
+                                "label_class": "navigation-megamenu__block__link"
+                            },
+                            {
+                                "highlight": true,
+                                "heading": "Discuss",
+                                "content": "Bullet points about the tool and what it enables you to do",
+                                "label": "Link to discuss"
+                            }
                         ]
                     }
                 ]
@@ -412,14 +386,12 @@
                         "class": "l-3up",
                         "column_class": "l-3up__col",
                         "columns": [
-                            [
-                                {
-                                    "highlight": true,
-                                    "heading": "Discuss",
-                                    "content": "Bullet points about the tool and what it enables you to do",
-                                    "label": "Link to discuss"
-                                }
-                            ]
+                            {
+                                "highlight": true,
+                                "heading": "Discuss",
+                                "content": "Bullet points about the tool and what it enables you to do",
+                                "label": "Link to discuss"
+                            }
                         ]
                     }
                 ]
@@ -442,48 +414,43 @@
                         "class": "l-4up",
                         "column_class": "l-4up__col",
                         "columns": [
-                            [
-                                {
-                                    "highlight": true,
-                                    "heading": "Who runs IATI",
-                                    "content": "Find out about out Governing Board and Secretariat",
-                                    "label": "Find out more"
-                                }
-                            ],
-                            [
-                                {
-                                    "highlight": true,
-                                    "heading": "Members Assembly",
-                                    "content": "The members assembly is a list of all IATI members",
-                                    "list": [
-                                        "View our membership",
-                                        "Member's assembly documents"
-                                    ]
-                                }
-                            ],
-                            [
-                                {
-                                    "highlight": true,
-                                    "heading": "Finances, reports and minutes",
-                                    "list": [
-                                        "IATI finances",
-                                        "Annual reports",
-                                        "Governing board minutes",
-                                        "Governance documents",
-                                        "Technical Advisory Group (TAG) documents"
-                                    ]
-                                }
-                            ],
-                            [
-                                {
-                                    "highlight": true,
-                                    "heading": "IATI plans",
-                                    "list": [
-                                        "IATI Strategic Plan 2020-2025",
-                                        "IATI work plan"
-                                    ]
-                                }
-                            ]
+                            {
+                                "highlight": true,
+                                "heading": "Who runs IATI",
+                                "content": "Find out about out Governing Board and Secretariat",
+                                "label": "Find out more"
+                            },
+                            {
+                                "highlight": true,
+                                "heading": "Members Assembly",
+                                "no_link_heading": true,
+                                "content": "The members assembly is a list of all IATI members",
+                                "list": [
+                                    "View our membership",
+                                    "Member's assembly documents"
+                                ]
+                            },
+                            {
+                                "highlight": true,
+                                "no_link_heading": true,
+                                "heading": "Finances, reports and minutes",
+                                "list": [
+                                    "IATI finances",
+                                    "Annual reports",
+                                    "Governing board minutes",
+                                    "Governance documents",
+                                    "Technical Advisory Group (TAG) documents"
+                                ]
+                            },
+                            {
+                                "highlight": true,
+                                "no_link_heading": true,
+                                "heading": "IATI plans",
+                                "list": [
+                                    "IATI Strategic Plan 2020-2025",
+                                    "IATI work plan"
+                                ]
+                            }
                         ]
                     }
                 ]
