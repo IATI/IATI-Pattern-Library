@@ -59,6 +59,7 @@
         padding: 1em;
         color: $heading-color;
         transition: all, ease-in-out, 0.3s;
+        font-size: inherit;
         @include link-active-styles {
             border-left: 3px solid $iati-land;
             background-color: darken($iati-land-light, 7%);

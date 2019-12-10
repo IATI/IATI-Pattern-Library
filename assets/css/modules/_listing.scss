@@ -300,6 +300,15 @@
 // Search results
 // ------------------------------------------------------------
 
+.listing-search-header {
+	border-bottom: 1px solid $default-border-color;
+	padding-bottom: 2em;
+	&__copy {
+		@include font-size($para);
+		color: darken($iati-ash, 25%);
+	}
+}
+
 .listing-search {
 	&__item {
 		position: relative;
