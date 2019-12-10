@@ -181,6 +181,13 @@
 				display: block;
 			}
 		}
+		.navigation-primary__item--link {
+			@include link-active-styles {
+				+ .navigation-megamenu {
+					display: block;
+				}
+			}
+		}
 	}
 }
 

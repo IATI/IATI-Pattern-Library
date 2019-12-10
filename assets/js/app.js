@@ -6,6 +6,7 @@ import mNav from './utils/mNav';
 import sNav from './utils/mNav';
 import searchTrigger from './utils/searchTrigger';
 import nestedNav from './utils/nestedNav';
+import './libs/accessible-mega-menu.min.js';
 // import counter from './utils/counter';
 
 function globals () {
@@ -39,6 +40,34 @@ function globals () {
         'header-search--active',
         '.header-search__close'
     );
+
+    // accessible megamenu
+    $('.navigation-primary__items').accessibleMegaMenu({
+        // prefix for generated unique id attributes, which are required
+        // to indicate aria-owns, aria-controls and aria-labelledby
+        uuidPrefix: 'megamenu',
+
+        // CSS class used to define the megamenu styling
+        menuClass: 'navigation-primary__items',
+
+        // CSS class for a top-level navigation item in the megamenu
+        topNavItemClass: 'navigation-primary__item--has-children',
+
+        // CSS class for a megamenu panel
+        panelClass: 'navigation-megamenu',
+
+        // CSS class for a group of items within a megamenu panel
+        panelGroupClass: 'navigation-megamenu__col',
+
+        // CSS class for the hover state
+        hoverClass: 'hover',
+
+        // CSS class for the focus state
+        focusClass: 'focus',
+
+        // CSS class for the open state
+        openClass: 'open'
+    });
 
     // nested nav
     nestedNav();
