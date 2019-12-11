@@ -59,6 +59,22 @@
 	}
 }
 
+.search-mobile {
+    position: relative;
+	margin: 1em 0;
+    @include respond-to($menu-respond) {
+        display: none;
+    }
+    .form-item {
+        @include font-size($para);
+    }
+    .button {
+		position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
 // ------------------------------------------------------------
 // Primary menu with mobile folding
 // ------------------------------------------------------------

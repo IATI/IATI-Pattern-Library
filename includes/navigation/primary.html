@@ -4,6 +4,13 @@
 <button role="button button--small" class="navigation-primary-toggle" id="navigation-primary-toggle"><span>Menu</span></button>
 
 <nav class="navigation-primary" id="navigation-primary">
+    <div class="search-mobile">
+        <form action="">
+            <label for="search-mobile" class="form-label form-label--hidden">Search this site</label>
+    		<input class="form-item" type="text" name="search" placeholder="Search this site">
+    		<button class="button" type="submit">Search</button>
+        </form>
+    </div>
     <ul class="navigation-primary__items">
     	{% for item in navigation.primary_extended %}
     		{% if not item.inactive %}
@@ -93,5 +100,8 @@
                 <li id="section-{{ item.in_section }}" class='navigation-primary__item navigation-primary__item--ss-only'><a href="{{ item.url }}">{{ item.label }}</a></li>
             {% endif %}
         {% endfor %}
+
+        <li class='navigation-primary__item navigation-primary__item--ss-only'><a href="#">English</a></li>
+        <li class='navigation-primary__item navigation-primary__item--ss-only'><a href="#">French</a></li>
     </ul>
 </nav>

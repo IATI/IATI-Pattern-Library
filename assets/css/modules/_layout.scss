@@ -267,9 +267,10 @@
 			width: 21.25%;
 			margin-left: 5%;
 			margin-bottom: 0;
-			&:nth-child(3n+1) {
+			&:nth-child(4n+1) {
 				margin-left: 0;
 				clear: left;
+				//background-color: red;
 				@supports (display: grid) {
 					margin-left: 0;
 				}
@@ -283,7 +284,7 @@
 				display: block;
 				width: 21.25%;
 				margin-left: 5%;
-				&:nth-child(3n+1) {
+				&:nth-child(4n+1) {
 					margin-left: 0;
 					clear: left;
 				}
@@ -291,8 +292,12 @@
 		}
 		&--double {
 			@include respond-to($c-vp) {
+				width: 48%;
+				@supports (display: grid) {
+					width: auto;
+				}
 				@supports (display: -ms-grid) {
-					width: 47.5%;
+					width: 48%;
 				}
 			}
 		}

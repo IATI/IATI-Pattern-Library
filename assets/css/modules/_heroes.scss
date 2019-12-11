@@ -7,9 +7,9 @@
     // background: linear-gradient(180deg, $iati-ocean, $iati-ocean, #F6F6F6);
     background: linear-gradient(0deg, darken($iati-ocean, 4%) 4%, $iati-ocean 20%);
     margin-bottom: 5em;
-    padding-top: 15em;
+    padding-top: 38em;
     padding-bottom: 5em;
-    margin-top: -15.5em;
+    margin-top: -38.5em;
     position: relative;
     @include respond-to-max($menu-respond) {
         &:before {
@@ -48,9 +48,6 @@
 
     }
     @include respond-to($c-vp) {
-        //overflow: hidden;
-        padding-top: 20em;
-        // margin-bottom: 8em;
         &--image {
             padding-top: 25em;
             margin-bottom: 5em;
