@@ -15,7 +15,7 @@
 			                    <div class="m-highlight">
 			                        <h2 class="m-highlight__heading">{{ item.highlight.heading }}</h2>
 			                        <p class="m-highlight__copy">{{ item.highlight.content }}</p>
-			                        <a href="#" class="button button--small">Read more</a>
+			                        <a href="http://iatistandard.org/" class="button button--small">Read more</a>
 			                    </div>
             				 </div>
             			{% endif %}
@@ -40,19 +40,19 @@
 						                                	{% if sub_col.no_link_heading %}
 						                                		{{ sub_col.heading }}
 						                                	{% else %}
-						                                		<a href="#">{{ sub_col.heading }}</a>
+						                                		<a href="http://iatistandard.org">{{ sub_col.heading }}</a>
 						                                	{% endif %}
 						                                </h3>
 						                                {% if sub_col.content %}
 						                                	<p class="navigation-megamenu__block__copy">{{ sub_col.content }}</p>
 						                                {% endif %}
 						                                {% if sub_col.label %}
-						                                	<a href="#" class="{{ sub_col.label_class|d('text-link') }}">{{ sub_col.label }}</a>
+						                                	<a href="http://iatistandard.org" class="{{ sub_col.label_class|d('text-link') }}">{{ sub_col.label }}</a>
 						                                {% endif %}
 						                                {% if sub_col.list %}
 							                                <ul class="navigation-megamenu__list">
 							                                	{% for label in sub_col.list %}
-							                                    	<li><a href="#">{{ label }}</a></li>
+							                                    	<li><a href="http://iatistandard.org">{{ label }}</a></li>
 							                                    {% endfor %}
 							                                </ul>
 							                            {% endif %}
@@ -65,11 +65,11 @@
 	                                								{{ label.heading }}
 								                                    <ul>
 								                                    	{% for sub_label in label.column %}
-								                                        	<li><a href="#">{{ sub_label }}</a></li>
+								                                        	<li><a href="http://iatistandard.org">{{ sub_label }}</a></li>
 								                                        {% endfor %}
 								                                    </ul>
 	                                							{% else %}
-	                                								<a href="#">{{ label }}</a>
+	                                								<a href="http://iatistandard.org">{{ label }}</a>
 	                                							{% endif %}
 	                                						</li>
 	                                					{% endfor %}

@@ -182,6 +182,11 @@
 			}
 		}
 		.navigation-primary__item--link {
+			&.focus {
+				+ .navigation-megamenu {
+					display: block;
+				}
+			}
 			@include link-active-styles {
 				+ .navigation-megamenu {
 					display: block;
@@ -490,7 +495,7 @@
 	@include respond-to-max($menu-respond) {
 		display: none;
 	}
-	&--active {
+	&--active, &.open {
 		display: block;
 	}
 	.button {

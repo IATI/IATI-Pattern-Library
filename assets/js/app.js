@@ -6,7 +6,7 @@ import mNav from './utils/mNav';
 import sNav from './utils/mNav';
 import searchTrigger from './utils/searchTrigger';
 import nestedNav from './utils/nestedNav';
-import './libs/accessible-mega-menu.min.js';
+import './libs/accessible-mega-menu';
 // import counter from './utils/counter';
 
 function globals () {
@@ -42,7 +42,7 @@ function globals () {
     );
 
     // accessible megamenu
-    $('.navigation-primary__items').accessibleMegaMenu({
+    $('#navigation-primary').accessibleMegaMenu({
         // prefix for generated unique id attributes, which are required
         // to indicate aria-owns, aria-controls and aria-labelledby
         uuidPrefix: 'megamenu',
@@ -51,7 +51,7 @@ function globals () {
         menuClass: 'navigation-primary__items',
 
         // CSS class for a top-level navigation item in the megamenu
-        topNavItemClass: 'navigation-primary__item--has-children',
+        topNavItemClass: 'navigation-primary__item',
 
         // CSS class for a megamenu panel
         panelClass: 'navigation-megamenu',
