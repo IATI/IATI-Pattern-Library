@@ -37,12 +37,6 @@
 		display: block;
 		position: relative;
 	}
-	&:focus {
-		outline: none;
-		span {
-
-		}
-	}
 	@include respond-to-max($menu-respond) {
 		html.js & {
 			display: block;
@@ -75,13 +69,13 @@
 		overflow: hidden;
 		transition: max-height ease-out 0.35s;
 		html.js & {
-			//display: none;
+			display: none;
 			max-height: 0;
 			margin-top: 1em;
 		}
 		&--active {
 			html.js & {
-				//display: block;
+				display: block;
 				transition: max-height ease-out 0.5s;
 				max-height: 1000px;
 			}
@@ -495,8 +489,10 @@
 	@include respond-to-max($menu-respond) {
 		display: none;
 	}
-	&--active, &.open {
-		display: block;
+	@include respond-to($menu-respond) {
+		&--active, &.open {
+			display: block;
+		}
 	}
 	.button {
 		@extend %font-sans;
