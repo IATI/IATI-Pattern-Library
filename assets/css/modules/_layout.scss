@@ -266,7 +266,7 @@
 			display: block;
 			width: 21.25%;
 			margin-left: 5%;
-			margin-bottom: 0;
+			margin-bottom: 1em;
 			&:nth-child(4n+1) {
 				margin-left: 0;
 				clear: left;
@@ -278,6 +278,7 @@
 			@supports (display: grid) {
 				margin-left: 0;
 				width: auto;
+				margin-bottom: 0;
 			}
 			@supports (display: -ms-grid) {
 				float: left;
@@ -292,12 +293,12 @@
 		}
 		&--double {
 			@include respond-to($c-vp) {
-				width: 48%;
+				width: 47.5%;
 				@supports (display: grid) {
 					width: auto;
 				}
 				@supports (display: -ms-grid) {
-					width: 48%;
+					width: 47.5%;
 				}
 			}
 		}
