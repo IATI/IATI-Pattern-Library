@@ -7,7 +7,9 @@ import sNav from './utils/mNav';
 import searchTrigger from './utils/searchTrigger';
 import nestedNav from './utils/nestedNav';
 import megaMenu from './utils/megaMenu';
+import gaExtras from './utils/gaExtras';
 // import counter from './utils/counter';
+// import instance from './utils/basicScroll';
 
 function globals () {
 
@@ -91,6 +93,9 @@ function globals () {
         event.preventDefault();
         $(this).text($(this).text() == 'Hide -' ? 'Expand +' : 'Hide -').prev().toggleClass('show-hide-target--hidden');
     });
+
+    // Download tracker for GA
+    gaExtras();
 }
 
 $(function run () {
