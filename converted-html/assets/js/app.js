@@ -4,7 +4,11 @@ import skipLinks from './utils/skipLinks';
 import iframer from './utils/iframer';
 import mNav from './utils/mNav';
 import sNav from './utils/mNav';
+import searchTrigger from './utils/searchTrigger';
+import nestedNav from './utils/nestedNav';
+import megaMenu from './utils/megaMenu';
 import gaExtras from './utils/gaExtras';
+// import counter from './utils/counter';
 // import instance from './utils/basicScroll';
 
 function globals () {
@@ -30,6 +34,20 @@ function globals () {
         '#navigation-secondary',
         'navigation-secondary--active'
     );
+
+    // Search trigger
+    searchTrigger(
+        '.header-search__trigger',
+        '.header-search',
+        'header-search--active',
+        '.header-search__close'
+    );
+
+    // accessible megamenu
+    megaMenu();
+
+    // nested nav
+    nestedNav();
 
     // Load EventBrite if the window is larger than 500px, which is our $b-vp breakpoint
     if ($(window).width() > 500) {
@@ -63,6 +81,17 @@ function globals () {
         event.preventDefault();
         var target = $(this).attr('data-target');
         $('#' + target).scrollView();
+    });
+
+    // counter for the homepage numbers
+    // counter();
+    // Moved to the template to stop erroring on anything but the homepage - see 0-home.html
+
+    // Show / Hide {
+    // Used on the codelist template 09-1a-codelist.html
+    $('.show-hide-trigger').on('click', function(event) {
+        event.preventDefault();
+        $(this).text($(this).text() == 'Hide -' ? 'Expand +' : 'Hide -').prev().toggleClass('show-hide-target--hidden');
     });
 
     // Download tracker for GA
