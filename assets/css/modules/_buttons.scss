@@ -102,6 +102,9 @@ button.button, input.button {
 .button--small {
 	@include font-size($zeta);
 	padding: .6em .75em;
+	.navigation-megamenu & {
+		margin-right: 10px;
+	}
 }
 
 .button--disabled {

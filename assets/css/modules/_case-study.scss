@@ -61,3 +61,10 @@
         @include font-size($zeta);
     }
 }
+
+.case-study__text-link {
+    .navigation-megamenu & {
+        display: inline-block;
+        transform: translateY(6px);
+    }
+}

@@ -59,6 +59,7 @@
     ],
     "primary_extended": [
         {
+            "inactive": true,
             "label": "About",
             "in_section": "about",
             "url": "http://iatistandard.org/about/",
@@ -88,6 +89,48 @@
                                 "heading": "AfDB's IATI portal improves development investments",
                                 "excerpt": "IATI has undertaken research to gain insights into how different countries use data."
                             }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "label": "About",
+            "in_section": "about",
+            "url": "http://iatistandard.org/about/",
+            "hidden": false,
+            "highlight": {
+                "heading": "About",
+                "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            },
+            "columns": {
+                "class": "navigation-megamenu__col navigation-megamenu__col--border",
+                "columns": [
+                    {
+                        "class": "l-3up",
+                        "column_class": "l-3up__col",
+                        "columns": [
+                            [
+                                "How IATI works",
+                                "Who is IATI for?",
+                                "Why use IATI?",
+                                "About the Standard",
+                                "The IATI story so far"
+                            ],
+                            [
+                                "Case studies",
+                                "Madagascar case study",
+                                "Oxfam Novib case study",
+                                "AfDB's IATI portal improves development investments"
+                            ],
+                            [
+                                "Governance",
+                                "Annual reports",
+                                "Who runs IATI",
+                                "Finances",
+                                "IATI work plan",
+                                "Archive"
+                            ]
                         ]
                     }
                 ]
