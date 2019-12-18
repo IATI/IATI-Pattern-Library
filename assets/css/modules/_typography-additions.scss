@@ -57,6 +57,13 @@
 		font-size: 175%;
 		@include leading($base-font-size*1.05);
 	}
+	.rich-text {
+		> p:first-of-type {
+			color: $heading-color;
+			font-size: 175%;
+			@include leading($base-font-size*1.05);
+		}
+	}
 }
 
 // ------------------------------------------------------------
