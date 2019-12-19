@@ -123,6 +123,10 @@
     .card--tool .card__header & {
         width: 70%;
         float: left;
+        &--full {
+            width: auto;
+            float: none;
+        }
     }
     .card--simple & {
         max-width: 75%;
