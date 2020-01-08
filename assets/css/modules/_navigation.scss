@@ -420,7 +420,6 @@
 // ------------------------------------------------------------
 
 .navigation-utility {
-	display: none;
 	@include respond-to($menu-respond) {
 		overflow: hidden;
 		display: inline-block;

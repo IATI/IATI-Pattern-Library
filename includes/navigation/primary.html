@@ -11,10 +11,15 @@
     		<button class="button" type="submit">Search</button>
         </form>
     </div>
+    <ul class="navigation-language navigation-language--mobile">
+        <li class="navigation-language__item">Lang:</li>
+        <li class="navigation-language__item navigation-language__item--active"><a href="#">EN</a></li>
+        <li class="navigation-language__item"><a href="#">FR</a></li>
+    </ul>
     <ul class="navigation-primary__items">
     	{% for item in navigation.primary_extended %}
     		{% if not item.inactive %}
-       			<li class="navigation-primary__item navigation-primary__item--has-children">
+       			<li class="navigation-primary__item {% if section == item.in_section %}navigation-primary__item--active{% endif %} navigation-primary__item--has-children">
        				<a class="navigation-primary__item--link" href="{{ item.url }}">{{ item.label }}</a>
             		<div class="navigation-megamenu">
             			{% if item.highlight %}
@@ -101,8 +106,5 @@
                 <li id="section-{{ item.in_section }}" class='navigation-primary__item navigation-primary__item--ss-only'><a href="{{ item.url }}">{{ item.label }}</a></li>
             {% endif %}
         {% endfor %}
-
-        <li class='navigation-primary__item navigation-primary__item--ss-only'><a href="#">English</a></li>
-        <li class='navigation-primary__item navigation-primary__item--ss-only'><a href="#">French</a></li>
     </ul>
 </nav>
