@@ -37,6 +37,44 @@
 		    "hidden": false
 		}
     ],
+    "primary_fr": [
+	    {
+		    "label": "À propos",
+		    "in_section": "about",
+            "url": "http://iatistandard.org/about/",
+		    "hidden": false
+		},
+		{
+		    "label": "Norme de l’IITA",
+		    "in_section": "standard",
+            "url": "http://iatistandard.org/iati-standard/",
+		    "hidden": false
+		},
+        {
+		    "label": "Utilisation des données",
+		    "in_section": "data",
+            "url": "http://iatistandard.org/using-data/",
+		    "hidden": false
+		},
+		{
+		    "label": "Outils et ressources",
+		    "in_section": "support",
+            "url": "http://iatistandard.org/guidance/",
+		    "hidden": false
+		},
+        {
+		    "label": "Conseils et assistance",
+		    "in_section": "community",
+            "url": "https://discuss.iatistandard.org/",
+		    "hidden": false
+		},
+		{
+		    "label": "Communauté",
+		    "in_section": "governance",
+            "url": "https://discuss.iatistandard.org/",
+		    "hidden": false
+		}
+    ],
     "utility": [
 	    {
 		    "label": "News",
@@ -46,6 +84,26 @@
 		},
 		{
 		    "label": "Events",
+		    "in_section": "events",
+            "url": "http://iatistandard.org/events/",
+		    "hidden": false
+		},
+		{
+		    "label": "Contact",
+		    "in_section": "contact",
+            "url": "http://iatistandard.org/contact/",
+		    "hidden": false
+		}
+    ],
+    "utility_fr": [
+	    {
+		    "label": "Actualités",
+		    "in_section": "news",
+            "url": "http://iatistandard.org/news/",
+		    "hidden": false
+		},
+		{
+		    "label": "Événements",
 		    "in_section": "events",
             "url": "http://iatistandard.org/events/",
 		    "hidden": false

@@ -168,10 +168,16 @@
 			}
 		}
 		&--active {
-			a {
-				&:after {
-					transform: scaleX(1);
-  					transform-origin: bottom left;
+			> a:not(.button) {
+				border-bottom-color: $action-respond;
+				border-bottom-width: 3px;
+			}
+			@include respond-to($menu-respond) {
+				> a:not(.button) {
+					&:after {
+						transform: scaleX(1);
+	  					transform-origin: bottom left;
+					}
 				}
 			}
 		}
@@ -417,10 +423,11 @@
 	display: none;
 	@include respond-to($menu-respond) {
 		overflow: hidden;
-		display: block;
-		position: absolute;
-		right: 11.5em;
-		top: 0;
+		display: inline-block;
+		float: left;
+		// position: absolute;
+		// right: 11.5em;
+		// top: 0;
 		background-color: $iati-ash;
 		padding: 1em 3em 1em 2em;
 	}
@@ -450,14 +457,15 @@
 // ------------------------------------------------------------
 
 .navigation-language {
-	display: none;
 	@extend %pie-clearfix;
+	@include font-size($zeta);
+	display: block;
 	@include respond-to($menu-respond) {
-		display: block;
-		position: absolute;
+		display: inline-block;
+		position: relative;
 		top: 12px;
-		right: 25em;
-		@include font-size($zeta);
+		// right: 25em;
+		float: left;
 	}
 	&__item {
 		&:first-child {
@@ -479,6 +487,25 @@
 		&--active a {
 			background-color: $iati-air;
 			border-color: $iati-air;
+		}
+	}
+	&--mobile {
+		border-bottom: 1px solid $iati-ash;
+		margin-bottom: 0.5em;
+		margin-top: 1em;
+		display: block;
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		.navigation-language__item {
+			float: none;
+			a {
+				display: block;
+			}
+		}
+		@include respond-to($menu-respond) {
+			display: none;
 		}
 	}
 }

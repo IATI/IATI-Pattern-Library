@@ -11,12 +11,14 @@
 </div>
 <header role="banner" class="header">
 	<a href="/" class="branding"><span>IATI - International Aid Transparency Initiative</span></a>
-	<ul class="navigation-language">
-		<li class="navigation-language__item">Lang:</li>
-		<li class="navigation-language__item navigation-language__item--active"><a href="#">EN</a></li>
-		<li class="navigation-language__item"><a href="#">FR</a></li>
-	</ul>
-	{% include 'navigation/utility.html' %}
-	<button type="button" class="header-search__trigger">{{ icons.icon('ico-search-ocean', '16') }} Search</button>
-	{% include 'navigation/primary.html' %}
+	<div class="header__utility">
+		<ul class="navigation-language">
+			<li class="navigation-language__item">Lang:</li>
+			<li class="navigation-language__item navigation-language__item--active"><a href="#">EN</a></li>
+			<li class="navigation-language__item"><a href="#">FR</a></li>
+		</ul>
+		{% include 'navigation/utility-fr.html' %}
+		<button type="button" class="header-search__trigger">{{ icons.icon('ico-search-ocean', '16') }} Recherche</button>
+	</div>
+	{% include 'navigation/primary-fr.html' %}
 </header>

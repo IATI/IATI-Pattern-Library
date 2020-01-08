@@ -27,6 +27,17 @@
 	}
 }
 
+.header__utility {
+	@extend %pie-clearfix;
+	display: none;
+	@include respond-to($menu-respond) {
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}
+
 .header-search {
 	overflow: hidden;
     position: absolute;
@@ -60,10 +71,11 @@
     display: none;
     @include respond-to($menu-respond) {
         @include font-size($zeta);
-        position: absolute;
-        display: block;
+        position: relative;
         top: 11px;
-        right: 20px;
+        // right: 20px;
+		display: inline-block;
+		float: left;
         .ico {
             top: -1px;
             margin-right: 2px;
