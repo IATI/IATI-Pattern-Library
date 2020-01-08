@@ -98,9 +98,11 @@
 	}
 	@include respond-to($menu-respond) {
 		display: block;
-		float: right;
-		margin-top: 3.9em;
-		margin-right: 1em;
+		//float: right;
+		margin-top: 2em;
+		//margin-right: 1em;
+		border-top: 1px solid $iati-ash;
+		padding-top: 2em;
 		html.js & {
 			display: block;
 		}
@@ -119,7 +121,7 @@
 			// 	margin-left: 0;
 			// }
 		}
-		@include respond-to($e-vp) {
+		@include respond-to($d-vp) {
 			@include font-size($zeta);
 		}
 		// @include respond-to($d-vp) {
@@ -427,8 +429,12 @@
 		// position: absolute;
 		// right: 11.5em;
 		// top: 0;
-		background-color: $iati-ash;
-		padding: 1em 3em 1em 2em;
+		//background-color: $iati-ash;
+		padding: 1em 2em 1em 2em;
+		margin-right: 1em;
+		margin-left: 0.75em;
+		border-left: 1px solid $iati-ash;
+		border-right: 1px solid $iati-ash;
 	}
 }
 
@@ -473,19 +479,20 @@
 		display: inline-block;
 		float: left;
 		a {
-			//background-color: $iati-ash;
+			background-color: transparent;
 			//border: 1px solid $iati-ash;
-			padding: 0.9em 0.75em 0.65em 0.75em;
+			padding: 0.9em 0.75em 0.4em 0.75em;
 			color: $heading-color;
 			transition: all, ease-in-out, 0.3s;
+			border-bottom: 3px solid transparent;
 			@include link-active-styles {
-				background-color: $iati-air;
-				border-color: $iati-air;
+				//background-color: $iati-air;
+				border-bottom: 3px solid $iati-air;
 			}
 		}
 		&--active a {
-			background-color: $iati-air;
-			border-color: $iati-air;
+			//background-color: $iati-air;
+			border-bottom: 3px solid $iati-air;
 		}
 	}
 	&--mobile {
@@ -518,7 +525,7 @@
 	overflow: hidden;
 	position: absolute;
 	left: 0;
-	top: 99px;
+	top: 161px;
 	display: none;
 	width: 100%;
 	background-color: $body-color;
