@@ -102,7 +102,7 @@
 		margin-top: 2em;
 		//margin-right: 1em;
 		border-top: 1px solid $iati-ash;
-		padding-top: 2em;
+		//padding-top: 2em;
 		html.js & {
 			display: block;
 		}
@@ -144,8 +144,8 @@
 				border-bottom: $default-border-width solid $heading-color;
 			}
 			@include respond-to($menu-respond) {
-				min-height: 40px;
-				padding: 0 .5em;
+				//min-height: 40px;
+				padding: 1em;
 				&:after {
 					content: '';
 					position: absolute;
@@ -158,9 +158,6 @@
 					transform-origin: bottom right;
 					transition: transform 0.25s ease-out;
 				}
-			}
-			@include respond-to($e-vp) {
-				padding: 0 1em;
 			}
 			@include link-active-styles {
 				&:after {
@@ -525,7 +522,7 @@
 	overflow: hidden;
 	position: absolute;
 	left: 0;
-	top: 161px;
+	top: 150px;
 	display: none;
 	width: 100%;
 	background-color: $body-color;
