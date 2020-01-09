@@ -39,6 +39,9 @@
 		color: #fff;
 		@include font-size($epsilon - 1);
 	}
+	.header-search & {
+		color: #fff;
+	}
 }
 
 // ------------------------------------------------------------
@@ -139,7 +142,7 @@ textarea.form-item {
 		width: 16px;
 		height: 16px;
 		position: relative;
-		top: 0px; // Usually needs a wiggle
+		top: -2px; // Usually needs a wiggle
 	}
 	input[type="radio"] {
 		border-radius: 50%;

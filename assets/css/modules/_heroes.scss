@@ -3,12 +3,13 @@
 // ------------------------------------------------------------
 
 .hero {
+    @extend %pie-clearfix;
     // background: linear-gradient(180deg, $iati-ocean, $iati-ocean, #F6F6F6);
     background: linear-gradient(0deg, darken($iati-ocean, 4%) 4%, $iati-ocean 20%);
     margin-bottom: 5em;
-    padding-top: 15em;
+    padding-top: 38em;
     padding-bottom: 5em;
-    margin-top: -15.5em;
+    margin-top: -38.5em;
     position: relative;
     @include respond-to-max($menu-respond) {
         &:before {
@@ -43,10 +44,10 @@
         background-color: $iati-ocean;
         padding-bottom: 5em;
     }
+    &--tool {
+
+    }
     @include respond-to($c-vp) {
-        overflow: hidden;
-        padding-top: 20em;
-        // margin-bottom: 8em;
         &--image {
             padding-top: 25em;
             margin-bottom: 5em;
@@ -85,6 +86,9 @@
             padding-top: 24em;
         }
     }
+    .alert {
+        margin-top: 1em;
+    }
 }
 
 .hero__caption {
@@ -92,12 +96,59 @@
     z-index: 3;
     border-left: 5px solid $iati-air;
     padding-left: 1.5em;
+    a:not(.button) {
+        color: #fff;
+        text-decoration: underline;
+    }
+    strong {
+        font-weight: 700;
+    }
+    .button {
+        margin-top: 1em;
+    }
     @include respond-to($c-vp) {
-        max-width: 50%;
+        max-width: 60%;
+        float: left;
         .hero--image &,
         .max-meter & {
             max-width: 100%;
         }
+        .hero--tool & {
+            float: left;
+        }
+        .hero--video & {
+            width: 50%;
+            @include respond-to($d-vp) {
+                transform: translateY(3em);
+            }
+        }
+    }
+}
+
+.hero__media {
+    margin-top: 2em;
+    @include respond-to($c-vp) {
+        margin-top: 0;
+        width: 35%;
+        float: right;
+        .hero--video & {
+            width: 45%;
+            @include respond-to($d-vp) {
+                transform: translateY(-3em);
+            }
+        }
+    }
+}
+
+.hero__logo {
+    margin-bottom: 1em;
+    img {
+        @extend %max-width;
+    }
+    @include respond-to($c-vp) {
+        margin-right: 5%;
+        float: left;
+        margin-bottom: 0;
     }
 }
 
@@ -189,5 +240,27 @@
     }
     html.no-cssmask & {
         display: none;
+    }
+}
+
+.hero-notice {
+    background-color: lighten($warning, 40%);
+    padding: 1.5em 0;
+    margin-top: -5em;
+    margin-bottom: 5em;
+}
+
+.hero-notice__copy {
+    @include font-size($para);
+    font-weight: 700;
+    line-height: 1;
+    color: darken($warning, 15%);
+    a {
+        color: darken($warning, 15%);
+        text-decoration: underline;
+    }
+    .ico {
+        top: -2px;
+        margin-right: 10px;
     }
 }

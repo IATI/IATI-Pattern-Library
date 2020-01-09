@@ -28,6 +28,9 @@
 		background-color: $action;
 		//background: linear-gradient(30deg, $action-respond, $action-respond);
 		color: #fff;
+		.hero & {
+			background-color: darken($action-respond, 10%);
+		}
 	}
 }
 
@@ -94,6 +97,14 @@ button.button, input.button {
 .button--large {
 	@include font-size($epsilon);
 	text-align: center;
+}
+
+.button--small {
+	@include font-size($zeta);
+	padding: .6em .75em;
+	.navigation-megamenu & {
+		margin-right: 10px;
+	}
 }
 
 .button--disabled {

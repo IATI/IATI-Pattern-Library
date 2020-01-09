@@ -48,11 +48,28 @@
             bottom: 2em;
         }
     }
+    &--tool {
+        margin-bottom: 4em;
+        .button {
+            margin-top: 1em;
+        }
+        &--alt {
+            background-color: $iati-ash;
+            box-shadow: none;
+        }
+    }
+    &--tool-feature {
+            @extend %pie-clearfix;
+    }
 }
 
 
 .card__header {
     padding: 2em;
+    .card--tool & {
+        @extend %pie-clearfix;
+        padding: 0;
+    }
 }
 
 .card__body {
@@ -70,6 +87,10 @@
     a span {
         display: inline;
         border-bottom: 2px solid $action-respond;
+    }
+    &--minor {
+        @include font-size($epsilon + 1);
+        line-height: 1.5;
     }
     .card--guidance & {
         a {
@@ -98,6 +119,53 @@
                 }
             }
         }
+    }
+    .card--tool .card__header & {
+        width: 70%;
+        float: left;
+        &--full {
+            width: auto;
+            float: none;
+        }
+    }
+    .card--simple & {
+        max-width: 75%;
+    }
+}
+
+.card__sub-heading {
+    @extend .heading;
+    @include font-size($epsilon);
+    line-height: 1.3em;
+    display: block;
+    margin-top: 1.75em;
+    + .card__list {
+        margin-top: .5em;
+    }
+}
+
+.card__logo {
+    float: left;
+    width: 25%;
+    margin-right: 5%;
+    padding: 1em;
+    img {
+        width: 100%;
+        display: block;
+    }
+    &--background {
+        background-color: $iati-ocean;
+    }
+    .card--tool-feature & {
+        float: right;
+        margin-right: 0;
+    }
+}
+
+.card__content {
+    .card--tool-feature & {
+        float: left;
+        width: 70%;
     }
 }
 
@@ -162,7 +230,7 @@
     @include respond-to-max (500px) {
         /* firefox */
         display: none;
-        
+
         &--truncated {
             display: block;
         }
@@ -172,11 +240,14 @@
         @include respond-to-max (1050px) {
             /* chrome + safari */
             display: none;
-            
+
             &--truncated {
                 display: block;
             }
         }
+    }
+    .card--tool &, .card--simple &, .card--tool-feature & {
+        display: block;
     }
 }
 
@@ -193,6 +264,15 @@
     .card--guidance & {
         color: $heading-color;
         border-color: $heading-color;
+    }
+    .aside-m & {
+        @include font-size($eta - 1);
+        @include respond-to-max($d-vp + 100px) {
+            float: none;
+            margin-left: 0;
+            display: inline-block;
+            margin-bottom: 0.75em;
+        }
     }
 }
 

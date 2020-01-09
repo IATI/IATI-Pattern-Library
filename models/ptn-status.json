@@ -9,7 +9,10 @@
 	},
 	{
 		"name": "0-home",
-		"stage": "approved"
+		"stage": "review"
+	},{
+		"name": "0b-home-video",
+		"stage": "review"
 	},
 	{
 		"name": "01-about",
@@ -44,6 +47,10 @@
 		"stage": "approved"
 	},
 	{
+		"name": "01-6-members-list",
+		"stage": "approved"
+	},
+	{
 		"name": "02-1-guidance-support",
 		"stage": "approved"
 	},
@@ -74,6 +81,14 @@
 	{
 		"name": "02-7-knowledgebase-single",
 		"stage": "approved"
+	},
+	{
+		"name": "02-8-support",
+		"stage": "approved"
+	},
+	{
+		"name": "02-9-standard-guidance",
+		"stage": "review"
 	},
 	{
 		"name": "03-news",
@@ -120,6 +135,10 @@
 		"stage": "approved"
 	},
 	{
+		"name": "06-1-guidance-page",
+		"stage": "review"
+	},
+	{
 		"name": "07-website-link",
 		"stage": "approved"
 	},
@@ -133,6 +152,42 @@
 	},
 	{
 		"name": "08-2-tools-resources-single",
+		"stage": "approved"
+	},
+	{
+		"name": "08-3-tools-resources",
+		"stage": "approved"
+	},
+	{
+		"name": "08-4-tool",
+		"stage": "approved"
+	},
+	{
+		"name": "09-the-standard",
+		"stage": "approved"
+	},
+	{
+		"name": "09-1-reference",
+		"stage": "approved"
+	},
+	{
+		"name": "09-1a-codelist",
+		"stage": "approved"
+	},
+	{
+		"name": "09-1b-schema",
+		"stage": "approved"
+	},
+	{
+		"name": "09-1c-organisation-identifiers",
+		"stage": "approved"
+	},
+	{
+		"name": "10-get-involved",
+		"stage": "review"
+	},
+	{
+		"name": "11-search",
 		"stage": "approved"
 	}
 ]
