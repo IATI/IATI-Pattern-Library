@@ -61,7 +61,7 @@
 
 .search-mobile {
     position: relative;
-	margin: 1em 0;
+	margin: 2em 0 1em 0;
     @include respond-to($menu-respond) {
         display: none;
     }
@@ -181,6 +181,7 @@
 			}
 		}
 		&--ss-only {
+			display: block;
 			@include respond-to($menu-respond) {
 				display: none;
 			}
@@ -493,9 +494,7 @@
 		}
 	}
 	&--mobile {
-		border-bottom: 1px solid $iati-ash;
-		margin-bottom: 0.5em;
-		margin-top: 1em;
+		margin-top: 0.5em;
 		display: block;
 		position: relative;
 		margin-left: auto;
