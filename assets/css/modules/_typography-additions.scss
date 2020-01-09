@@ -18,7 +18,7 @@
 // Make articles text more legible
 .is-typeset.is-typeset--article {
 	@include respond-to($menu-respond) {
-		p, li {
+		p, li , code {
 			 @include font-size($para*1.22);
 		}
 		h1 {
@@ -57,6 +57,13 @@
 		font-size: 175%;
 		@include leading($base-font-size*1.05);
 	}
+	.rich-text {
+		> p:first-of-type {
+			color: $heading-color;
+			font-size: 175%;
+			@include leading($base-font-size*1.05);
+		}
+	}
 }
 
 // ------------------------------------------------------------
@@ -75,6 +82,12 @@
 	cite {
 		@include font-size($zeta);
 		display: block;
+	}
+	.case-study__panel & {
+		padding-top: 0;
+		p {
+			@include font-size($para);
+		}
 	}
 }
 

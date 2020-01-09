@@ -12,6 +12,7 @@
 {% set section = "home" %}
 {% set title = "International Aid Transparency Initiative" %}
 {% set hero_image = "hero-home.jpg" %}
+{% set hero_copy = "IATI is a common format to share data on aid and development for better decision making and outcomes" %}
 
 
 {# --------------------------------------- #}
@@ -49,11 +50,11 @@
             </div>
             <div class="stat stat--flex">
                 <div class="stat__body stat__body--center">
-                    <h2 class="stat__heading stat__heading--large">1,000,000</h2>
+                    <h2 id="stat-activities" class="stat__heading stat__heading--large" data-inc-duration="1000" data-inc-delay="0" data-inc-value="1260899">1,260,899</h2>
                     <p class="stat__copy">Humanitarian and developlemnt activies published to the IATI Standard</p>
                 </div>
                 <div class="stat__body stat__body--center">
-                    <h2 class="stat__heading stat__heading--large">700</h2>
+                    <h2 id="stat-publishers" class="stat__heading stat__heading--large" data-inc-duration="1000" data-inc-delay="0" data-inc-value="1033">1,033</h2>
                     <p class="stat__copy">Publishers and counting that contribute data to make the world a better place</p>
                 </div>
             </div>
@@ -127,75 +128,145 @@
     </div>
     <div class="section section-alt-bottom">
         <div class="row">
-            <h2 class="section__heading">Case studies</h2>
+            <h2 class="section__heading">IATI in action</h2>
+            <div class="max-meter is-typeset is-typeset--article">
+                <p class="section__copy">Duis sit amet aliquam enim. Donec tempus nisi est, vel finibus dolor finibus sit amet. Pellentesque maximus sollicitudin urna.</p>
+            </div>
+            <div class="l-offset l-offset--reverse">
+                <div class="l-offset__col">
+                    <article class="case-study">
+                    	<div class="case-study__media background-cover" style="background-image: url({{ global.assets_root }}/img/content-image3.jpg"></div>
+                    	<div class="case-study__panel">
+                    		<h2 class="case-study__heading"><a href=""><span>São Tomé and Príncipe is IATI’s first Portuguese-speaking Member</span></a></h2>
+                    		<p class="case-study__excerpt">Nullam magna ligula, sagittis vitae faucibus ut, sollicitudin et mauris. Donec et varius lacus.</p>
+                            <blockquote class="m-quote__quote as-blockquote">
+                                <p>“Vestibulum facilisis venenatis laoreet”</p>
+                                <cite>Source</cite>
+                            </blockquote>
+                        </div>
+                    </article>
+                </div>
+                <div class="l-offset__col">
+                    <h3 class="case-study__heading"><a href="#">Netherlands Enterprise Agency</a></h3>
+                    <p class="case-study__excerpt"> IATI has launched a new series of profiles on data use in partner countries, starting with Bangladesh.</p>
+                    <div class="space-module-top">
+                        <h3 class="case-study__heading"><a href="#">Spotlight on IATI data use</a></h3>
+                        <p class="case-study__excerpt"> IATI has launched a new series of profiles on data use in partner countries, starting with Bangladesh.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="section-alt">
+            <h2 class="section__heading">IATI tools</h2>
             <div class="max-meter is-typeset is-typeset--article">
                 <p class="section__copy">Duis sit amet aliquam enim. Donec tempus nisi est, vel finibus dolor finibus sit amet. Pellentesque maximus sollicitudin urna.</p>
             </div>
             <div class="l-2up">
-                <div class="l-2up__col">
-                    <div class="help help--standout">
-                        <div class="help__header help__header--big background-cover" style="background-image: url({{ global.assets_root }}/img/case-study1.png)">
-                            <div class="help__panel fill-sunset">
-                                <h3 class="help__heading">Netherlands Enterprise Agency</h3>
-                                <p>Sharing information on more than 1100 projects, across 125 countries.</p>
-                                <a href="#none">Read more</a>
-                            </div>
+                <div class="card card--tool-feature">
+                    <div class="card__logo card__logo--background">
+                        <a href="#">
+                            <img src="{{ global.assets_root }}/img/tool-logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="card__content">
+                        <h3 class="card__heading"><a href="#">d-portal</a></h3>
+                        <div class="is-typeset">
+                            <p class="card__excerpt">Search and visualise IATI activity data. Great for users who are new to IATI.</p>
+                            <p><a href="#" class="button">Got to www.iatiregistry.org</a></p>
                         </div>
                     </div>
                 </div>
-                <div class="l-2up__col">
-                    <div class="help help--standout">
-                        <div class="help__header background-cover" style="background-image: url({{ global.assets_root }}/img/case-study2.png)">
-                            <div class="help__panel fill-sunset">
-                                <h3 class="help__heading">Spotlight on IATI data use</h3>
-                                <p> IATI has launched a new series of profiles on data use in partner countries, starting with Bangladesh.</p>
-                                <a href="#none">Read more</a>
-                            </div>
+                <div class="card card--tool-feature">
+                    <div class="card__logo card__logo--background">
+                        <a href="#">
+                            <img src="https://via.placeholder.com/200x120?text=logo" alt="">
+                        </a>
+                    </div>
+                    <div class="card__content">
+                        <h3 class="card__heading"><a href="#">IATI Datastore</a></h3>
+                        <div class="is-typeset">
+                            <p class="card__excerpt">Query all organisation and activity data published to IATI. Data is returned as csv, xls, json or xml.</p>
+                            <p><a href="#" class="button">Go to [web address]</a></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="section-alt">
-            <h2 class="section__heading">Partners</h2>
+
+    <div class="section">
+        <div class="row">
+            <h2 class="section__heading">Latest news</h2>
             <div class="l-2up">
                 <div class="l-2up__col">
-                    <article class="listing listing--article listing--people">
+                    <article class="listing listing--article listing--article--minor">
                         <aside class="listing__aside">
                             <div class="listing__media">
-                                <img src="{{ global.assets_root }}/img/portrait.png" alt="alt tag">
+                                <img src="{{ global.assets_root }}/img/content-image2.jpg" alt="alt tag">
                             </div>
                         </aside>
                         <div class="listing__body">
-                            <blockquote class="as-blockquote listing-quote">
-                                <p>&ldquo;Duis sit amet aliquam enim. Donec tempus nisi est, vel finibus dolor finibus sit amet. Pellentesque maximus sollicitudin urna.&rdquo;</p>
-
-                                <cite class="heading">Person Name</cite>
-                                <cite>Role</cite>
-                            </blockquote>
+                            <h3 class="listing__heading">News item title</h3>
+                            <ul class="listing__metadata">
+                    			<li class="listing__metadata__item">
+                    				{{ icons.icon('ico-calendar-ocean', '14') }} <span class="listing__metadata__date">June 17</span>
+                    			</li>
+                    		</ul>
+                            <div class="listing__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                    		<a href="#" class="m-text-link">Read more</a>
                         </div>
                     </article>
+                    <article class="listing listing--article listing--article--minor">
+                        <aside class="listing__aside">
+                            <div class="listing__media">
+                                <img src="{{ global.assets_root }}/img/content-image3.jpg" alt="alt tag">
+                            </div>
+                        </aside>
+                        <div class="listing__body">
+                            <h3 class="listing__heading">News item title</h3>
+                            <ul class="listing__metadata">
+                    			<li class="listing__metadata__item">
+                    				{{ icons.icon('ico-calendar-ocean', '14') }} <span class="listing__metadata__date">June 17</span>
+                    			</li>
+                    		</ul>
+                            <div class="listing__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                    		<a href="#" class="m-text-link">Read more</a>
+                        </div>
+                    </article>
+                    <article class="listing listing--article listing--article--minor">
+                        <aside class="listing__aside">
+                            <div class="listing__media">
+                                <img src="{{ global.assets_root }}/img/content-image.jpg" alt="alt tag">
+                            </div>
+                        </aside>
+                        <div class="listing__body">
+                            <h3 class="listing__heading">News item title</h3>
+                            <ul class="listing__metadata">
+                    			<li class="listing__metadata__item">
+                    				{{ icons.icon('ico-calendar-ocean', '14') }} <span class="listing__metadata__date">June 17</span>
+                    			</li>
+                    		</ul>
+                            <div class="listing__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                    		<a href="#" class="m-text-link">Read more</a>
+                        </div>
+                    </article>
+                    <a href="#" class="button">View all news</a>
                 </div>
                 <div class="l-2up__col">
-                    <article class="listing listing--article listing--people">
-                        <aside class="listing__aside">
-                            <div class="listing__media">
-                                <img src="{{ global.assets_root }}/img/portrait.png" alt="alt tag">
-                            </div>
-                        </aside>
-                        <div class="listing__body">
-                            <blockquote class="as-blockquote listing-quote">
-                                <p>&ldquo;Duis sit amet aliquam enim. Donec tempus nisi est, vel finibus dolor finibus sit amet. Pellentesque maximus sollicitudin urna.&rdquo;</p>
-
-                                <cite class="heading">Person Name</cite>
-                                <cite>Role</cite>
-                            </blockquote>
-                        </div>
-                    </article>
+                    <a class="twitter-timeline" data-height="700" href="https://twitter.com/IATI_aid?ref_src=twsrc%5Etfw">Tweets by IATI_aid</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                 </div>
             </div>
         </div>
     </div>
+{% endblock %}
+
+{% block html_footer %}
+<!-- Number animation -->
+<script src="{{ global.assets_root }}/js/utils/counter.js"></script>
+<script>
+    counter();
+</script>
 {% endblock %}

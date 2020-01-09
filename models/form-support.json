@@ -23,10 +23,10 @@
     ],
     "textarea": [
 	    {
-		    "field_spacing": false,
+		    "field_spacing": true,
 		    "field_error": false,
 		    "item_id": "textarea",
-		    "item_label": "Textarea",
+		    "item_label": "How can we help you?",
 		    "item_label_type": ""
 		}
 	]

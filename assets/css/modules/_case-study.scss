@@ -25,6 +25,12 @@
         top: 2em;
         // margin-right: -2em;
         width: 50%;
+        .navigation-megamenu & {
+            width: 75%;
+            padding: 1em;
+            top: 0;
+            height: 100%;
+        }
     }
 }
 
@@ -36,9 +42,29 @@
     line-height: 1.4;
     margin-bottom: 0.5em;
     padding-bottom: 0.5em;
+    .navigation-megamenu & {
+        @include font-size($epsilon);
+        line-height: 1.2;
+        a {
+            min-height: auto !important;
+            &:after {
+                content: none !important;
+            }
+        }
+    }
 }
 
 .case-study__excerpt {
     @include font-size($para);
     margin-bottom: 0.75em;
+    .navigation-megamenu & {
+        @include font-size($zeta);
+    }
+}
+
+.case-study__text-link {
+    .navigation-megamenu & {
+        display: inline-block;
+        transform: translateY(6px);
+    }
 }
