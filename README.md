@@ -1,5 +1,5 @@
 # IATI-Pattern-Library
-Place for web style components built in conjunction with the new IATI brand.
+No longer maintained as an independent project. Please see the [patterns folder](https://github.com/IATI/IATI-Standard-Website/tree/master/patterns) of the IATI-Standard-Website for the maintained version of this library.
 
 ## Usage
 The toolkit is based around the following elements, in order of granularity:
