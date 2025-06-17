@@ -1,5 +1,8 @@
 # IATI-Pattern-Library
-Place for web style components built in conjunction with the new IATI brand.
+
+The IATI Pattern Library contains styles, assets and guidance for development of the [IATI website at iatistandard.org](https://github.com/IATI/IATI-Standard-Website). All other IATI web development should use the [IATI Design System](https://github.com/IATI/design-system). If developing for iatistandard.org, divergence from the design system should be minimised while retaining consistency with the Pattern Library as far as possible.  
+
+See also the [IATI Brand Guide](https://drive.google.com/drive/folders/1YqxzGzdObx17nZbWG2b-vUHHcFTrA_kC?usp=sharing) that was developed alongside the Pattern Library and that has informed the design system. 
 
 ## Usage
 The toolkit is based around the following elements, in order of granularity:
